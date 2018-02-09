@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<Folder FolderName="XML Files" ExtStr="xml;cml;math;rdf;smil;svg;wml">
+		<File FilePath="xml_docs\allChannels.xml" HomeFolder="Yes"/>
+		<File FilePath="xml_docs\kanal5.se_2017-11-03.xml" HomeFolder="Yes"/>
+		<File FilePath="xml_docs\sjuan.se_2017-11-03.xml" HomeFolder="Yes"/>
+		<File FilePath="xml_docs\svt1.svt.se_2017-11-03.xml" HomeFolder="Yes"/>
+		<File FilePath="xml_docs\svt2.svt.se_2017-11-03.xml" HomeFolder="Yes"/>
+		<File FilePath="xml_docs\tv3.se_2017-11-03.xml" HomeFolder="Yes"/>
+		<File FilePath="xml_docs\tv4.se_2017-11-03.xml" HomeFolder="Yes"/>
+		<File FilePath="xml_docs\tv6.se_2017-11-03.xml" HomeFolder="Yes"/>
+		<File FilePath="xml_docs\tv8.se_2017-11-03.xml" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XSL Files" ExtStr="xsl;xslt">
+		<File FilePath="convert_xml_to_html.xsl" HomeFolder="Yes"/>
+		<File FilePath="merge_xml_files.xsl" HomeFolder="Yes"/>
+		<File FilePath="XSL-FO\xsl_fo.xsl" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XQuery Files" ExtStr="xq;xql;xquery;xqu">
+		<File FilePath="convert_xquery_to_html.xquery" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp"/>
+	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd">
+		<File FilePath="xmltv.dtd" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="Entities" ExtStr="ent"/>
+</Project>

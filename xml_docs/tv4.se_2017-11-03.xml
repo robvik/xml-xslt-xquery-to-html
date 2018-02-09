@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv [
+<!ELEMENT tv (channel*, programme*)>
+<!ATTLIST tv date   CDATA #IMPLIED source-info-url     CDATA #IMPLIED source-info-name    CDATA #IMPLIED        source-data-url     CDATA #IMPLIED        generator-info-name CDATA #IMPLIED          generator-info-url  CDATA #IMPLIED >
+<!ELEMENT channel (display-name+, icon*, url*) >
+<!ATTLIST channel id CDATA #REQUIRED >
+<!ELEMENT display-name (#PCDATA)>
+<!ATTLIST display-name lang CDATA #IMPLIED>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT programme (title+, sub-title*, desc*, credits?, date?,
+                     category*, keyword*, language?, orig-language?,
+                     length?, icon*, url*, country*, episode-num*,
+                     video?, audio?, previously-shown?, premiere?,
+                     last-chance?, new?, subtitles*, rating*,
+                     star-rating*, review* )>
+<!ATTLIST programme start     CDATA #REQUIRED
+                    stop      CDATA #IMPLIED
+                    pdc-start CDATA #IMPLIED
+                    vps-start CDATA #IMPLIED
+                    showview  CDATA #IMPLIED
+                    videoplus CDATA #IMPLIED
+                    channel   CDATA #REQUIRED
+                    clumpidx  CDATA "0/1" >
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title lang CDATA #IMPLIED>
+<!ELEMENT sub-title (#PCDATA)>
+<!ATTLIST sub-title lang CDATA #IMPLIED>
+<!ELEMENT desc (#PCDATA)>
+<!ATTLIST desc lang CDATA #IMPLIED>
+<!ELEMENT credits (director*, actor*, writer*, adapter*, producer*,
+                   composer*, editor*, presenter*, commentator*, 
+                   guest* )>
+<!ELEMENT director    (#PCDATA)>
+<!ELEMENT actor       (#PCDATA)>
+<!ATTLIST actor role  CDATA #IMPLIED>
+<!ELEMENT writer      (#PCDATA)>
+<!ELEMENT adapter     (#PCDATA)>
+<!ELEMENT producer    (#PCDATA)>
+<!ELEMENT composer    (#PCDATA)>
+<!ELEMENT editor      (#PCDATA)>
+<!ELEMENT presenter   (#PCDATA)>
+<!ELEMENT commentator (#PCDATA)>
+<!ELEMENT guest       (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ATTLIST category lang CDATA #IMPLIED>
+<!ELEMENT keyword (#PCDATA)>
+<!ATTLIST keyword lang CDATA #IMPLIED>
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language lang CDATA #IMPLIED>
+<!ELEMENT orig-language (#PCDATA)>
+<!ATTLIST orig-language lang CDATA #IMPLIED>
+<!ELEMENT length (#PCDATA)>
+<!ATTLIST length units (seconds | minutes | hours) #REQUIRED>
+<!ELEMENT icon EMPTY>
+<!ATTLIST icon src         CDATA #REQUIRED
+               width       CDATA #IMPLIED
+               height      CDATA #IMPLIED> 
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ATTLIST country lang CDATA #IMPLIED>
+<!ELEMENT episode-num (#PCDATA)>
+<!ATTLIST episode-num system CDATA "onscreen">
+<!ELEMENT video (present?, colour?, aspect?, quality?)>
+<!ELEMENT present (#PCDATA)>
+<!ELEMENT colour (#PCDATA)>
+<!ELEMENT aspect (#PCDATA)>
+<!ELEMENT quality (#PCDATA)>
+<!ELEMENT audio (present?, stereo?)>
+<!ELEMENT stereo (#PCDATA)>
+<!ELEMENT previously-shown EMPTY>
+<!ATTLIST previously-shown start   CDATA #IMPLIED
+                           channel CDATA #IMPLIED >
+<!ELEMENT premiere (#PCDATA)>
+<!ATTLIST premiere lang CDATA #IMPLIED>
+<!ELEMENT last-chance (#PCDATA)>
+<!ATTLIST last-chance lang CDATA #IMPLIED>
+<!ELEMENT new EMPTY>
+<!ELEMENT subtitles (language?)>
+<!ATTLIST subtitles type (teletext | onscreen | deaf-signed) #IMPLIED>
+<!ELEMENT rating (value, icon*)>
+<!ATTLIST rating system CDATA #IMPLIED>
+<!ELEMENT star-rating (value, icon*)>
+<!ATTLIST star-rating system CDATA #IMPLIED>
+<!ELEMENT review (#PCDATA)>
+<!ATTLIST review type     (text | url) #REQUIRED
+                 source   CDATA        #IMPLIED
+                 reviewer CDATA        #IMPLIED
+                 lang     CDATA        #IMPLIED>
+]>
+
+<tv generator-info-name="Taiga XMLTV" generator-info-url="http://xmltv.se">
+	<programme start="20171103015500 +0100" stop="20171103030000 +0100" channel="tv4.se">
+		<title lang="sv">112 - på liv och död</title>
+		<sub-title lang="sv">Avsnitt 12</sub-title>
+		<desc lang="sv">Gävlepoliserna Andreas och Josefin söker tillsammans med flera patruller efter en försvunnen nioåring. Pojken har varit borta i flera timmar och det är kallt ute. De är oroliga för att han kan ha blivit utsatt för något brott. På ambulansenheten i Göteborg beger sig Anna i väg för att hjälpa en kvinna med svåra magsmärtor. På Brännkyrka brandstation i Stockholm jobbar Micke natt. Under småtimmarna kommer ett larm om en lägenhetsbrand och brandmännen rycker ut.</desc>
+		<date>2011</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/38631/season/3/episode/12]]></url>
+		<episode-num system="xmltv_ns">2 . 11/12 .</episode-num>
+		<episode-num system="onscreen">Episode 12 of 12 season 3</episode-num>
+	</programme>
+	<programme start="20171103030000 +0100" stop="20171103035500 +0100" channel="tv4.se">
+		<title lang="sv">Mord och inga visor</title>
+		<sub-title lang="sv">Crimson Harvest</sub-title>
+		<desc lang="sv">Jessica letar efter en koppling mellan morden på översittaren Sam Bryce och kvinnan han var otrogen med.</desc>
+		<credits>
+			<director>Anthony Pullen Shaw</director>
+			<actor>Len Cariou</actor>
+			<actor role="Jessica Fletcher">Angela Lansbury</actor>
+			<actor>Eddie Velez</actor>
+			<actor>Robert Pine</actor>
+			<actor>Joseph Cali</actor>
+			<actor>Lainie Kazan</actor>
+			<actor>David Newsom</actor>
+			<actor>Ismael 'East' Carlo</actor>
+			<actor>Elizabeth Gracen</actor>
+			<actor>Gregg Henry</actor>
+		</credits>
+		<date>1994</date>
+		<category lang="en">series</category>
+		<category lang="en">Crime</category>
+		<category lang="en">Drama</category>
+		<category lang="en">Mystery</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/484/season/11/episode/8]]></url>
+		<episode-num system="xmltv_ns">10 . 7/21 .</episode-num>
+		<episode-num system="onscreen">Episode 8 of 21 season 11</episode-num>
+	</programme>
+	<programme start="20171103035500 +0100" stop="20171103054500 +0100" channel="tv4.se">
+		<title lang="sv">Paranormal activity 2</title>
+		<desc lang="sv">Paranormal activity 2 är en amerikansk skräckfilm från 2010. När en familj flyttar in i sitt nya hem varnas de av sin hushållerska om att huset hemsöks av övernaturliga fenomen på nätterna. Till en början tror de inte på henne men efter en tid börjar de misstänka att hon har rätt. De installerar en kamera som registrerar vad som pågår och får sina misstankar bekräftade. Samtidigt börjar kvinnan i huset minnas saker från sin barndom vilket får ödesdigra konsekvenser.</desc>
+		<credits>
+			<director>Tod Williams</director>
+			<actor role="Katie">Katie Featherston</actor>
+			<actor role="Surveillance Camera Expert">David Bierend</actor>
+			<actor role="Daniel Rey">Brian Boland</actor>
+			<actor role="Ali Rey">Molly Ephraim</actor>
+			<actor role="Brad">Seth Ginsberg</actor>
+			<actor role="Kristi Rey">Sprague Grayden</actor>
+			<actor role="Hunter Rey">William Juan Prieto</actor>
+			<actor role="Hunter Rey">Jackson Xenia Prieto</actor>
+			<actor role="Micah">Micah Sloat</actor>
+			<actor role="Martine">Vivis Cortez</actor>
+			<writer>Tom Pabst</writer>
+			<writer>Christopher B. Landon</writer>
+			<writer>Michael R. Perry</writer>
+			<producer>Jason Blum</producer>
+			<producer>Oren Peli</producer>
+		</credits>
+		<date>2010</date>
+		<category lang="en">movie</category>
+		<category lang="en">Horror</category>
+		<category lang="en">Thriller</category>
+		<url><![CDATA[http://www.themoviedb.org/movie/41436]]></url>
+		<episode-num system="themoviedb.org">movie/41436</episode-num>
+		<star-rating>
+			<value>5.7 / 10</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103054500 +0100" stop="20171103100000 +0100" channel="tv4.se">
+		<title lang="sv">Nyhetsmorgon</title>
+		<desc lang="sv">Direktsänt morgonprogram. Nyheter varvas med fördjupande diskussioner, bevakning av de senaste trenderna, personliga intervjuer, kultur och sport. Programledare: Jenny Strömstedt och Steffo Törnquist.</desc>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2015 . 74/120 .</episode-num>
+		<episode-num system="onscreen">Episode 75 of 120 season 2016</episode-num>
+	</programme>
+	<programme start="20171103100000 +0100" stop="20171103120000 +0100" channel="tv4.se">
+		<title lang="sv">Malou efter tio</title>
+		<desc lang="sv">Signalreparatören Lars Elner har i 30 år levt med skulden till att ha bidragit till en av Sveriges värsta tågolyckor genom tiderna. Nu möter han Gunnel Åkerhielm vars far omkom i olyckan. Jack Vreeswijk berättar om sin pappas musikskatt.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<episode-num system="xmltv_ns">23 . 9/50 .</episode-num>
+		<episode-num system="onscreen">Episode 10 of 50 season 24</episode-num>
+	</programme>
+	<programme start="20171103120000 +0100" stop="20171103123000 +0100" channel="tv4.se">
+		<title lang="sv">Hem till gården</title>
+		<desc lang="sv">Debbie bestämmer sig för att flytta in hos Moira. Rebecca besöker Lachlan. Chrissie får stanna kvar på sjukhuset. Tracy är hoppfull inför sin första bokklubb.</desc>
+		<credits>
+			<actor role="Rebecca White">Emily Head</actor>
+			<actor role="Tracy Metcalfe">Amy Walsh</actor>
+			<actor role="Charity Dingle">Emma Atkins</actor>
+			<actor>Martin Fustes</actor>
+			<producer>Iain MacLeod</producer>
+			<producer>John Whiston</producer>
+		</credits>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Drama</category>
+		<episode-num system="xmltv_ns">30 . 184 .</episode-num>
+		<episode-num system="onscreen">Episode 185 season 31</episode-num>
+	</programme>
+	<programme start="20171103123000 +0100" stop="20171103130000 +0100" channel="tv4.se">
+		<title lang="sv">Tareq Taylors nordiska matresa</title>
+		<desc lang="sv">Tareq besöker Ringkøbing, en charmig gammal marknadsstad i Danmark. Han besöker bland annat den traditionella sillfestivalen och träffar lokala entreprenörer som lärt sig att hantera den alltid föränderliga miljön.</desc>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Cooking</category>
+		<episode-num system="xmltv_ns">3 . 3 .</episode-num>
+		<episode-num system="onscreen">Episode 4 season 4</episode-num>
+	</programme>
+	<programme start="20171103130000 +0100" stop="20171103140000 +0100" channel="tv4.se">
+		<title lang="sv">Downton Abbey</title>
+		<sub-title lang="sv">Episode Three</sub-title>
+		<desc lang="sv">Planerna på ett konvalescenthem för krigsskadade på Downton fortsätter och Thomas blir ansvarig. William som ska ge sig ut i kriget friar till Daisy. Bates börjar arbeta på en pub och han och Anna återförenas för en kort stund.</desc>
+		<credits>
+			<director>Andy Goddard</director>
+			<actor role="Robert Crawley">Hugh Bonneville</actor>
+			<actor role="Violet Crawley">Maggie Smith</actor>
+			<actor role="Mary Crawley">Michelle Dockery</actor>
+			<actor role="Mr. Carson">Jim Carter</actor>
+			<actor role="Edith Crawley">Laura Carmichael</actor>
+			<actor role="Cora Crawley">Elizabeth McGovern</actor>
+			<actor role="Sybil Crawley">Jessica Brown Findlay</actor>
+			<actor role="Mrs. Hughes">Phyllis Logan</actor>
+			<actor role="Isobel Crawley">Penelope Wilton</actor>
+			<actor role="John Bates">Brendan Coyle</actor>
+			<actor role="Anna Smith">Joanne Froggatt</actor>
+			<actor role="Thomas Barrow">Rob James-Collier</actor>
+			<actor role="Mrs. Patmore">Lesley Nicol</actor>
+			<actor role="Ethel Parks">Amy Nuttall</actor>
+			<actor role="Daisy Mason">Sophie McShera</actor>
+			<actor role="Sarah O'Brien">Siobhan Finneran</actor>
+			<actor role="Matthew Crawley">Dan Stevens</actor>
+			<actor role="Tom Branson">Allen Leech</actor>
+			<writer>Julian Fellowes</writer>
+			<producer>Gareth Neame</producer>
+			<producer>Julian Fellowes</producer>
+			<producer>Rebecca Eaton</producer>
+			<producer>Liz Trubridge</producer>
+		</credits>
+		<date>2011</date>
+		<category lang="en">series</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/33907/season/2/episode/3]]></url>
+		<episode-num system="xmltv_ns">1 . 2/8 .</episode-num>
+		<episode-num system="onscreen">Episode 3 of 8 season 2</episode-num>
+	</programme>
+	<programme start="20171103140000 +0100" stop="20171103150000 +0100" channel="tv4.se">
+		<title lang="sv">Mord och inga visor</title>
+		<sub-title lang="sv">Murder by Twos</sub-title>
+		<desc lang="sv">När Jessica gör reklam för en bokklubb drabbas människor i hennes omgivning av mord, plagiering och utpressning.</desc>
+		<credits>
+			<director>Anthony Pullen Shaw</director>
+			<actor>Len Cariou</actor>
+			<actor role="Jessica Fletcher">Angela Lansbury</actor>
+			<actor>Ben Browder</actor>
+			<actor>Chris Mulkey</actor>
+			<actor>Ron Masak</actor>
+			<actor>Jennifer Warren</actor>
+			<actor>Vinessa Shaw</actor>
+			<actor>William Windom</actor>
+			<actor>Bibi Besch</actor>
+			<actor>Troy Evans</actor>
+		</credits>
+		<date>1994</date>
+		<category lang="en">series</category>
+		<category lang="en">Crime</category>
+		<category lang="en">Drama</category>
+		<category lang="en">Mystery</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/484/season/11/episode/9]]></url>
+		<episode-num system="xmltv_ns">10 . 8/21 .</episode-num>
+		<episode-num system="onscreen">Episode 9 of 21 season 11</episode-num>
+	</programme>
+	<programme start="20171103150000 +0100" stop="20171103155500 +0100" channel="tv4.se">
+		<title lang="sv">Antiques roadshow</title>
+		<desc lang="sv">Michael och experterna besöker Tavistock i Devon. Bland sakerna de värderar finns ett antikt jakthorn och ett fat som visar sig vara värt 1 000 pund.</desc>
+		<date>2005</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<episode-num system="xmltv_ns">27 . 4 .</episode-num>
+		<episode-num system="onscreen">Episode 5 season 28</episode-num>
+	</programme>
+	<programme start="20171103155500 +0100" stop="20171103165500 +0100" channel="tv4.se">
+		<title lang="sv">En plats i solen: SommarsoI</title>
+		<desc lang="sv">Ruth och Philip Trinder har sålt sitt företag och vill nu köpa en lägenhet på Mallorca där de kan tillbringa halva året.</desc>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Lifestyle</category>
+		<episode-num system="xmltv_ns">2 . 9 .</episode-num>
+		<episode-num system="onscreen">Episode 10 season 3</episode-num>
+	</programme>
+	<programme start="20171103165500 +0100" stop="20171103175000 +0100" channel="tv4.se">
+		<title lang="sv">Fixer Upper</title>
+		<sub-title lang="sv">Coastal Calm in the Country</sub-title>
+		<desc lang="sv">Chris och Lindy har flyttat runt väldigt mycket men har nu bestämt sig för att slå sig ner nära sin familj i Hewitt i Texas. De tar hjälp av Chip och Joanna som hittar en lantlig ranch som kan passa paret efter lite renovering.</desc>
+		<credits>
+			<actor>Joanna Gaines</actor>
+			<actor>Chip Gaines</actor>
+		</credits>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/60911/season/3/episode/14]]></url>
+		<episode-num system="xmltv_ns">2 . 13/18 .</episode-num>
+		<episode-num system="onscreen">Episode 14 of 18 season 3</episode-num>
+	</programme>
+	<programme start="20171103175000 +0100" stop="20171103175500 +0100" channel="tv4.se">
+		<title lang="sv">V75-Klubben</title>
+		<desc lang="sv">Travmagasin. En tittare får chansen att komma till studion och vinna på Top 7 spelet på upp till 9000 kronor. Hur stor Top 7-spelet blir avgöras av ett lotterihjul. Vinnaren kan sedan dubbla sin vinst genom ett Harryboy-system.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Sports</category>
+		<episode-num system="xmltv_ns">2016 . 26/35 .</episode-num>
+		<episode-num system="onscreen">Episode 27 of 35 season 2017</episode-num>
+	</programme>
+	<programme start="20171103175500 +0100" stop="20171103185000 +0100" channel="tv4.se">
+		<title lang="sv">112 - på liv och död</title>
+		<sub-title lang="sv">Avsnitt 16</sub-title>
+		<desc lang="sv">Polisen Mats rycker ut när man misstänker att några ungdomar har automatvapen. Brandmannen Sebastian får larm om en brand i en lägenhet. Brandmannen Emma åker ut till en husvagnsbrand.</desc>
+		<date>2010</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=164861&seasonid=595994&id=5010236&lid=8]]></url>
+		<episode-num system="xmltv_ns">9 . 15 .</episode-num>
+		<episode-num system="onscreen">Episode 16 season 10</episode-num>
+		<episode-num system="thetvdb.com">series/164861</episode-num>
+	</programme>
+	<programme start="20171103185000 +0100" stop="20171103190000 +0100" channel="tv4.se">
+		<title lang="sv">Keno</title>
+		<desc lang="sv">Redovisning av dagens Kenodragning.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">2016 . 306/365 .</episode-num>
+		<episode-num system="onscreen">Episode 307 of 365 season 2017</episode-num>
+	</programme>
+	<programme start="20171103190000 +0100" stop="20171103191500 +0100" channel="tv4.se">
+		<title lang="sv">Nyheterna</title>
+		<desc lang="sv">Nyheter från TV4. Varje nyhetssändning profileras av ett huvudankare. Anna Lindmarker, Anders Kraft Ulrika Nilsson, Peter Lindgren och Bengt Magnusson leder TV4Nyheterna under vardagar och helger.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 213/255 .</episode-num>
+		<episode-num system="onscreen">Episode 214 of 255 season 2017</episode-num>
+	</programme>
+	<programme start="20171103191500 +0100" stop="20171103192000 +0100" channel="tv4.se">
+		<title lang="sv">Sporten</title>
+		<desc lang="sv">Sportnyheter.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Sports</category>
+		<episode-num system="xmltv_ns">2016 . 213/255 .</episode-num>
+		<episode-num system="onscreen">Episode 214 of 255 season 2017</episode-num>
+	</programme>
+	<programme start="20171103192000 +0100" stop="20171103193000 +0100" channel="tv4.se">
+		<title lang="sv">Vädret</title>
+		<desc lang="sv">Väderprognos.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 213/255 .</episode-num>
+		<episode-num system="onscreen">Episode 214 of 255 season 2017</episode-num>
+	</programme>
+	<programme start="20171103193000 +0100" stop="20171103200000 +0100" channel="tv4.se">
+		<title lang="sv">Drömpyramiden</title>
+		<desc lang="sv">Svenskt underhållningsprogram från 2017. Här tävlar par i att försöka svara rätt på så många frågor i rad som möjligt. Målet är att klättra i en pyramid av containrar där fem av dem innehåller otroliga priser för hela familjen. Priserna är utvalda av familjens egna nära och kära. Programledare: Rickard Sjöberg.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Entertainment</category>
+		<episode-num system="xmltv_ns">1 . 2/10 .</episode-num>
+		<episode-num system="onscreen">Episode 3 of 10 season 2</episode-num>
+	</programme>
+	<programme start="20171103200000 +0100" stop="20171103213000 +0100" channel="tv4.se">
+		<title lang="sv">Idol 2017</title>
+		<desc lang="sv">Svenskt underhållningsprogram från 2017. Juryn bestående av Kishti Tomita, Alexander Kronlund, Nikki Amini och Anders Bagge söker efter Sveriges nästa superstjärna bland tusentals sökande. Efter auditionturnén får tittarna rösta fram sin idol under fredagsfinalerna. Vinnaren får ett skivkontrakt. Programledare: Pär Lernström.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Entertainment</category>
+		<episode-num system="xmltv_ns">12 . 22/28 .</episode-num>
+		<episode-num system="onscreen">Episode 23 of 28 season 13</episode-num>
+	</programme>
+	<programme start="20171103213000 +0100" stop="20171103220000 +0100" channel="tv4.se">
+		<title lang="sv">Ack Värmland</title>
+		<desc lang="sv">När Janne får ett tråkigt besked av läkaren anlitar han Ola som personlig tränare. Anette tar en vit månad och Pontus fattar ett dåligt beslut angående nya hyresgäster på tomten.</desc>
+		<credits>
+			<actor role="Anette">Mia Skäringer</actor>
+			<actor role="Fanny">Ida Hallquist</actor>
+			<actor role="Pontus">Björn Ling</actor>
+			<actor role="Ola">Johan Ostling</actor>
+			<actor role="Sol-Britt">Sussie Eriksson</actor>
+			<actor role="Janne">Tomas Tjerneld</actor>
+			<actor role="Granne">Bengt Alsterlind</actor>
+			<actor role="Granne">Lotta Tejle</actor>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<episode-num system="xmltv_ns">1 . 2 .</episode-num>
+		<episode-num system="onscreen">Episode 3 season 2</episode-num>
+	</programme>
+	<programme start="20171103220000 +0100" stop="20171103220500 +0100" channel="tv4.se">
+		<title lang="sv">Nyheterna</title>
+		<desc lang="sv">Nyheter.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 59/123 .</episode-num>
+		<episode-num system="onscreen">Episode 60 of 123 season 2017</episode-num>
+	</programme>
+	<programme start="20171103220500 +0100" stop="20171103221500 +0100" channel="tv4.se">
+		<title lang="sv">Vädret</title>
+		<desc lang="sv">Väderprognos.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 59/123 .</episode-num>
+		<episode-num system="onscreen">Episode 60 of 123 season 2017</episode-num>
+	</programme>
+	<programme start="20171103221500 +0100" stop="20171103224000 +0100" channel="tv4.se">
+		<title lang="sv">Idol 2017 - resultatshow</title>
+		<desc lang="sv">Svenskt underhållningsprogram från 2017. Resultatet av kvällens röstningar i Idol redovisas.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Entertainment</category>
+		<episode-num system="xmltv_ns">12 . 9/15 .</episode-num>
+		<episode-num system="onscreen">Episode 10 of 15 season 13</episode-num>
+	</programme>
+	<programme start="20171103224000 +0100" stop="20171103231000 +0100" channel="tv4.se">
+		<title lang="sv">Idol Extra</title>
+		<desc lang="sv">Svenskt underhållningsprogram från 2017. Programledare Pär Lernström och hans sidekick Daniel Redgert bjuder på intervjuer, eftersnack och analyser tillsammans med journalister, bloggare, jurymedlemmar och tävlande.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Entertainment</category>
+		<episode-num system="xmltv_ns">12 . 5/11 .</episode-num>
+		<episode-num system="onscreen">Episode 6 of 11 season 13</episode-num>
+	</programme>
+	<programme start="20171103231000 +0100" stop="20171104010000 +0100" channel="tv4.se">
+		<title lang="sv">The giver</title>
+		<desc lang="sv">Jonas lever i ett perfekt samhälle där varken fattigdom, arbetslöshet eller konflikter existerar. När han får i uppgift att vara minnesbevarare dröjer det inte länge förrän han börjar ifrågasätta den värld han lever i.</desc>
+		<credits>
+			<director>Phillip Noyce</director>
+			<actor role="The Giver">Jeff Bridges</actor>
+			<actor role="Chief Elder">Meryl Streep</actor>
+			<actor role="Jonas">Brenton Thwaites</actor>
+			<actor role="Fiona">Odeya Rush</actor>
+			<actor role="Jonas' Father">Alexander Skarsgård</actor>
+			<actor role="Jonas' Mother">Katie Holmes</actor>
+			<actor role="Rosemary">Taylor Swift</actor>
+			<actor role="Asher">Cameron Monaghan</actor>
+			<actor role="Lily">Emma Tremblay</actor>
+			<actor role="Nurturer">Katharina Damm</actor>
+			<actor role="Gabriel 12 Months">Alexander Jillings</actor>
+			<actor role="Gabriel 12 Months">James Jillings</actor>
+			<actor role="Gabriel 3 Months">Jordan Nicholas Smal</actor>
+			<actor role="Gabriel 6 Months">Saige Fernandes</actor>
+			<actor role="Dinah">Renate Stuurman</actor>
+			<actor role="Elder">Vanessa Cooke</actor>
+			<actor role="Elder">John Whiteley</actor>
+			<actor role="Chief Elder's Assistant">Kira Wilkinson</actor>
+			<actor role="Bride">Meganne Young</actor>
+			<actor role="Robbie">Thabo Rametsi</actor>
+			<actor role="Security Officer">Vaughn Lucas</actor>
+			<actor role="Vietcong Sniper">Jaime Coue</actor>
+			<actor role="Community (voice)">Jefferson Mays</actor>
+			<writer>Robert B. Weide</writer>
+			<writer>Michael Mitnick</writer>
+			<producer>Jeff Bridges</producer>
+			<producer>Neil Koenigsberg</producer>
+			<producer>Nikki Silver</producer>
+		</credits>
+		<date>2014</date>
+		<category lang="en">movie</category>
+		<category lang="en">Drama</category>
+		<category lang="en">Sci-Fi</category>
+		<url><![CDATA[http://www.themoviedb.org/movie/227156]]></url>
+		<episode-num system="themoviedb.org">movie/227156</episode-num>
+		<star-rating>
+			<value>6.4 / 10</value>
+		</star-rating>
+	</programme>
+</tv>

@@ -1,0 +1,326 @@
+/*
+	Author: Robin Viktorsson
+	Date:	2017-11-02
+	Filename: style.css
+*/
+	
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  background-color: #d0d0d0;
+  color: grey;
+}
+
+img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+input {
+  border-radius: 7px;
+  border: none;
+  padding: 8px;
+}
+
+input[type="submit"] {
+  color: lightgrey;
+  font-weight: bold;
+  background-color: #8b3b58;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+input[type="submit"]:hover {
+  color: #ffffff;
+  background-color: #b34d72;
+}
+
+input[type="submit"]:active {
+  color: #ffffff;
+  -moz-box-shadow:    inset 0 0 5px #000000;
+  -webkit-box-shadow: inset 0 0 5px #000000;
+  box-shadow:         inset 0 0 5px #000000;
+}
+
+a {
+  color: #8b3b58;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* This is for the right arrow in channel header */
+i {
+  border: solid grey;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+
+}
+
+.live {
+  color: red;
+}
+
+.title {
+  font-weight: bold !important;
+}
+
+/*
+  Main container and all its children-containers
+*/
+.main_container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
+
+/*
+  Top container and all its children-containers
+*/
+.top_container {
+  width: 100%
+  height: 100px;
+  background-color: #fdb51f;
+  padding: 25px;
+}
+
+#logo {
+  width: 94px;
+  height: 51px;
+  background-image: url(../images/logo.png);
+}
+
+/*
+  Middle container and all its children-containers
+*/
+
+@media(min-width:1024px){
+
+  .middle_container {
+
+    display: flex;
+    align-items: strech;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    overflow: auto;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background-color: #fdb51f;
+    overflow: auto;
+  }
+
+  .main_container {
+    width: 80%;
+  }
+}
+
+.live {
+  text-decoration: none;
+  color: red;
+  border: 1px solid black;
+  font-weight: 300;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-bottom: 1px;
+  margin-left: 5px;
+
+}
+
+.movie {
+  float: right;
+  margin-right: 15px;
+  text-decoration: none;
+  background-color: #e96b63;
+  color: #ffffff;
+  font-weight: 300;
+  border-radius: 50px;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-bottom: 1.5px;
+  background: -webkit-linear-gradient(#e96b63, #dc6458); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#e96b63, #dc6458); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#e96b63, #dc6458); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#e96b63, #dc6458); /* Standard syntax */
+}
+
+
+.tvshow {
+  float: right;
+  margin-right: 15px;
+  text-decoration: none;
+  background-color: #e96b63;
+  color: #ffffff;
+  font-weight: 300;
+  border-radius: 50px;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-bottom: 1.5px;
+  background: -webkit-linear-gradient(#5e9fe2, #518bc6); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#5e9fe2, #518bc6); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#5e9fe2, #518bc6); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#5e9fe2, #518bc6); /* Standard syntax */
+}
+
+.sports {
+  float: right;
+  margin-right: 15px;
+  text-decoration: none;
+  background-color: #e96b63;
+  color: #ffffff;
+  font-weight: 300;
+  border-radius: 50px;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-bottom: 1.5px;
+  background: -webkit-linear-gradient(#f3b37b, #f2a866); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#f3b37b, #f2a866); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#f3b37b, #f2a866); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#f3b37b, #f2a866); /* Standard syntax */
+}
+
+.category {
+  float: right;
+  margin-right: 5px;
+  text-decoration: none;
+  background-color: #e96b63;
+  color: #ffffff;
+  font-weight: 300;
+  border-radius: 50px;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-bottom: 1.5px;
+  padding-top: 1.5px;
+  background: -webkit-linear-gradient(#d659b4, #af3f91); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#d659b4, #af3f91); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#d659b4, #af3f91); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#d659b4, #af3f91); /* Standard syntax */
+}
+
+.series{
+  float: right;
+  margin-right: 15px;
+  text-decoration: none;
+  background-color: #52d675;
+  color: #ffffff;
+  font-weight: 300;
+  border-radius: 50px;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 1.5px;
+  background: -webkit-linear-gradient(#52d675, #40af5e); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#52d675, #40af5e); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#52d675, #40af5e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#52d675, #40af5e); /* Standard syntax */
+}
+.channel_container {
+	flex-basis: 24.5%;
+  /*width: 24.5%;
+  margin-left: 0.65%;
+  float: left;*/
+  margin-bottom: 10px;
+}
+
+.channel_container:first-child {
+  margin-left: 0%;
+}
+
+.channel_header {
+  padding: 5px;
+  background-color: white;
+  overflow: auto;
+}
+
+.channel_header .channel_logo {
+  float: left;
+  width: 25%;
+}
+
+.channel_header .channel_name {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10%;
+  margin-right: 25px;
+  font-weight: bolder;
+  color: black;
+}
+
+.channel_header .channel_arrow {
+  float: right;
+  width: 25%;
+  text-align: right;
+}
+
+.channel_programmes {
+  background-color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.channel_programmes:last-child {
+ padding-bottom: 15px;
+}
+
+.programme_time {
+  margin-left: 10px;
+  float: left;
+}
+
+.programme_title {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+
+.programme_title:hover {
+  color: black;
+}
+
+/*
+  Footer and all its children-containers
+*/
+
+.footer_container {
+	flex-basis: 25%;
+  background-color: #fdb51f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: auto;
+  height: auto;
+}
+
+.footer_container:first-child {
+  margin-left: 0%;
+}
+
+.footer_title {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.footer_content {
+  font-size: 12px;
+  font-weight: normal;
+  padding-left: 10px;
+  padding-right: 5px;
+  line-height: 20px;
+}

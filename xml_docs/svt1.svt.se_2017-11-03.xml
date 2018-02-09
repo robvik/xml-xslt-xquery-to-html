@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv [
+<!ELEMENT tv (channel*, programme*)>
+<!ATTLIST tv date   CDATA #IMPLIED source-info-url     CDATA #IMPLIED source-info-name    CDATA #IMPLIED        source-data-url     CDATA #IMPLIED        generator-info-name CDATA #IMPLIED          generator-info-url  CDATA #IMPLIED >
+<!ELEMENT channel (display-name+, icon*, url*) >
+<!ATTLIST channel id CDATA #REQUIRED >
+<!ELEMENT display-name (#PCDATA)>
+<!ATTLIST display-name lang CDATA #IMPLIED>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT programme (title+, sub-title*, desc*, credits?, date?,
+                     category*, keyword*, language?, orig-language?,
+                     length?, icon*, url*, country*, episode-num*,
+                     video?, audio?, previously-shown?, premiere?,
+                     last-chance?, new?, subtitles*, rating*,
+                     star-rating*, review* )>
+<!ATTLIST programme start     CDATA #REQUIRED
+                    stop      CDATA #IMPLIED
+                    pdc-start CDATA #IMPLIED
+                    vps-start CDATA #IMPLIED
+                    showview  CDATA #IMPLIED
+                    videoplus CDATA #IMPLIED
+                    channel   CDATA #REQUIRED
+                    clumpidx  CDATA "0/1" >
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title lang CDATA #IMPLIED>
+<!ELEMENT sub-title (#PCDATA)>
+<!ATTLIST sub-title lang CDATA #IMPLIED>
+<!ELEMENT desc (#PCDATA)>
+<!ATTLIST desc lang CDATA #IMPLIED>
+<!ELEMENT credits (director*, actor*, writer*, adapter*, producer*,
+                   composer*, editor*, presenter*, commentator*, 
+                   guest* )>
+<!ELEMENT director    (#PCDATA)>
+<!ELEMENT actor       (#PCDATA)>
+<!ATTLIST actor role  CDATA #IMPLIED>
+<!ELEMENT writer      (#PCDATA)>
+<!ELEMENT adapter     (#PCDATA)>
+<!ELEMENT producer    (#PCDATA)>
+<!ELEMENT composer    (#PCDATA)>
+<!ELEMENT editor      (#PCDATA)>
+<!ELEMENT presenter   (#PCDATA)>
+<!ELEMENT commentator (#PCDATA)>
+<!ELEMENT guest       (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ATTLIST category lang CDATA #IMPLIED>
+<!ELEMENT keyword (#PCDATA)>
+<!ATTLIST keyword lang CDATA #IMPLIED>
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language lang CDATA #IMPLIED>
+<!ELEMENT orig-language (#PCDATA)>
+<!ATTLIST orig-language lang CDATA #IMPLIED>
+<!ELEMENT length (#PCDATA)>
+<!ATTLIST length units (seconds | minutes | hours) #REQUIRED>
+<!ELEMENT icon EMPTY>
+<!ATTLIST icon src         CDATA #REQUIRED
+               width       CDATA #IMPLIED
+               height      CDATA #IMPLIED> 
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ATTLIST country lang CDATA #IMPLIED>
+<!ELEMENT episode-num (#PCDATA)>
+<!ATTLIST episode-num system CDATA "onscreen">
+<!ELEMENT video (present?, colour?, aspect?, quality?)>
+<!ELEMENT present (#PCDATA)>
+<!ELEMENT colour (#PCDATA)>
+<!ELEMENT aspect (#PCDATA)>
+<!ELEMENT quality (#PCDATA)>
+<!ELEMENT audio (present?, stereo?)>
+<!ELEMENT stereo (#PCDATA)>
+<!ELEMENT previously-shown EMPTY>
+<!ATTLIST previously-shown start   CDATA #IMPLIED
+                           channel CDATA #IMPLIED >
+<!ELEMENT premiere (#PCDATA)>
+<!ATTLIST premiere lang CDATA #IMPLIED>
+<!ELEMENT last-chance (#PCDATA)>
+<!ATTLIST last-chance lang CDATA #IMPLIED>
+<!ELEMENT new EMPTY>
+<!ELEMENT subtitles (language?)>
+<!ATTLIST subtitles type (teletext | onscreen | deaf-signed) #IMPLIED>
+<!ELEMENT rating (value, icon*)>
+<!ATTLIST rating system CDATA #IMPLIED>
+<!ELEMENT star-rating (value, icon*)>
+<!ATTLIST star-rating system CDATA #IMPLIED>
+<!ELEMENT review (#PCDATA)>
+<!ATTLIST review type     (text | url) #REQUIRED
+                 source   CDATA        #IMPLIED
+                 reviewer CDATA        #IMPLIED
+                 lang     CDATA        #IMPLIED>
+]>
+
+<tv generator-info-name="Taiga XMLTV" generator-info-url="http://xmltv.se">
+	<programme start="20171103044500 +0100" stop="20171103051500 +0100" channel="svt1.svt.se">
+		<title lang="sv">Sverige idag</title>
+		<desc lang="sv">Nyheter från hela Sverige - direkt från Umeå.</desc>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 148/220 .</episode-num>
+		<episode-num system="onscreen">Episode 149 of 220 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103051500 +0100" stop="20171103060000 +0100" channel="svt1.svt.se">
+		<title lang="sv">Go'kväll</title>
+		<desc lang="sv">Intervju med Emma Frans, doktor i medicinsk epidemiologi, som vill slå hål på myter och få oss att förstå att vi måste lita mer på vetenskap och forskning. En tittare får ny stil av stylisterna Eva-Lena Rylander och Hulda Andersson. Reportage om Ingrid Ölund som bakar ett prisat barkbröd. Programledare Beppe Starbrink.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Magazine</category>
+		<episode-num system="xmltv_ns">2016 . 52/90 .</episode-num>
+		<episode-num system="onscreen">Episode 53 of 90 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>dolby digital</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103060000 +0100" stop="20171103061500 +0100" channel="svt1.svt.se">
+		<title lang="sv">Morgonstudion</title>
+		<desc lang="sv">Dagens viktigaste nyheter och analyser med ständiga uppdateringar. Vi sänder direkt inrikes- och utrikesnyheter inklusive sport, kultur och nöje. Dessutom intervjuer med aktuella gäster. Nyhetssammanfattningar varje kvart med start kl 06.00. Lokala nyheter från kl 07.05. Väder kvart i och kvart över. Läs text-tv sid 679.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Politics</category>
+		<category lang="en">Society</category>
+		<episode-num system="xmltv_ns">2016 . 49/90 .</episode-num>
+		<episode-num system="onscreen">Episode 50 of 90 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103091000 +0100" stop="20171103095500 +0100" channel="svt1.svt.se">
+		<title lang="sv">Go'kväll</title>
+		<desc lang="sv">Intervju med Emma Frans, doktor i medicinsk epidemiologi, som vill slå hål på myter och få oss att förstå att vi måste lita mer på vetenskap och forskning. En tittare får ny stil av stylisterna Eva-Lena Rylander och Hulda Andersson. Reportage om Ingrid Ölund som bakar ett prisat barkbröd. Programledare Beppe Starbrink.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Magazine</category>
+		<episode-num system="xmltv_ns">2016 . 52/90 .</episode-num>
+		<episode-num system="onscreen">Episode 53 of 90 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>dolby digital</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103095500 +0100" stop="20171103100000 +0100" channel="svt1.svt.se">
+		<title lang="sv">Anslagstavlan</title>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<episode-num system="xmltv_ns">12 . 7/20 .</episode-num>
+		<episode-num system="onscreen">Episode 8 of 20 season 13</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103100000 +0100" stop="20171103110000 +0100" channel="svt1.svt.se">
+		<title lang="sv">Engelska Antikrundan</title>
+		<sub-title lang="sv">Stowe House 2</sub-title>
+		<desc lang="sv">Tusentals besökare väntar ivrigt med sina föremål när Antikrundan är tillbaka vid universitetet i Stowe, Buckinghamshire. En av besökarna är den flerfaldige formel 1-världsmästaren Jackie Stewart som har med sig en oväntad trofé.</desc>
+		<date>1979</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<category lang="en">Special Interest</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=83774&seasonid=502417&id=4575642&lid=8]]></url>
+		<episode-num system="xmltv_ns">34 . 22 .</episode-num>
+		<episode-num system="onscreen">Episode 23 season 35</episode-num>
+		<episode-num system="thetvdb.com">series/83774</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103110000 +0100" stop="20171103175500 +0100" channel="svt1.svt.se">
+		<title lang="sv">Ishockey</title>
+		<sub-title lang="sv">TV-pucken</sub-title>
+		<desc lang="sv">Den 58:e upplagan av TV-pucken avgörs i Göteborg och dagens kvartsfinaler spelas i Frölundaborg. Experter: Mikael Renberg och Jonas Andersson.</desc>
+		<credits>
+			<presenter>Dusan Umicevic</presenter>
+			<commentator>Chris Härenstam</commentator>
+		</credits>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Hockey</category>
+		<episode-num system="xmltv_ns">2016 . 0/10 .</episode-num>
+		<episode-num system="onscreen">Episode 1 of 10 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103175500 +0100" stop="20171103180000 +0100" channel="svt1.svt.se">
+		<title lang="sv">Sverigeresan</title>
+		<desc lang="sv">"Alla känner en Arne". Det vore närmast tjänstefel att göra en resa genom idrotts-Sverige utan att beröra hjärtat: eldsjälarna. Därför ska vi till tre orter, tre föreningar - för att upptäcka platsens betydelse, gemenskap och passion. Reportageserie om idrotts-Sverige bortanför de stora arenorna.</desc>
+		<date>2017</date>
+		<category lang="en">sports</category>
+		<category lang="en">Sports</category>
+		<episode-num system="xmltv_ns">0 . 4/12 .</episode-num>
+		<episode-num system="onscreen">Episode 5 of 12 season 1</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103180000 +0100" stop="20171103181300 +0100" channel="svt1.svt.se">
+		<title lang="sv">Rapport</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103181300 +0100" stop="20171103182500 +0100" channel="svt1.svt.se">
+		<title lang="sv">Kulturnyheterna</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103182500 +0100" stop="20171103183000 +0100" channel="svt1.svt.se">
+		<title lang="sv">Sportnytt</title>
+		<date>2017</date>
+		<category lang="en">sports</category>
+		<category lang="en">Sports</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103183000 +0100" stop="20171103184500 +0100" channel="svt1.svt.se">
+		<title lang="sv">Lokala nyheter</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 174/220 .</episode-num>
+		<episode-num system="onscreen">Episode 175 of 220 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103184500 +0100" stop="20171103193000 +0100" channel="svt1.svt.se">
+		<title lang="sv">Go'kväll</title>
+		<desc lang="sv">Arkitekten Gert Wingårdh bjuder till bords. Sissel Kyrkjebø står på musikscenen. Biorecensioner med Göran Everdahl.</desc>
+		<credits>
+			<presenter>Linda Olofsson</presenter>
+		</credits>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Magazine</category>
+		<episode-num system="xmltv_ns">2016 . 53/90 .</episode-num>
+		<episode-num system="onscreen">Episode 54 of 90 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>dolby digital</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103193000 +0100" stop="20171103195500 +0100" channel="svt1.svt.se">
+		<title lang="sv">Rapport</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103195500 +0100" stop="20171103200000 +0100" channel="svt1.svt.se">
+		<title lang="sv">Lokala nyheter</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 263/315 .</episode-num>
+		<episode-num system="onscreen">Episode 264 of 315 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103200000 +0100" stop="20171103210000 +0100" channel="svt1.svt.se">
+		<title lang="sv">Doobidoo</title>
+		<desc lang="sv">Lekfullt musik- och frågesportprogram under ledning av Lasse Kronér. I kvällens avsnitt tävlar Björn Kjellman och Lilla Namo mot Pia Johansson och Edward af Sillén.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Music</category>
+		<episode-num system="xmltv_ns">12 . 7/12 .</episode-num>
+		<episode-num system="onscreen">Episode 8 of 12 season 13</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103210000 +0100" stop="20171103220000 +0100" channel="svt1.svt.se">
+		<title lang="sv">Skavlan</title>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<category lang="en">Entertainment</category>
+		<episode-num system="xmltv_ns">17 . 7/12 .</episode-num>
+		<episode-num system="onscreen">Episode 8 of 12 season 18</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103220000 +0100" stop="20171103223000 +0100" channel="svt1.svt.se">
+		<title lang="sv">Grotescos sju mästerverk</title>
+		<desc lang="sv">Flyktingkrisen - en musikal. En musikal om Sverige och en period i vår nutidshistoria som markerade en kraftig kursändring i svensk politik. Grotesco har tonsatt perioden juni-november 2015, då Sverige tog emot fler asylsökande än någonsin till följd av kriget i Syrien och andra konflikter.</desc>
+		<credits>
+			<actor>Henrik Dorsin</actor>
+			<actor>Per Andersson</actor>
+			<actor>Micke Lindgren</actor>
+			<actor>Hanna Dorsin</actor>
+			<actor>Rikard Ulvshammar</actor>
+			<actor>Emma Molin</actor>
+			<actor>Jakob Setterberg</actor>
+			<actor>Emma Peters</actor>
+			<actor>Linus Eklund-Adolphson</actor>
+			<actor>Anna Vnuk</actor>
+			<actor>Per Gavatin</actor>
+			<actor>Jonas Kahnlund</actor>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<episode-num system="xmltv_ns">2 . 0/8 .</episode-num>
+		<episode-num system="onscreen">Episode 1 of 8 season 3</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103223000 +0100" stop="20171103224500 +0100" channel="svt1.svt.se">
+		<title lang="sv">Släng dig i brunnen</title>
+		<desc lang="sv">Standup med några av Sveriges bästa ståuppkomiker. Inspelat på Norra Brunn i Stockholm.</desc>
+		<credits>
+			<actor>Petrina Solange</actor>
+			<actor>Jonatan Unge</actor>
+			<actor>Nisse Hallberg</actor>
+			<actor>Henrik Nyblom</actor>
+			<actor>Magnus Betnér</actor>
+			<actor>Charlie Michaelsen</actor>
+			<actor>Niklas Andersson</actor>
+			<actor>Johannes Finnlaugsson</actor>
+		</credits>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<episode-num system="xmltv_ns">0 . 6/8 .</episode-num>
+		<episode-num system="onscreen">Episode 7 of 8 season 1</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103224500 +0100" stop="20171103233000 +0100" channel="svt1.svt.se">
+		<title lang="sv">American odyssey</title>
+		<desc lang="sv">Odelle, Aslam och Luc måste fatta ett beslut angående Frank, som nu är i deras förvar.</desc>
+		<credits>
+			<actor>Anna Friel</actor>
+			<actor>Peter Facinelli</actor>
+			<actor>Jake Robinson</actor>
+			<actor>Adewale Akinnuoye-Agbaje</actor>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">0 . 9/13 .</episode-num>
+		<episode-num system="onscreen">Episode 10 of 13 season 1</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>dolby digital</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103233000 +0100" stop="20171103233500 +0100" channel="svt1.svt.se">
+		<title lang="sv">SVT Nyheter</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 306/366 .</episode-num>
+		<episode-num system="onscreen">Episode 307 of 366 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103233500 +0100" stop="20171103235000 +0100" channel="svt1.svt.se">
+		<title lang="sv">Sverige idag</title>
+		<desc lang="sv">Nyheter från hela Sverige - direkt från Umeå.</desc>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 149/220 .</episode-num>
+		<episode-num system="onscreen">Episode 150 of 220 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103235000 +0100" stop="20171104005000 +0100" channel="svt1.svt.se">
+		<title lang="sv">Jordskott</title>
+		<sub-title lang="sv">Del XIII</sub-title>
+		<desc lang="sv">Jakten på den försvunna flickan Robin fortsätter och Evas situation kompliceras av det oväntade ansvaret för den förrymda Kalem. Eva och Wass gräver djupare i utredningen och hittar något som för länge sedan tillhört Evas mamma. Bahar blir allt mer misstänksam mot Eva och Wass beteende. I jakten på den skyldiga gräver Eva och Wass fram bevis på att den de letar efter mördat många gånger förut. Tom dras samtidigt in i en utredning av en bestialisk björnattack i Silverhöjd som väcker intresse från oväntat håll.</desc>
+		<credits>
+			<actor role="Koljonen">Johannes Brost</actor>
+			<actor role="Gran">Hans Mosesson</actor>
+			<actor role="Sigvardsson">Ann Petrén</actor>
+			<actor role="Harry Storm">Ville Virtanen</actor>
+			<actor role="Göran Wass">Göran Ragnerstam</actor>
+			<actor role="Gerda Gunnarsson">Lia Boysen</actor>
+			<actor role="Ylva">Vanja Blomkvist</actor>
+			<actor role="Gustav Borén">Peter Andersson</actor>
+			<actor role="Eva Thörnbladh">Moa Gammel</actor>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=291965&seasonid=717790&id=6357197&lid=8]]></url>
+		<episode-num system="xmltv_ns">1 . 2 .</episode-num>
+		<episode-num system="onscreen">Episode 3 season 2</episode-num>
+		<episode-num system="thetvdb.com">series/291965</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>dolby digital</stereo>
+		</audio>
+	</programme>
+</tv>

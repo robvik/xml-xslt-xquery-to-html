@@ -1,0 +1,1475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv [
+<!ELEMENT tv (channel*, programme*)>
+<!ATTLIST tv date   CDATA #IMPLIED source-info-url     CDATA #IMPLIED source-info-name    CDATA #IMPLIED        source-data-url     CDATA #IMPLIED        generator-info-name CDATA #IMPLIED          generator-info-url  CDATA #IMPLIED >
+<!ELEMENT channel (display-name+, icon*, url*) >
+<!ATTLIST channel id CDATA #REQUIRED >
+<!ELEMENT display-name (#PCDATA)>
+<!ATTLIST display-name lang CDATA #IMPLIED>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT programme (title+, sub-title*, desc*, credits?, date?,
+                     category*, keyword*, language?, orig-language?,
+                     length?, icon*, url*, country*, episode-num*,
+                     video?, audio?, previously-shown?, premiere?,
+                     last-chance?, new?, subtitles*, rating*,
+                     star-rating*, review* )>
+<!ATTLIST programme start     CDATA #REQUIRED
+                    stop      CDATA #IMPLIED
+                    pdc-start CDATA #IMPLIED
+                    vps-start CDATA #IMPLIED
+                    showview  CDATA #IMPLIED
+                    videoplus CDATA #IMPLIED
+                    channel   CDATA #REQUIRED
+                    clumpidx  CDATA "0/1" >
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title lang CDATA #IMPLIED>
+<!ELEMENT sub-title (#PCDATA)>
+<!ATTLIST sub-title lang CDATA #IMPLIED>
+<!ELEMENT desc (#PCDATA)>
+<!ATTLIST desc lang CDATA #IMPLIED>
+<!ELEMENT credits (director*, actor*, writer*, adapter*, producer*,
+                   composer*, editor*, presenter*, commentator*, 
+                   guest* )>
+<!ELEMENT director    (#PCDATA)>
+<!ELEMENT actor       (#PCDATA)>
+<!ATTLIST actor role  CDATA #IMPLIED>
+<!ELEMENT writer      (#PCDATA)>
+<!ELEMENT adapter     (#PCDATA)>
+<!ELEMENT producer    (#PCDATA)>
+<!ELEMENT composer    (#PCDATA)>
+<!ELEMENT editor      (#PCDATA)>
+<!ELEMENT presenter   (#PCDATA)>
+<!ELEMENT commentator (#PCDATA)>
+<!ELEMENT guest       (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ATTLIST category lang CDATA #IMPLIED>
+<!ELEMENT keyword (#PCDATA)>
+<!ATTLIST keyword lang CDATA #IMPLIED>
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language lang CDATA #IMPLIED>
+<!ELEMENT orig-language (#PCDATA)>
+<!ATTLIST orig-language lang CDATA #IMPLIED>
+<!ELEMENT length (#PCDATA)>
+<!ATTLIST length units (seconds | minutes | hours) #REQUIRED>
+<!ELEMENT icon EMPTY>
+<!ATTLIST icon src         CDATA #REQUIRED
+               width       CDATA #IMPLIED
+               height      CDATA #IMPLIED> 
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ATTLIST country lang CDATA #IMPLIED>
+<!ELEMENT episode-num (#PCDATA)>
+<!ATTLIST episode-num system CDATA "onscreen">
+<!ELEMENT video (present?, colour?, aspect?, quality?)>
+<!ELEMENT present (#PCDATA)>
+<!ELEMENT colour (#PCDATA)>
+<!ELEMENT aspect (#PCDATA)>
+<!ELEMENT quality (#PCDATA)>
+<!ELEMENT audio (present?, stereo?)>
+<!ELEMENT stereo (#PCDATA)>
+<!ELEMENT previously-shown EMPTY>
+<!ATTLIST previously-shown start   CDATA #IMPLIED
+                           channel CDATA #IMPLIED >
+<!ELEMENT premiere (#PCDATA)>
+<!ATTLIST premiere lang CDATA #IMPLIED>
+<!ELEMENT last-chance (#PCDATA)>
+<!ATTLIST last-chance lang CDATA #IMPLIED>
+<!ELEMENT new EMPTY>
+<!ELEMENT subtitles (language?)>
+<!ATTLIST subtitles type (teletext | onscreen | deaf-signed) #IMPLIED>
+<!ELEMENT rating (value, icon*)>
+<!ATTLIST rating system CDATA #IMPLIED>
+<!ELEMENT star-rating (value, icon*)>
+<!ATTLIST star-rating system CDATA #IMPLIED>
+<!ELEMENT review (#PCDATA)>
+<!ATTLIST review type     (text | url) #REQUIRED
+                 source   CDATA        #IMPLIED
+                 reviewer CDATA        #IMPLIED
+                 lang     CDATA        #IMPLIED>
+]>
+
+<tv generator-info-name="Taiga XMLTV" generator-info-url="http://xmltv.se">
+	<programme start="20171103010500 +0100" stop="20171103013500 +0100" channel="tv6.se">
+		<title lang="sv">Seinfeld</title>
+		<sub-title lang="sv">The Van Buren Boys</sub-title>
+		<desc lang="sv">George blir ombedd att intervjua lovande ungdomar från Susans minnesfond, men det slutar med att han intervjuar en medelmåttig student som påminner honom om honom själv.</desc>
+		<credits>
+			<director>Andy Ackerman</director>
+			<actor role="Helen">Liz Sheridan</actor>
+			<actor role="Estelle Constanza">Estelle Harris</actor>
+			<actor role="Susan Ross">Heidi Swedberg</actor>
+			<actor role="George Steinbrenner">Larry David</actor>
+			<actor role="Juror">Spike Feresten</actor>
+			<actor role="Ruthie Cohen">Ruth Cohen</actor>
+			<actor role="Frank Costanza">Jerry Stiller</actor>
+			<actor role="Newman">Wayne Knight</actor>
+			<actor role="Morty">Barney Martin</actor>
+			<actor role="Jerry Seinfeld">Jerry Seinfeld</actor>
+			<actor role="George Costanza">Jason Alexander</actor>
+			<actor role="Elaine Benes">Julia Louis-Dreyfus</actor>
+			<actor role="Cosmo Kramer">Michael Richards</actor>
+			<actor>David Moscow</actor>
+			<actor>Bruce Davison</actor>
+			<actor>Barney Martin</actor>
+			<actor>Liz Sheridan</actor>
+			<actor>Christine Taylor</actor>
+			<writer>Darin Henry</writer>
+		</credits>
+		<date>1997</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1400/season/8/episode/14]]></url>
+		<episode-num system="xmltv_ns">7 . 13/22 .</episode-num>
+		<episode-num system="onscreen">Episode 14 of 22 season 8</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>6.8 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103013500 +0100" stop="20171103020500 +0100" channel="tv6.se">
+		<title lang="sv">Seinfeld</title>
+		<sub-title lang="sv">The Susie</sub-title>
+		<desc lang="sv">George har lyckats få en dejt till en stor fest med The Yankees, men misstänker att hon tänker ställa in. För att försäkra sig om att hon följer med till festen gör han allt han kan för att undvika henne fram till festen.</desc>
+		<credits>
+			<director>Andy Ackerman</director>
+			<actor role="Helen">Liz Sheridan</actor>
+			<actor role="Estelle Constanza">Estelle Harris</actor>
+			<actor role="Susan Ross">Heidi Swedberg</actor>
+			<actor role="George Steinbrenner">Larry David</actor>
+			<actor role="Juror">Spike Feresten</actor>
+			<actor role="Ruthie Cohen">Ruth Cohen</actor>
+			<actor role="Frank Costanza">Jerry Stiller</actor>
+			<actor role="Newman">Wayne Knight</actor>
+			<actor role="Morty">Barney Martin</actor>
+			<actor role="Jerry Seinfeld">Jerry Seinfeld</actor>
+			<actor role="George Costanza">Jason Alexander</actor>
+			<actor role="Elaine Benes">Julia Louis-Dreyfus</actor>
+			<actor role="Cosmo Kramer">Michael Richards</actor>
+			<actor>Lee Arenberg</actor>
+			<actor>Richard Herd</actor>
+			<writer>David Mandel</writer>
+		</credits>
+		<date>1997</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1400/season/8/episode/15]]></url>
+		<episode-num system="xmltv_ns">7 . 14/22 .</episode-num>
+		<episode-num system="onscreen">Episode 15 of 22 season 8</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>6.9 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103020500 +0100" stop="20171103023000 +0100" channel="tv6.se">
+		<title lang="sv">Scrubs</title>
+		<sub-title lang="sv">My Common Enemy</sub-title>
+		<desc lang="sv">Turk tipsar JD om ett sätt att få vad man vill ha. Doktor Cox och doktor Kelso går samman för att besegra en gemensam fiende..</desc>
+		<credits>
+			<director>Joanna Kerns</director>
+			<actor role="John 'J.D.' Dorian">Zach Braff</actor>
+			<actor role="Christopher Turk">Donald Faison</actor>
+			<actor role="Elliot Reid">Sarah Chalke</actor>
+			<actor role="Perry Cox">John C. McGinley</actor>
+			<actor role="Janitor">Neil Flynn</actor>
+			<actor role="Bob Kelso">Ken Jenkins</actor>
+			<actor role="Carla Espinosa">Judy Reyes</actor>
+			<actor role="Inserviente">Neil Flynn</actor>
+			<actor role="Dan Dorian">Tom Cavanagh</actor>
+			<actor>Heather Graham</actor>
+			<actor>Sam Lloyd</actor>
+			<writer>Bill Callahan</writer>
+		</credits>
+		<date>2004</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/4556/season/4/episode/7]]></url>
+		<episode-num system="xmltv_ns">3 . 6/25 .</episode-num>
+		<episode-num system="onscreen">Episode 7 of 25 season 4</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103023000 +0100" stop="20171103025500 +0100" channel="tv6.se">
+		<title lang="sv">Scrubs</title>
+		<sub-title lang="sv">My Last Chance</sub-title>
+		<desc lang="sv">Molly får jobb i en annan stad. Hon och JD tillbringar en het kväll tillsammans innan hon åker.</desc>
+		<credits>
+			<director>Zach Braff</director>
+			<actor role="John 'J.D.' Dorian">Zach Braff</actor>
+			<actor role="Christopher Turk">Donald Faison</actor>
+			<actor role="Elliot Reid">Sarah Chalke</actor>
+			<actor role="Perry Cox">John C. McGinley</actor>
+			<actor role="Janitor">Neil Flynn</actor>
+			<actor role="Bob Kelso">Ken Jenkins</actor>
+			<actor role="Carla Espinosa">Judy Reyes</actor>
+			<actor role="Inserviente">Neil Flynn</actor>
+			<actor>Robert Maschio</actor>
+			<actor>Heather Graham</actor>
+			<actor role="Denise Lemmon">Molly Shannon</actor>
+			<writer>Mike Schwartz</writer>
+		</credits>
+		<date>2004</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/4556/season/4/episode/8]]></url>
+		<episode-num system="xmltv_ns">3 . 7/25 .</episode-num>
+		<episode-num system="onscreen">Episode 8 of 25 season 4</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103025500 +0100" stop="20171103032000 +0100" channel="tv6.se">
+		<title lang="sv">My Name Is Earl</title>
+		<sub-title lang="sv">Teacher Earl</sub-title>
+		<desc lang="sv">För att kompensera för de gånger Earl retat folk med annorlunda dialekter, lär Earl ut engelska till invandrare. En av Earls vänner kommer ut från fängelse och försöker sig på att gå samma rättfärdiga väg som Earl, men han misslyckas och återvänder till kriminalitet och försöker dessutom stjäla Earls pengar.</desc>
+		<credits>
+			<director>Chris Koch</director>
+			<actor role="Earl Hickey">Jason Lee</actor>
+			<actor role="Randy Hickey">Ethan Suplee</actor>
+			<actor role="Catalina Aruca">Nadine Velazquez</actor>
+			<actor role="Joy Turner">Jaime Pressly</actor>
+			<actor role="Darnell Turner">Eddie Steeples</actor>
+			<actor>Sunkrish Bala</actor>
+		</credits>
+		<date>2005</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/2317/season/1/episode/5]]></url>
+		<episode-num system="xmltv_ns">0 . 4/24 .</episode-num>
+		<episode-num system="onscreen">Episode 5 of 24 season 1</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103032000 +0100" stop="20171103034000 +0100" channel="tv6.se">
+		<title lang="sv">Family Guy</title>
+		<sub-title lang="sv">The Boys in the Band</sub-title>
+		<desc lang="sv">Stewie blir besatt av Adderal. Peter och Quagmire gör sina egna matprogram som konkurrerar mot varandra.</desc>
+		<credits>
+			<actor role="Peter Griffin / Brian Griffin / Stewie Griffin / Glenn Quagmire / Tom Tucker / God / Kool-Aid Guy (voice)">Seth MacFarlane</actor>
+			<actor role="Lois Griffin (voice)">Alex Borstein</actor>
+			<actor role="Meg Griffin (voice)">Mila Kunis</actor>
+			<actor role="Chris Griffin (voice)">Seth Green</actor>
+		</credits>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Animation</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1434/season/15/episode/1]]></url>
+		<episode-num system="xmltv_ns">14 . 0/20 .</episode-num>
+		<episode-num system="onscreen">Episode 1 of 20 season 15</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103034000 +0100" stop="20171103040500 +0100" channel="tv6.se">
+		<title lang="sv">Family Guy</title>
+		<sub-title lang="sv">Bookie of the Year</sub-title>
+		<desc lang="sv">När killarna hittar Joes pappa måste Peter låtsas vara Joe då fått reda på att Joes pappa hatar handikappade människor. Stewie får reda på att han inte kommer bli så mycket längre blir han kompis med Tom Cruise som också är kort.</desc>
+		<credits>
+			<actor role="Peter Griffin / Brian Griffin / Stewie Griffin / Glenn Quagmire / Tom Tucker / God / Kool-Aid Guy (voice)">Seth MacFarlane</actor>
+			<actor role="Lois Griffin (voice)">Alex Borstein</actor>
+			<actor role="Meg Griffin (voice)">Mila Kunis</actor>
+			<actor role="Chris Griffin (voice)">Seth Green</actor>
+		</credits>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Animation</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1434/season/15/episode/2]]></url>
+		<episode-num system="xmltv_ns">14 . 1/20 .</episode-num>
+		<episode-num system="onscreen">Episode 2 of 20 season 15</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103040500 +0100" stop="20171103042500 +0100" channel="tv6.se">
+		<title lang="sv">American Dad</title>
+		<sub-title lang="sv">For Black Eyes Only</sub-title>
+		<desc lang="sv">I denna uppföljare till James Bond-parodin från säsong 4 måste Stan samarbeta med tearjerker (Roger). Han kämpar för att stoppa Black Villain som tänker smälta de arktiska glaciärerna.</desc>
+		<credits>
+			<actor role="Klaus Heissler (voice)">Dee Bradley Baker</actor>
+			<actor role="Stan Smith (voice)">Seth MacFarlane</actor>
+			<actor role="Francine Smith (voice)">Wendy Schaal</actor>
+			<actor role="Hayley Smith (voice)">Rachael MacFarlane</actor>
+			<actor role="Steve Smith (voice)">Scott Grimes</actor>
+			<actor role="Klaus (voice)">Dee Bradley Baker</actor>
+			<actor role="Avery Bullock (voice)">Patrick Stewart</actor>
+			<actor role="Roger (voice)">Seth MacFarlane</actor>
+			<actor role="Toshi Yoshida (voice)">Daisuke Suzuki</actor>
+			<actor role="Terry Bates (voice)">Mike Barker</actor>
+			<actor role="Snot (voice)">Curtis Armstrong</actor>
+			<actor role="Barry (voice)">Eddie Kaye Thomas</actor>
+			<actor role="Snot (Voice)">Curtis Armstrong</actor>
+			<actor role="Avery Bullock (Voice)">Patrick Stewart</actor>
+			<actor role="Barry Robinson (Vocie)">Eddie Kaye Thomas</actor>
+			<actor role="Jeff Fischer (Voice)">Jeff Fischer</actor>
+		</credits>
+		<date>2013</date>
+		<category lang="en">series</category>
+		<category lang="en">Animation</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1433/season/9/episode/13]]></url>
+		<episode-num system="xmltv_ns">8 . 12/19 .</episode-num>
+		<episode-num system="onscreen">Episode 13 of 19 season 9</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103042500 +0100" stop="20171103045000 +0100" channel="tv6.se">
+		<title lang="sv">American Dad</title>
+		<sub-title lang="sv">Spelling Bee My Baby</sub-title>
+		<desc lang="sv">Francine anmäler Steve till en stavningstävling där han möter Toshis syster, Akiko. Samtidigt planerar Roger och Stan att låta Hayley sörja sin förlorade make så länge hon vill.</desc>
+		<credits>
+			<actor role="Klaus Heissler (voice)">Dee Bradley Baker</actor>
+			<actor role="Stan Smith (voice)">Seth MacFarlane</actor>
+			<actor role="Francine Smith (voice)">Wendy Schaal</actor>
+			<actor role="Hayley Smith (voice)">Rachael MacFarlane</actor>
+			<actor role="Steve Smith (voice)">Scott Grimes</actor>
+			<actor role="Klaus (voice)">Dee Bradley Baker</actor>
+			<actor role="Avery Bullock (voice)">Patrick Stewart</actor>
+			<actor role="Roger (voice)">Seth MacFarlane</actor>
+			<actor role="Toshi Yoshida (voice)">Daisuke Suzuki</actor>
+			<actor role="Terry Bates (voice)">Mike Barker</actor>
+			<actor role="Snot (voice)">Curtis Armstrong</actor>
+			<actor role="Barry (voice)">Eddie Kaye Thomas</actor>
+			<actor role="Snot (Voice)">Curtis Armstrong</actor>
+			<actor role="Avery Bullock (Voice)">Patrick Stewart</actor>
+			<actor role="Barry Robinson (Vocie)">Eddie Kaye Thomas</actor>
+			<actor role="Jeff Fischer (Voice)">Jeff Fischer</actor>
+		</credits>
+		<date>2013</date>
+		<category lang="en">series</category>
+		<category lang="en">Animation</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1433/season/9/episode/14]]></url>
+		<episode-num system="xmltv_ns">8 . 13/19 .</episode-num>
+		<episode-num system="onscreen">Episode 14 of 19 season 9</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103045000 +0100" stop="20171103051000 +0100" channel="tv6.se">
+		<title lang="sv">Community</title>
+		<sub-title lang="sv">Paranormal Parentage</sub-title>
+		<desc lang="sv">Paranormal Percentage. Under Halloween blir Pierce instängd i sitt panikrum. Gruppen måste hitta koden för att befria honom. När de letar igenom det kusliga huset upptäcker de mycket läskigt och många hemligheter.</desc>
+		<credits>
+			<director>Tristram Shapeero</director>
+			<actor role="Annie Edison">Alison Brie</actor>
+			<actor role="Jeff Winger">Joel McHale</actor>
+			<actor role="Britta Perry">Gillian Jacobs</actor>
+			<actor role="Shirley Bennett">Yvette Nicole Brown</actor>
+			<actor role="Abed Nadir">Danny Pudi</actor>
+			<actor role="Señor Ben Chang">Ken Jeong</actor>
+			<actor role="Dean Craig Pelton">Jim Rash</actor>
+			<actor role="Troy Barnes">Donald Glover</actor>
+			<actor role="Pierce Hawthorne">Chevy Chase</actor>
+			<actor role="Gilbert Lawson">Giancarlo Esposito</actor>
+			<writer>Megan Ganz</writer>
+		</credits>
+		<date>2013</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/18347/season/4/episode/2]]></url>
+		<episode-num system="xmltv_ns">3 . 1/13 .</episode-num>
+		<episode-num system="onscreen">Episode 2 of 13 season 4</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103051000 +0100" stop="20171103053500 +0100" channel="tv6.se">
+		<title lang="sv">Våra värsta år</title>
+		<sub-title lang="sv">Sue Casa, His Casa</sub-title>
+		<desc lang="sv">Al lär Kelly om sport så att hon kan vara med på TV.</desc>
+		<credits>
+			<director>Gerry Cohen</director>
+			<actor role="Al Bundy">Ed O'Neill</actor>
+			<actor role="Bud Bundy">David Faustino</actor>
+			<actor role="Kelly Bundy">Christina Applegate</actor>
+			<actor role="Peggy Bundy">Katey Sagal</actor>
+			<actor role="Marcy D'Arcy">Amanda Bearse</actor>
+			<actor role="Jefferson D'Arcy">Ted McGinley</actor>
+		</credits>
+		<date>1990</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/4239/season/5/episode/3]]></url>
+		<episode-num system="xmltv_ns">4 . 2/25 .</episode-num>
+		<episode-num system="onscreen">Episode 3 of 25 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103053500 +0100" stop="20171103055900 +0100" channel="tv6.se">
+		<title lang="sv">Våra värsta år</title>
+		<sub-title lang="sv">The Unnatural</sub-title>
+		<desc lang="sv">Al och Jefferson hittar en låda med 70-talsskor.</desc>
+		<credits>
+			<director>Gerry Cohen</director>
+			<actor role="Al Bundy">Ed O'Neill</actor>
+			<actor role="Bud Bundy">David Faustino</actor>
+			<actor role="Kelly Bundy">Christina Applegate</actor>
+			<actor role="Peggy Bundy">Katey Sagal</actor>
+			<actor role="Marcy D'Arcy">Amanda Bearse</actor>
+			<actor role="Jefferson D'Arcy">Ted McGinley</actor>
+			<writer>Katherine Green</writer>
+		</credits>
+		<date>1990</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/4239/season/5/episode/4]]></url>
+		<episode-num system="xmltv_ns">4 . 3/25 .</episode-num>
+		<episode-num system="onscreen">Episode 4 of 25 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103060000 +0100" stop="20171103062500 +0100" channel="tv6.se">
+		<title lang="sv">Jims värld</title>
+		<sub-title lang="sv">The Garage Door</sub-title>
+		<desc lang="sv">Cheryl och Dana tvingas bryta sig ut ur ett låst garage efter att ha struntat i att lyssna på Jim förklara hur man öppnar dörren inifrån.</desc>
+		<credits>
+			<director>Leonard R. Garner, Jr.</director>
+			<actor role="Jim">Jim Belushi</actor>
+			<actor role="Cheryl Mabel">Courtney Thorne-Smith</actor>
+			<actor role="Andy">Larry Joe Campbell</actor>
+			<actor role="Ruby">Taylor Atelian</actor>
+			<actor role="Dana">Kimberly Williams-Paisley</actor>
+			<actor role="Kyle">Conner Rayburn</actor>
+			<actor role="Gracie">Billi Bruno</actor>
+			<writer>Howard J. Morris</writer>
+		</credits>
+		<date>2004</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1739/season/4/episode/4]]></url>
+		<episode-num system="xmltv_ns">3 . 3/27 .</episode-num>
+		<episode-num system="onscreen">Episode 4 of 27 season 4</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>6.9 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103062500 +0100" stop="20171103064500 +0100" channel="tv6.se">
+		<title lang="sv">Community</title>
+		<sub-title lang="sv">Conventions of Space and Time</sub-title>
+		<desc lang="sv">Conventions of Space and Time. Under ett Inspector Spacetime-konvent blir Abed vän med ett annat fan, men det förstör för hans relation med Troy. Annie lever en dröm som "Mrs Winger" efter ett misstag av hotellpersonalen.</desc>
+		<credits>
+			<director>Michael Patrick Jann</director>
+			<actor role="Annie Edison">Alison Brie</actor>
+			<actor role="Jeff Winger">Joel McHale</actor>
+			<actor role="Britta Perry">Gillian Jacobs</actor>
+			<actor role="Shirley Bennett">Yvette Nicole Brown</actor>
+			<actor role="Abed Nadir">Danny Pudi</actor>
+			<actor role="Señor Ben Chang">Ken Jeong</actor>
+			<actor role="Dean Craig Pelton">Jim Rash</actor>
+			<actor role="Troy Barnes">Donald Glover</actor>
+			<actor role="Pierce Hawthorne">Chevy Chase</actor>
+			<actor role="Official Woman">Summer Stevens</actor>
+			<actor role="Official Man">Brad Stevens</actor>
+			<actor role="Minerva">Maren McGuire</actor>
+			<actor role="Inspector Spacetime">Luke Perry</actor>
+			<actor role="Ensign">Jennie Garth</actor>
+			<actor role="Constable Edmund">Mark Ryan</actor>
+			<actor role="Bellman">Chris Tallman</actor>
+			<actor role="Lauren">Tricia Helfer</actor>
+			<actor role="Toby">Matt Lucas</actor>
+			<writer>Maggie Bandur</writer>
+		</credits>
+		<date>2013</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/18347/season/4/episode/3]]></url>
+		<episode-num system="xmltv_ns">3 . 2/13 .</episode-num>
+		<episode-num system="onscreen">Episode 3 of 13 season 4</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103064500 +0100" stop="20171103073500 +0100" channel="tv6.se">
+		<title lang="sv">Stargate SG-1</title>
+		<sub-title lang="sv">The Fifth Man</sub-title>
+		<desc lang="sv">O'Neill fastnar i fiendes territorium då han kämpar mot en okänd Gou'ld-armé.</desc>
+		<credits>
+			<director>Peter DeLuise</director>
+			<actor role="Jack O'Neill">Richard Dean Anderson</actor>
+			<actor role="Teal'c">Christopher Judge</actor>
+			<actor role="Samantha Carter">Amanda Tapping</actor>
+			<actor role="Daniel Jackson">Michael Shanks</actor>
+			<actor role="George Hammond">Don S. Davis</actor>
+			<actor role="Lieutenant Tyler">Dion Johnstone</actor>
+			<actor role="Janet Fraiser">Teryl Rothery</actor>
+			<actor role="Walter Harriman">Gary Jones</actor>
+			<actor role="Frank Simmons">John de Lancie</actor>
+			<writer>Joseph Mallozzi</writer>
+			<writer>Paul Mullie</writer>
+		</credits>
+		<date>2001</date>
+		<category lang="en">series</category>
+		<category lang="en">Fantasy</category>
+		<category lang="en">Sci-Fi</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/4629/season/5/episode/4]]></url>
+		<episode-num system="xmltv_ns">4 . 3/22 .</episode-num>
+		<episode-num system="onscreen">Episode 4 of 22 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103073500 +0100" stop="20171103080000 +0100" channel="tv6.se">
+		<title lang="sv">Våra värsta år</title>
+		<sub-title lang="sv">The Dance Show</sub-title>
+		<desc lang="sv">Al måste förnya sitt körkort och han får Bud som körlärare.</desc>
+		<credits>
+			<director>Gerry Cohen</director>
+			<actor role="Al Bundy">Ed O'Neill</actor>
+			<actor role="Bud Bundy">David Faustino</actor>
+			<actor role="Kelly Bundy">Christina Applegate</actor>
+			<actor role="Peggy Bundy">Katey Sagal</actor>
+			<actor role="Marcy D'Arcy">Amanda Bearse</actor>
+			<actor role="Jefferson D'Arcy">Ted McGinley</actor>
+		</credits>
+		<date>1990</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/4239/season/5/episode/5]]></url>
+		<episode-num system="xmltv_ns">4 . 4/25 .</episode-num>
+		<episode-num system="onscreen">Episode 5 of 25 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103080000 +0100" stop="20171103083000 +0100" channel="tv6.se">
+		<title lang="sv">Våra värsta år</title>
+		<sub-title lang="sv">Kelly Bounces Back</sub-title>
+		<desc lang="sv">Kelly ska spela in en reklamfilm, men får en finne som kan förstöra allt.</desc>
+		<credits>
+			<director>Gerry Cohen</director>
+			<actor role="Al Bundy">Ed O'Neill</actor>
+			<actor role="Bud Bundy">David Faustino</actor>
+			<actor role="Kelly Bundy">Christina Applegate</actor>
+			<actor role="Peggy Bundy">Katey Sagal</actor>
+			<actor role="Marcy D'Arcy">Amanda Bearse</actor>
+			<actor role="Jefferson D'Arcy">Ted McGinley</actor>
+		</credits>
+		<date>1990</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/4239/season/5/episode/6]]></url>
+		<episode-num system="xmltv_ns">4 . 5/25 .</episode-num>
+		<episode-num system="onscreen">Episode 6 of 25 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103083000 +0100" stop="20171103093000 +0100" channel="tv6.se">
+		<title lang="sv">Face Off</title>
+		<sub-title lang="sv">Creature Carnage</sub-title>
+		<desc lang="sv">Spänningen stiger inför finalen! De fyra semifinalisterna måste besegra ett gigantiskt monster för att gå vidare i tävlingen.</desc>
+		<date>2014</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/35370/season/7/episode/14]]></url>
+		<episode-num system="xmltv_ns">6 . 13/15 .</episode-num>
+		<episode-num system="onscreen">Episode 14 of 15 season 7</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103093000 +0100" stop="20171103100000 +0100" channel="tv6.se">
+		<title lang="sv">My Name Is Earl</title>
+		<sub-title lang="sv">Pilot</sub-title>
+		<desc lang="sv">Earl inser hur viktigt det är att ha god karma och författar därför en lista över sitt livs onda gärningar. Earls tanke är att gottgöra alla sina dåliga handligar för att på så sätt få bättre tur själv.</desc>
+		<credits>
+			<director>Marc Buckland</director>
+			<actor role="Earl Hickey">Jason Lee</actor>
+			<actor role="Randy Hickey">Ethan Suplee</actor>
+			<actor role="Catalina Aruca">Nadine Velazquez</actor>
+			<actor role="Joy Turner">Jaime Pressly</actor>
+			<actor role="Darnell Turner">Eddie Steeples</actor>
+			<actor>Leo Fitzpatrick</actor>
+			<actor>Dale Dickey</actor>
+			<actor>Willam Belli</actor>
+			<writer>Greg Garcia</writer>
+		</credits>
+		<date>2005</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/2317/season/1/episode/1]]></url>
+		<episode-num system="xmltv_ns">0 . 0/24 .</episode-num>
+		<episode-num system="onscreen">Episode 1 of 24 season 1</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103100000 +0100" stop="20171103103000 +0100" channel="tv6.se">
+		<title lang="sv">Brooklyn Nine-Nine</title>
+		<sub-title lang="sv">Ava</sub-title>
+		<desc lang="sv">Jake har som uppgift att underhålla Sharon medan Terry och Rosa ger sig iväg för att ta reda på mer om mordet på Dogulas Street. Men, Sharons vatten går och panik utbryter på polisdistriktet. Amy och Charlie får göra massor med administrativt arbete då internet är nere. Undertiden måste Holt konftrontera expojkvännen.</desc>
+		<credits>
+			<director>Dean Holland</director>
+			<director>Craig Zisk</director>
+			<director>Julie Anne Robinson</director>
+			<actor role="Jake Peralta">Andy Samberg</actor>
+			<actor role="Captain Ray Holt">Andre Braugher</actor>
+			<actor role="Terry Jeffords">Terry Crews</actor>
+			<actor role="Amy Santiago">Melissa Fumero</actor>
+			<actor role="Gina Linetti">Chelsea Peretti</actor>
+			<actor role="Rosa Diaz">Stephanie Beatriz</actor>
+			<actor role="Charles Boyle">Joe Lo Truglio</actor>
+			<actor role="Norman “Norm” Scully">Joel McKinnon Miller</actor>
+			<actor role="Michael Hitchcock">Dirk Blocker</actor>
+			<actor role="Frederick">Nick Offerman</actor>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Crime</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/48891/season/3/episode/8]]></url>
+		<episode-num system="xmltv_ns">2 . 7/23 .</episode-num>
+		<episode-num system="onscreen">Episode 8 of 23 season 3</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103103000 +0100" stop="20171103113000 +0100" channel="tv6.se">
+		<title lang="sv">NCIS: Los Angeles</title>
+		<sub-title lang="sv">Old Tricks</sub-title>
+		<desc lang="sv">Efter att en person från en ålderdomshem kidnappats upptäcker NCIS-teamet ett par bedragare, Ginger och Edward, som hoppar från hem till hem för att lura av gamlingarna hela deras förmögenhet.</desc>
+		<credits>
+			<actor role="G. Callen">Chris O'Donnell</actor>
+			<actor role="Sam Hanna">LL Cool J</actor>
+			<actor role="Kensi Blye">Daniela Ruah</actor>
+			<actor role="Marty Deeks">Eric Christian Olsen</actor>
+			<actor role="Henrietta Lange">Linda Hunt</actor>
+			<actor role="Eric Beal">Barrett Foa</actor>
+			<actor role="Nell Jones">Renée Felice Smith</actor>
+		</credits>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Crime</category>
+		<category lang="en">Drama</category>
+		<category lang="en">Mystery</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/17610/season/8/episode/16]]></url>
+		<episode-num system="xmltv_ns">7 . 15/24 .</episode-num>
+		<episode-num system="onscreen">Episode 16 of 24 season 8</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103113000 +0100" stop="20171103123000 +0100" channel="tv6.se">
+		<title lang="sv">Stargate SG-1</title>
+		<sub-title lang="sv">Red Sky</sub-title>
+		<desc lang="sv">Teamet besöker en planet som påminner om Norge. Men dess växtliv är på väg att utplånas. Kan teamet säkra planetens överlevnad?</desc>
+		<credits>
+			<director>Martin Wood</director>
+			<actor role="Jack O'Neill">Richard Dean Anderson</actor>
+			<actor role="Teal'c">Christopher Judge</actor>
+			<actor role="Samantha Carter">Amanda Tapping</actor>
+			<actor role="Daniel Jackson">Michael Shanks</actor>
+			<actor role="George Hammond">Don S. Davis</actor>
+			<actor role="Dr. MacLaren">Norman Armour</actor>
+			<actor role="Malchus">John Prosky</actor>
+			<actor role="Elrad">Fred Applegate</actor>
+			<writer>Ron Wilkerson</writer>
+		</credits>
+		<date>2001</date>
+		<category lang="en">series</category>
+		<category lang="en">Fantasy</category>
+		<category lang="en">Sci-Fi</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/4629/season/5/episode/5]]></url>
+		<episode-num system="xmltv_ns">4 . 4/22 .</episode-num>
+		<episode-num system="onscreen">Episode 5 of 22 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103123000 +0100" stop="20171103133000 +0100" channel="tv6.se">
+		<title lang="sv">Face Off</title>
+		<sub-title lang="sv">One Knight Only</sub-title>
+		<desc lang="sv">Det är finaldags och make up-artisterna måste ge sig in i riddarnas fantastiska värld. Vem kommer att ta hem segern med sitt livs levande konstverk?</desc>
+		<date>2014</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/35370/season/7/episode/15]]></url>
+		<episode-num system="xmltv_ns">6 . 14/15 .</episode-num>
+		<episode-num system="onscreen">Episode 15 of 15 season 7</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103133000 +0100" stop="20171103140000 +0100" channel="tv6.se">
+		<title lang="sv">How I Met Your Mother</title>
+		<sub-title lang="sv">The Possimpible</sub-title>
+		<desc lang="sv">Robin förlitar sig på en video-CV som förberetts av Barney för att få ett jobb inom TV innan han hotas av deportering tillbaka till Kanada.</desc>
+		<credits>
+			<director>Pamela Fryman</director>
+			<actor role="Ted Mosby">Josh Radnor</actor>
+			<actor role="Marshall Eriksen">Jason Segel</actor>
+			<actor role="Robin Scherbatsky">Cobie Smulders</actor>
+			<actor role="Barney Stinson">Neil Patrick Harris</actor>
+			<actor role="Lily Aldrin">Alyson Hannigan</actor>
+			<actor>Colleen Shannon</actor>
+			<actor>Regan Burns</actor>
+		</credits>
+		<date>2009</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1100/season/4/episode/14]]></url>
+		<episode-num system="xmltv_ns">3 . 13/24 .</episode-num>
+		<episode-num system="onscreen">Episode 14 of 24 season 4</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103140000 +0100" stop="20171103143000 +0100" channel="tv6.se">
+		<title lang="sv">How I Met Your Mother</title>
+		<sub-title lang="sv">The Stinsons</sub-title>
+		<desc lang="sv">Gänget misstänker att Barney har en hemlig flickvän och följer efter honom när han lämnar MacLarens.</desc>
+		<credits>
+			<director>Pamela Fryman</director>
+			<actor role="Ted Mosby">Josh Radnor</actor>
+			<actor role="Marshall Eriksen">Jason Segel</actor>
+			<actor role="Robin Scherbatsky">Cobie Smulders</actor>
+			<actor role="Barney Stinson">Neil Patrick Harris</actor>
+			<actor role="Lily Aldrin">Alyson Hannigan</actor>
+			<actor>Zachary Gordon</actor>
+			<actor>Brooke D'Orsay</actor>
+			<actor>Frances Conroy</actor>
+			<writer>Craig Thomas</writer>
+			<writer>Carter Bays</writer>
+		</credits>
+		<date>2009</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1100/season/4/episode/15]]></url>
+		<episode-num system="xmltv_ns">3 . 14/24 .</episode-num>
+		<episode-num system="onscreen">Episode 15 of 24 season 4</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103143000 +0100" stop="20171103150000 +0100" channel="tv6.se">
+		<title lang="sv">2 1/2 män</title>
+		<sub-title lang="sv">I Can't Afford Hyenas</sub-title>
+		<desc lang="sv">Charlies finansrådgivare säger åt honom att hans inkomster inte är lika höga som hans utgifter och att han måste utarbeta en budget.</desc>
+		<credits>
+			<director>Chuck Lorre</director>
+			<director>Lee Aronsohn</director>
+			<actor role="Charlie Harper">Charlie Sheen</actor>
+			<actor role="Alan Harper">Jon Cryer</actor>
+			<actor role="Judith Harper">Marin Hinkle</actor>
+			<actor role="Evelyn Harper">Holland Taylor</actor>
+			<actor role="Jake Harper">Angus T. Jones</actor>
+			<actor role="Berta">Conchata Ferrell</actor>
+			<actor role="Rose">Melanie Lynskey</actor>
+			<actor>Elena Lyons</actor>
+			<actor>Conchata Ferrell</actor>
+			<actor>Richard Lewis</actor>
+			<writer>Eddie Gorodetsky</writer>
+		</credits>
+		<date>2004</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/2691/season/1/episode/14]]></url>
+		<episode-num system="xmltv_ns">0 . 13/24 .</episode-num>
+		<episode-num system="onscreen">Episode 14 of 24 season 1</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103150000 +0100" stop="20171103153000 +0100" channel="tv6.se">
+		<title lang="sv">Simpsons</title>
+		<sub-title lang="sv">Homer and Apu</sub-title>
+		<desc lang="sv">Bart sticker när han är på skolutflykt.</desc>
+		<credits>
+			<director>Mark Kirkland</director>
+			<actor role="Milhouse Van Houten">Pamela Hayden</actor>
+			<actor role="Groundskeeper Willie">Dan Castellaneta</actor>
+			<actor role="Lenny Leonard">Harry Shearer</actor>
+			<actor role="Waylon Smithers">Harry Shearer</actor>
+			<actor role="Mr. Burns">Harry Shearer</actor>
+			<actor role="Nelson Muntz">Nancy Cartwright</actor>
+			<actor role="Reverend Lovejoy">Harry Shearer</actor>
+			<actor role="Martin Prince">Russi Taylor</actor>
+			<actor role="Chief Wiggum">Hank Azaria</actor>
+			<actor role="Ralph Wiggum">Nancy Cartwright</actor>
+			<actor role="Dr. Hibbert">Harry Shearer</actor>
+			<actor role="Apu Nahasapeemapetilon">Hank Azaria</actor>
+			<actor role="Grampa Simpson">Dan Castellaneta</actor>
+			<actor role="Luann Van Houten">Maggie Roswell</actor>
+			<actor role="Edna Krabappel">Marcia Wallace</actor>
+			<actor role="Krusty the Clown">Dan Castellaneta</actor>
+			<actor role="Sideshow Mel">Dan Castellaneta</actor>
+			<actor role="Agnes Skinner">Tress MacNeille</actor>
+			<actor role="Troy McClure">Phil Hartman</actor>
+			<actor>Chris Edgerly</actor>
+			<actor role="Barney Gumble">Dan Castellaneta</actor>
+			<actor role="Mayor Quimby">Dan Castellaneta</actor>
+			<actor role="Hans Moleman">Dan Castellaneta</actor>
+			<actor role="Patty and Selma">Julie Kavner</actor>
+			<actor role="Todd Flanders">Nancy Cartwright</actor>
+			<actor role="Kearney Zzyzwicz">Nancy Cartwright</actor>
+			<actor role="Ned Flanders">Harry Shearer</actor>
+			<actor role="Kent Brockman">Harry Shearer</actor>
+			<actor role="Moe Szyslak">Hank Azaria</actor>
+			<actor role="Comic Book Guy">Hank Azaria</actor>
+			<actor role="Mr. Burns / Smithers / Dr. Marvin Monroe / Ned Flanders / Seymour Skinner / Otto / Kent Brockman / Dr. Hibbert / Lenny / Rev. Lovejoy / Various">Harry Shearer</actor>
+			<actor role="Apu / Moe / Chief Wiggum / Carl / Comic Book Guy / Dr. Nick Riviera / Prof. Frink / Cletus / Sea Captain / Kirk Van Houten / Various">Hank Azaria</actor>
+			<actor role="Lisa Simpson / Various (voice)">Yeardley Smith</actor>
+			<actor role="Marge Simpson / Patty Bouvier / Selma Bouvier / Jacqueline Ingrid Bouvier / Various (voice)">Julie Kavner</actor>
+			<actor role="Bart Simpson / Nelson Muntz / Ralph Wiggum / Todd Flanders / Kearney / Various (voice)">Nancy Cartwright</actor>
+			<actor role="Homer Simpson / Abraham Simpson / Krusty the Klown / Barney / Willy / Sideshow Mel / Mayor Quimby / Hans Moleman / Gil / Itchy / Various (voice)">Dan Castellaneta</actor>
+			<actor role="Mr. Burns / Mr. Smithers / Principal Skinner / Ned Flanders / Reverend Lovejoy / Dr. Hibbert / Various (voice)">Harry Shearer</actor>
+			<actor>James Woods</actor>
+			<writer>Greg Daniels</writer>
+		</credits>
+		<date>1994</date>
+		<category lang="en">series</category>
+		<category lang="en">Animation</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/456/season/5/episode/13]]></url>
+		<episode-num system="xmltv_ns">4 . 12/22 .</episode-num>
+		<episode-num system="onscreen">Episode 13 of 22 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103153000 +0100" stop="20171103160000 +0100" channel="tv6.se">
+		<title lang="sv">Simpsons</title>
+		<sub-title lang="sv">Lisa vs. Malibu Stacy</sub-title>
+		<desc lang="sv">Lisa tycker att den nya Malibu-Staceydockan är diskriminerande mot kvinnor.</desc>
+		<credits>
+			<director>Jeffrey Lynch</director>
+			<actor role="Milhouse Van Houten">Pamela Hayden</actor>
+			<actor role="Groundskeeper Willie">Dan Castellaneta</actor>
+			<actor role="Lenny Leonard">Harry Shearer</actor>
+			<actor role="Waylon Smithers">Harry Shearer</actor>
+			<actor role="Mr. Burns">Harry Shearer</actor>
+			<actor role="Nelson Muntz">Nancy Cartwright</actor>
+			<actor role="Reverend Lovejoy">Harry Shearer</actor>
+			<actor role="Martin Prince">Russi Taylor</actor>
+			<actor role="Chief Wiggum">Hank Azaria</actor>
+			<actor role="Ralph Wiggum">Nancy Cartwright</actor>
+			<actor role="Dr. Hibbert">Harry Shearer</actor>
+			<actor role="Apu Nahasapeemapetilon">Hank Azaria</actor>
+			<actor role="Grampa Simpson">Dan Castellaneta</actor>
+			<actor role="Luann Van Houten">Maggie Roswell</actor>
+			<actor role="Edna Krabappel">Marcia Wallace</actor>
+			<actor role="Krusty the Clown">Dan Castellaneta</actor>
+			<actor role="Sideshow Mel">Dan Castellaneta</actor>
+			<actor role="Agnes Skinner">Tress MacNeille</actor>
+			<actor role="Troy McClure">Phil Hartman</actor>
+			<actor>Chris Edgerly</actor>
+			<actor role="Barney Gumble">Dan Castellaneta</actor>
+			<actor role="Mayor Quimby">Dan Castellaneta</actor>
+			<actor role="Hans Moleman">Dan Castellaneta</actor>
+			<actor role="Patty and Selma">Julie Kavner</actor>
+			<actor role="Todd Flanders">Nancy Cartwright</actor>
+			<actor role="Kearney Zzyzwicz">Nancy Cartwright</actor>
+			<actor role="Ned Flanders">Harry Shearer</actor>
+			<actor role="Kent Brockman">Harry Shearer</actor>
+			<actor role="Moe Szyslak">Hank Azaria</actor>
+			<actor role="Comic Book Guy">Hank Azaria</actor>
+			<actor role="Mr. Burns / Smithers / Dr. Marvin Monroe / Ned Flanders / Seymour Skinner / Otto / Kent Brockman / Dr. Hibbert / Lenny / Rev. Lovejoy / Various">Harry Shearer</actor>
+			<actor role="Apu / Moe / Chief Wiggum / Carl / Comic Book Guy / Dr. Nick Riviera / Prof. Frink / Cletus / Sea Captain / Kirk Van Houten / Various">Hank Azaria</actor>
+			<actor role="Lisa Simpson / Various (voice)">Yeardley Smith</actor>
+			<actor role="Marge Simpson / Patty Bouvier / Selma Bouvier / Jacqueline Ingrid Bouvier / Various (voice)">Julie Kavner</actor>
+			<actor role="Bart Simpson / Nelson Muntz / Ralph Wiggum / Todd Flanders / Kearney / Various (voice)">Nancy Cartwright</actor>
+			<actor role="Homer Simpson / Abraham Simpson / Krusty the Klown / Barney / Willy / Sideshow Mel / Mayor Quimby / Hans Moleman / Gil / Itchy / Various (voice)">Dan Castellaneta</actor>
+			<actor role="Mr. Burns / Mr. Smithers / Principal Skinner / Ned Flanders / Reverend Lovejoy / Dr. Hibbert / Various (voice)">Harry Shearer</actor>
+			<actor>Maggie Roswell</actor>
+			<actor>Kathleen Turner</actor>
+			<writer>Bill Oakley</writer>
+			<writer>Josh Weinstein</writer>
+		</credits>
+		<date>1994</date>
+		<category lang="en">series</category>
+		<category lang="en">Animation</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/456/season/5/episode/14]]></url>
+		<episode-num system="xmltv_ns">4 . 13/22 .</episode-num>
+		<episode-num system="onscreen">Episode 14 of 22 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103160000 +0100" stop="20171103163000 +0100" channel="tv6.se">
+		<title lang="sv">Scrubs</title>
+		<sub-title lang="sv">My Malpractical Decision</sub-title>
+		<desc lang="sv">JD kontaktas av en advokat som vill att han utför en riskabel operation på hennes far. Turk kämpar för att undvika en hypokondrisk patient.</desc>
+		<credits>
+			<director>Gail Mancuso</director>
+			<actor role="John 'J.D.' Dorian">Zach Braff</actor>
+			<actor role="Christopher Turk">Donald Faison</actor>
+			<actor role="Elliot Reid">Sarah Chalke</actor>
+			<actor role="Perry Cox">John C. McGinley</actor>
+			<actor role="Janitor">Neil Flynn</actor>
+			<actor role="Bob Kelso">Ken Jenkins</actor>
+			<actor role="Carla Espinosa">Judy Reyes</actor>
+			<actor role="Inserviente">Neil Flynn</actor>
+			<actor>Dayo Ade</actor>
+			<actor>Sam Lloyd</actor>
+			<actor>Julianna Margulies</actor>
+			<actor>Richard Kind</actor>
+			<actor>Biff Yeager</actor>
+			<writer>Janae Bakken</writer>
+		</credits>
+		<date>2004</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/4556/season/4/episode/9]]></url>
+		<episode-num system="xmltv_ns">3 . 8/25 .</episode-num>
+		<episode-num system="onscreen">Episode 9 of 25 season 4</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103163000 +0100" stop="20171103170000 +0100" channel="tv6.se">
+		<title lang="sv">Scrubs</title>
+		<sub-title lang="sv">My Female Trouble</sub-title>
+		<desc lang="sv">Elliot försöker bevisa att hon är en fullfjädrad läkare och inte behöver hjälp längre. Hennes beteende gör doktor Cox nervös...</desc>
+		<credits>
+			<director>Chris Koch</director>
+			<actor role="John 'J.D.' Dorian">Zach Braff</actor>
+			<actor role="Christopher Turk">Donald Faison</actor>
+			<actor role="Elliot Reid">Sarah Chalke</actor>
+			<actor role="Perry Cox">John C. McGinley</actor>
+			<actor role="Janitor">Neil Flynn</actor>
+			<actor role="Bob Kelso">Ken Jenkins</actor>
+			<actor role="Carla Espinosa">Judy Reyes</actor>
+			<actor role="Inserviente">Neil Flynn</actor>
+			<actor>Sam Lloyd</actor>
+			<actor>Zach Mills</actor>
+			<actor>Julianna Margulies</actor>
+			<actor>Robert Maschio</actor>
+			<actor>Jon Polito</actor>
+			<actor>Richard Kind</actor>
+			<writer>Debra Fordham</writer>
+		</credits>
+		<date>2004</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/4556/season/4/episode/10]]></url>
+		<episode-num system="xmltv_ns">3 . 9/25 .</episode-num>
+		<episode-num system="onscreen">Episode 10 of 25 season 4</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103170000 +0100" stop="20171103173000 +0100" channel="tv6.se">
+		<title lang="sv">Seinfeld</title>
+		<sub-title lang="sv">The Pothole</sub-title>
+		<desc lang="sv">Jerry tappar av misstag sin flickväns tandborste i toaletten, men kan inte förmå sig att berätta det för henne och gör allt för att slippa kyssa henne.</desc>
+		<credits>
+			<director>Andy Ackerman</director>
+			<actor role="Helen">Liz Sheridan</actor>
+			<actor role="Estelle Constanza">Estelle Harris</actor>
+			<actor role="Susan Ross">Heidi Swedberg</actor>
+			<actor role="George Steinbrenner">Larry David</actor>
+			<actor role="Juror">Spike Feresten</actor>
+			<actor role="Ruthie Cohen">Ruth Cohen</actor>
+			<actor role="Frank Costanza">Jerry Stiller</actor>
+			<actor role="Newman">Wayne Knight</actor>
+			<actor role="Morty">Barney Martin</actor>
+			<actor role="Jerry Seinfeld">Jerry Seinfeld</actor>
+			<actor role="George Costanza">Jason Alexander</actor>
+			<actor role="Elaine Benes">Julia Louis-Dreyfus</actor>
+			<actor role="Cosmo Kramer">Michael Richards</actor>
+			<actor>Wayne Knight</actor>
+			<actor>George Cheung</actor>
+			<actor>Radmar Agana Jao</actor>
+			<actor>Jack McGee</actor>
+			<actor role="Jenna">Kristin Davis</actor>
+			<writer>Steve O'Donnell</writer>
+			<writer>Dan O'Keeffe</writer>
+		</credits>
+		<date>1997</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1400/season/8/episode/16]]></url>
+		<episode-num system="xmltv_ns">7 . 15/22 .</episode-num>
+		<episode-num system="onscreen">Episode 16 of 22 season 8</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>7.1 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103173000 +0100" stop="20171103180000 +0100" channel="tv6.se">
+		<title lang="sv">Seinfeld</title>
+		<sub-title lang="sv">The English Patient</sub-title>
+		<desc lang="sv">Elaine upptäcker att hon är den enda i världen som hatar "Den engelske patienten". George träffar en snygg tjej, som har en pojkvän som är på pricken lik George. Jerry får veta att Kramer inte pratade om cigarrer när han bar Jerry att köpa några kubaner till honom i Florida.</desc>
+		<credits>
+			<director>Andy Ackerman</director>
+			<actor role="Helen">Liz Sheridan</actor>
+			<actor role="Estelle Constanza">Estelle Harris</actor>
+			<actor role="Susan Ross">Heidi Swedberg</actor>
+			<actor role="George Steinbrenner">Larry David</actor>
+			<actor role="Juror">Spike Feresten</actor>
+			<actor role="Ruthie Cohen">Ruth Cohen</actor>
+			<actor role="Frank Costanza">Jerry Stiller</actor>
+			<actor role="Newman">Wayne Knight</actor>
+			<actor role="Morty">Barney Martin</actor>
+			<actor role="Jerry Seinfeld">Jerry Seinfeld</actor>
+			<actor role="George Costanza">Jason Alexander</actor>
+			<actor role="Elaine Benes">Julia Louis-Dreyfus</actor>
+			<actor role="Cosmo Kramer">Michael Richards</actor>
+			<actor>Jill Talley</actor>
+			<actor>Gene Dynarski</actor>
+			<actor>O'Neal Compton</actor>
+			<actor>Barney Martin</actor>
+			<actor>Liz Sheridan</actor>
+			<actor>Lloyd Bridges</actor>
+			<actor>Chelsea Noble</actor>
+			<writer>Steve Koren</writer>
+		</credits>
+		<date>1997</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1400/season/8/episode/17]]></url>
+		<episode-num system="xmltv_ns">7 . 16/22 .</episode-num>
+		<episode-num system="onscreen">Episode 17 of 22 season 8</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>7.1 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103180000 +0100" stop="20171103183000 +0100" channel="tv6.se">
+		<title lang="sv">How I Met Your Mother</title>
+		<sub-title lang="sv">Sorry, Bro</sub-title>
+		<desc lang="sv">Teds flickvän från College kommer tillbaka och påminner Marshall och Lily om hur mycket de avskydde henne.</desc>
+		<credits>
+			<director>Pamela Fryman</director>
+			<actor role="Ted Mosby">Josh Radnor</actor>
+			<actor role="Marshall Eriksen">Jason Segel</actor>
+			<actor role="Robin Scherbatsky">Cobie Smulders</actor>
+			<actor role="Barney Stinson">Neil Patrick Harris</actor>
+			<actor role="Lily Aldrin">Alyson Hannigan</actor>
+			<actor>Laura Ann Kesling</actor>
+			<actor>David Burtka</actor>
+			<actor>Taran Killam</actor>
+			<actor>Laura Prepon</actor>
+			<writer>Craig Gerard</writer>
+			<writer>Matthew Zinman</writer>
+		</credits>
+		<date>2009</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1100/season/4/episode/16]]></url>
+		<episode-num system="xmltv_ns">3 . 15/24 .</episode-num>
+		<episode-num system="onscreen">Episode 16 of 24 season 4</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103183000 +0100" stop="20171103190000 +0100" channel="tv6.se">
+		<title lang="sv">How I Met Your Mother</title>
+		<sub-title lang="sv">The Front Porch</sub-title>
+		<desc lang="sv">Ted får en chock när han får veta att Lily är ansvarig för att många av hans förhållanden tagit slut.</desc>
+		<credits>
+			<actor role="Ted Mosby">Josh Radnor</actor>
+			<actor role="Marshall Eriksen">Jason Segel</actor>
+			<actor role="Robin Scherbatsky">Cobie Smulders</actor>
+			<actor role="Barney Stinson">Neil Patrick Harris</actor>
+			<actor role="Lily Aldrin">Alyson Hannigan</actor>
+			<actor>Laura Prepon</actor>
+			<writer>Chris Harris</writer>
+		</credits>
+		<date>2009</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1100/season/4/episode/17]]></url>
+		<episode-num system="xmltv_ns">3 . 16/24 .</episode-num>
+		<episode-num system="onscreen">Episode 17 of 24 season 4</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103190000 +0100" stop="20171103193000 +0100" channel="tv6.se">
+		<title lang="sv">Brooklyn Nine-Nine</title>
+		<sub-title lang="sv">The Swedes</sub-title>
+		<desc lang="sv">Jake och Rosa måste samarbeta med svenska poliser för att lösa ett internationellt fall. Amy och Terry erbjuder sig att hjälpa Gina med att förbereda sig för ett prov. Holt värver Charles som partner till den årliga squash turneringen.</desc>
+		<credits>
+			<director>Dean Holland</director>
+			<director>Craig Zisk</director>
+			<director>Julie Anne Robinson</director>
+			<actor role="Jake Peralta">Andy Samberg</actor>
+			<actor role="Captain Ray Holt">Andre Braugher</actor>
+			<actor role="Terry Jeffords">Terry Crews</actor>
+			<actor role="Amy Santiago">Melissa Fumero</actor>
+			<actor role="Gina Linetti">Chelsea Peretti</actor>
+			<actor role="Rosa Diaz">Stephanie Beatriz</actor>
+			<actor role="Charles Boyle">Joe Lo Truglio</actor>
+			<actor role="Norman “Norm” Scully">Joel McKinnon Miller</actor>
+			<actor role="Michael Hitchcock">Dirk Blocker</actor>
+			<actor role="Soren">Anders Holm</actor>
+			<actor role="Agneta">Riki Lindhome</actor>
+			<actor role="Mitch">Ravi Naidu</actor>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Crime</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/48891/season/3/episode/9]]></url>
+		<episode-num system="xmltv_ns">2 . 8/23 .</episode-num>
+		<episode-num system="onscreen">Episode 9 of 23 season 3</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103193000 +0100" stop="20171103200000 +0100" channel="tv6.se">
+		<title lang="sv">2 1/2 män</title>
+		<sub-title lang="sv">Round One to the Hot Crazy Chick</sub-title>
+		<desc lang="sv">Charlie faller för en till synes heltokig kvinna - mot Alans sunda förnuft.</desc>
+		<credits>
+			<director>Andrew D. Weyman</director>
+			<actor role="Charlie Harper">Charlie Sheen</actor>
+			<actor role="Alan Harper">Jon Cryer</actor>
+			<actor role="Judith Harper">Marin Hinkle</actor>
+			<actor role="Evelyn Harper">Holland Taylor</actor>
+			<actor role="Jake Harper">Angus T. Jones</actor>
+			<actor role="Berta">Conchata Ferrell</actor>
+			<actor role="Rose">Melanie Lynskey</actor>
+			<actor>Juliette Goglia</actor>
+			<actor role="Dharma">Jenna Elfman</actor>
+			<writer>Chuck Lorre</writer>
+			<writer>Lee Aronsohn</writer>
+		</credits>
+		<date>2004</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/2691/season/1/episode/15]]></url>
+		<episode-num system="xmltv_ns">0 . 14/24 .</episode-num>
+		<episode-num system="onscreen">Episode 15 of 24 season 1</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103200000 +0100" stop="20171103203000 +0100" channel="tv6.se">
+		<title lang="sv">Simpsons</title>
+		<sub-title lang="sv">Deep Space Homer</sub-title>
+		<desc lang="sv">NASA ska skicka en vanlig kille till rymden. De väljer Homer.</desc>
+		<credits>
+			<director>Carlos Baeza</director>
+			<actor role="Milhouse Van Houten">Pamela Hayden</actor>
+			<actor role="Groundskeeper Willie">Dan Castellaneta</actor>
+			<actor role="Lenny Leonard">Harry Shearer</actor>
+			<actor role="Waylon Smithers">Harry Shearer</actor>
+			<actor role="Mr. Burns">Harry Shearer</actor>
+			<actor role="Nelson Muntz">Nancy Cartwright</actor>
+			<actor role="Reverend Lovejoy">Harry Shearer</actor>
+			<actor role="Martin Prince">Russi Taylor</actor>
+			<actor role="Chief Wiggum">Hank Azaria</actor>
+			<actor role="Ralph Wiggum">Nancy Cartwright</actor>
+			<actor role="Dr. Hibbert">Harry Shearer</actor>
+			<actor role="Apu Nahasapeemapetilon">Hank Azaria</actor>
+			<actor role="Grampa Simpson">Dan Castellaneta</actor>
+			<actor role="Luann Van Houten">Maggie Roswell</actor>
+			<actor role="Edna Krabappel">Marcia Wallace</actor>
+			<actor role="Krusty the Clown">Dan Castellaneta</actor>
+			<actor role="Sideshow Mel">Dan Castellaneta</actor>
+			<actor role="Agnes Skinner">Tress MacNeille</actor>
+			<actor role="Troy McClure">Phil Hartman</actor>
+			<actor>Chris Edgerly</actor>
+			<actor role="Barney Gumble">Dan Castellaneta</actor>
+			<actor role="Mayor Quimby">Dan Castellaneta</actor>
+			<actor role="Hans Moleman">Dan Castellaneta</actor>
+			<actor role="Patty and Selma">Julie Kavner</actor>
+			<actor role="Todd Flanders">Nancy Cartwright</actor>
+			<actor role="Kearney Zzyzwicz">Nancy Cartwright</actor>
+			<actor role="Ned Flanders">Harry Shearer</actor>
+			<actor role="Kent Brockman">Harry Shearer</actor>
+			<actor role="Moe Szyslak">Hank Azaria</actor>
+			<actor role="Comic Book Guy">Hank Azaria</actor>
+			<actor role="Mr. Burns / Smithers / Dr. Marvin Monroe / Ned Flanders / Seymour Skinner / Otto / Kent Brockman / Dr. Hibbert / Lenny / Rev. Lovejoy / Various">Harry Shearer</actor>
+			<actor role="Apu / Moe / Chief Wiggum / Carl / Comic Book Guy / Dr. Nick Riviera / Prof. Frink / Cletus / Sea Captain / Kirk Van Houten / Various">Hank Azaria</actor>
+			<actor role="Lisa Simpson / Various (voice)">Yeardley Smith</actor>
+			<actor role="Marge Simpson / Patty Bouvier / Selma Bouvier / Jacqueline Ingrid Bouvier / Various (voice)">Julie Kavner</actor>
+			<actor role="Bart Simpson / Nelson Muntz / Ralph Wiggum / Todd Flanders / Kearney / Various (voice)">Nancy Cartwright</actor>
+			<actor role="Homer Simpson / Abraham Simpson / Krusty the Klown / Barney / Willy / Sideshow Mel / Mayor Quimby / Hans Moleman / Gil / Itchy / Various (voice)">Dan Castellaneta</actor>
+			<actor role="Mr. Burns / Mr. Smithers / Principal Skinner / Ned Flanders / Reverend Lovejoy / Dr. Hibbert / Various (voice)">Harry Shearer</actor>
+			<actor>James Taylor</actor>
+			<actor>Maggie Roswell</actor>
+			<actor>Buzz Aldrin</actor>
+			<writer>David Mirkin</writer>
+		</credits>
+		<date>1994</date>
+		<category lang="en">series</category>
+		<category lang="en">Animation</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/456/season/5/episode/15]]></url>
+		<episode-num system="xmltv_ns">4 . 14/22 .</episode-num>
+		<episode-num system="onscreen">Episode 15 of 22 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103203000 +0100" stop="20171103210000 +0100" channel="tv6.se">
+		<title lang="sv">Simpsons</title>
+		<sub-title lang="sv">Homer Loves Flanders</sub-title>
+		<desc lang="sv">Ned ger Homer biljetter till en amerikansk fotbollsmatch. Nu är han Homers bästa vän!</desc>
+		<credits>
+			<director>Wes Archer</director>
+			<actor role="Milhouse Van Houten">Pamela Hayden</actor>
+			<actor role="Groundskeeper Willie">Dan Castellaneta</actor>
+			<actor role="Lenny Leonard">Harry Shearer</actor>
+			<actor role="Waylon Smithers">Harry Shearer</actor>
+			<actor role="Mr. Burns">Harry Shearer</actor>
+			<actor role="Nelson Muntz">Nancy Cartwright</actor>
+			<actor role="Reverend Lovejoy">Harry Shearer</actor>
+			<actor role="Martin Prince">Russi Taylor</actor>
+			<actor role="Chief Wiggum">Hank Azaria</actor>
+			<actor role="Ralph Wiggum">Nancy Cartwright</actor>
+			<actor role="Dr. Hibbert">Harry Shearer</actor>
+			<actor role="Apu Nahasapeemapetilon">Hank Azaria</actor>
+			<actor role="Grampa Simpson">Dan Castellaneta</actor>
+			<actor role="Luann Van Houten">Maggie Roswell</actor>
+			<actor role="Edna Krabappel">Marcia Wallace</actor>
+			<actor role="Krusty the Clown">Dan Castellaneta</actor>
+			<actor role="Sideshow Mel">Dan Castellaneta</actor>
+			<actor role="Agnes Skinner">Tress MacNeille</actor>
+			<actor role="Troy McClure">Phil Hartman</actor>
+			<actor>Chris Edgerly</actor>
+			<actor role="Barney Gumble">Dan Castellaneta</actor>
+			<actor role="Mayor Quimby">Dan Castellaneta</actor>
+			<actor role="Hans Moleman">Dan Castellaneta</actor>
+			<actor role="Patty and Selma">Julie Kavner</actor>
+			<actor role="Todd Flanders">Nancy Cartwright</actor>
+			<actor role="Kearney Zzyzwicz">Nancy Cartwright</actor>
+			<actor role="Ned Flanders">Harry Shearer</actor>
+			<actor role="Kent Brockman">Harry Shearer</actor>
+			<actor role="Moe Szyslak">Hank Azaria</actor>
+			<actor role="Comic Book Guy">Hank Azaria</actor>
+			<actor role="Mr. Burns / Smithers / Dr. Marvin Monroe / Ned Flanders / Seymour Skinner / Otto / Kent Brockman / Dr. Hibbert / Lenny / Rev. Lovejoy / Various">Harry Shearer</actor>
+			<actor role="Apu / Moe / Chief Wiggum / Carl / Comic Book Guy / Dr. Nick Riviera / Prof. Frink / Cletus / Sea Captain / Kirk Van Houten / Various">Hank Azaria</actor>
+			<actor role="Lisa Simpson / Various (voice)">Yeardley Smith</actor>
+			<actor role="Marge Simpson / Patty Bouvier / Selma Bouvier / Jacqueline Ingrid Bouvier / Various (voice)">Julie Kavner</actor>
+			<actor role="Bart Simpson / Nelson Muntz / Ralph Wiggum / Todd Flanders / Kearney / Various (voice)">Nancy Cartwright</actor>
+			<actor role="Homer Simpson / Abraham Simpson / Krusty the Klown / Barney / Willy / Sideshow Mel / Mayor Quimby / Hans Moleman / Gil / Itchy / Various (voice)">Dan Castellaneta</actor>
+			<actor role="Mr. Burns / Mr. Smithers / Principal Skinner / Ned Flanders / Reverend Lovejoy / Dr. Hibbert / Various (voice)">Harry Shearer</actor>
+			<actor>Maggie Roswell</actor>
+			<writer>David Richardson</writer>
+		</credits>
+		<date>1994</date>
+		<category lang="en">series</category>
+		<category lang="en">Animation</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/456/season/5/episode/16]]></url>
+		<episode-num system="xmltv_ns">4 . 15/22 .</episode-num>
+		<episode-num system="onscreen">Episode 16 of 22 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103210000 +0100" stop="20171103220000 +0100" channel="tv6.se">
+		<title lang="sv">Midnight, Texas</title>
+		<sub-title lang="sv">Riders on the Storm</sub-title>
+		<desc lang="sv">En sandstorm gömmer en hel hop av demoniska andar som förbereder ankomsten av en demon från helvetet. Bobo lovar att skydda Fiji och Manfred, Joe och Reven gräver efter svar från det förflutna.</desc>
+		<credits>
+			<director>Greg Beeman</director>
+			<actor role="Manfred Bernardo">François Arnaud</actor>
+			<actor role="Creek Lovell">Sarah Ramos</actor>
+			<actor role="Bobo Winthrop">Dylan Bruce</actor>
+			<actor role="Fiji Cavanaugh">Parisa Fitz-Henley</actor>
+			<actor role="Olivia Charity">Arielle Kebbel</actor>
+			<actor role="Lemuel Bridger">Peter Mensah</actor>
+			<actor role="Joe Strong">Jason Lewis</actor>
+			<actor role="Rev. Emilio Sheehan">Yul Vazquez</actor>
+			<actor>Bellina Logan</actor>
+			<actor role="Catori">David Midthunder</actor>
+			<actor role="Jeremy">Ryan McCartan</actor>
+			<actor role="Mr. Snuggly (voice)">Joe Smith</actor>
+		</credits>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Drama</category>
+		<category lang="en">Fantasy</category>
+		<category lang="en">Mystery</category>
+		<category lang="en">Sci-Fi</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/67861/season/1/episode/9]]></url>
+		<episode-num system="xmltv_ns">0 . 8/10 .</episode-num>
+		<episode-num system="onscreen">Episode 9 of 10 season 1</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103220000 +0100" stop="20171103235000 +0100" channel="tv6.se">
+		<title lang="sv">Resident Evil: Retribution</title>
+		<desc lang="sv">Umbrella Corporations dödliga T-virus härjar på jorden och förvandlar alla människor till köttätande odöda. Mänskligheten sätter sitt sista hopp till Alice, som vaknar upp på Umbrellas mest hemliga forskningsanläggning där mer av hennes mystiska förflutna nystas upp. Utan en trygg plats fortsätter Alice att leta efter de som ligger bakom virusutbrottet. Jakten för henne från Tokyo till New York, Washington DC och Moskva, och till slut gör hon ett avslöjande som tvingar henne att ifrågasätta allt som hon någonsin har trott på. Med hjälp av nya och bekanta ansikten måste Alice kämpa för att överleva länge nog för att fly undan en fientlig värld som är på väg att utplånas. Nedräkningen har börjat.</desc>
+		<credits>
+			<director>Paul W.S. Anderson</director>
+			<actor role="Alice">Milla Jovovich</actor>
+			<actor role="Jill Valentine">Sienna Guillory</actor>
+			<actor role="Rain Ocampo">Michelle Rodriguez</actor>
+			<actor role="Becky">Aryana Engineer</actor>
+			<actor role="Ada Wong">Li Bingbing</actor>
+			<actor role="Luther West">Boris Kodjoe</actor>
+			<actor role="Leon S. Kennedy">Johann Urb</actor>
+			<actor role="Sergei">Robin Kasyanov</actor>
+			<actor role="Barry Burton">Kevin Durand</actor>
+			<actor role="Tony">Ofilio Portillo</actor>
+			<actor role="Todd / Carlos">Oded Fehr</actor>
+			<actor role="James 'One' Shade">Colin Salmon</actor>
+			<actor role="Albert Wesker">Shawn Roberts</actor>
+			<actor role="The Red Queen">Megan Charpentier</actor>
+			<actor role="Japanese Businessman">Takato Yamashita</actor>
+			<actor role="J Pop Girl">Mika Nakashima</actor>
+			<actor role="The Axe Men">Ray Olubowale</actor>
+			<actor role="K-Mart (archive footage)">Spencer Locke</actor>
+			<actor role="Dr. Green (archive footage)">Anna Bolt</actor>
+			<actor role="Ms. Black (archive footage)">Indra Ové</actor>
+			<actor role="Dr. Lisa Addison (archive footage)">Heike Makatsch</actor>
+			<actor role="Terri Morales (archive footage)">Sandrine Holt</actor>
+			<actor role="Medic (archive footage)">Liz May Brice</actor>
+			<actor role="Major Tom Caine (archive footage)">Thomas Kretschmann</actor>
+			<actor role="Claire Redfield (archive footage)">Ali Larter</actor>
+			<actor role="Chris Redfield (archive footage)">Wentworth Miller</actor>
+			<producer>Paul W.S. Anderson</producer>
+			<producer>Jeremy Bolt</producer>
+			<producer>Don Carmody</producer>
+			<producer>Alexander Dostal</producer>
+		</credits>
+		<date>2012</date>
+		<category lang="en">movie</category>
+		<category lang="en">Action</category>
+		<category lang="en">Horror</category>
+		<category lang="en">Sci-Fi</category>
+		<url><![CDATA[http://www.themoviedb.org/movie/71679]]></url>
+		<episode-num system="themoviedb.org">movie/71679</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>5.6 / 10</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103235000 +0100" stop="20171104002000 +0100" channel="tv6.se">
+		<title lang="sv">American Dad</title>
+		<sub-title lang="sv">The Missing Kink</sub-title>
+		<desc lang="sv">Francine är missnöjd med läget i sängkammaren och inser att hon har en sadomasochistisk sida. Under tiden försöker Hayley att komma över Jeff som ska skickas till yttre rymden.</desc>
+		<credits>
+			<actor role="Klaus Heissler (voice)">Dee Bradley Baker</actor>
+			<actor role="Stan Smith (voice)">Seth MacFarlane</actor>
+			<actor role="Francine Smith (voice)">Wendy Schaal</actor>
+			<actor role="Hayley Smith (voice)">Rachael MacFarlane</actor>
+			<actor role="Steve Smith (voice)">Scott Grimes</actor>
+			<actor role="Klaus (voice)">Dee Bradley Baker</actor>
+			<actor role="Avery Bullock (voice)">Patrick Stewart</actor>
+			<actor role="Roger (voice)">Seth MacFarlane</actor>
+			<actor role="Toshi Yoshida (voice)">Daisuke Suzuki</actor>
+			<actor role="Terry Bates (voice)">Mike Barker</actor>
+			<actor role="Snot (voice)">Curtis Armstrong</actor>
+			<actor role="Barry (voice)">Eddie Kaye Thomas</actor>
+			<actor role="Snot (Voice)">Curtis Armstrong</actor>
+			<actor role="Avery Bullock (Voice)">Patrick Stewart</actor>
+			<actor role="Barry Robinson (Vocie)">Eddie Kaye Thomas</actor>
+			<actor role="Jeff Fischer (Voice)">Jeff Fischer</actor>
+		</credits>
+		<date>2013</date>
+		<category lang="en">series</category>
+		<category lang="en">Animation</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1433/season/9/episode/15]]></url>
+		<episode-num system="xmltv_ns">8 . 14/19 .</episode-num>
+		<episode-num system="onscreen">Episode 15 of 19 season 9</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171104002000 +0100" stop="20171104005000 +0100" channel="tv6.se">
+		<title lang="sv">Seinfeld</title>
+		<sub-title lang="sv">The Pothole</sub-title>
+		<desc lang="sv">Jerry tappar av misstag sin flickväns tandborste i toaletten, men kan inte förmå sig att berätta det för henne och gör allt för att slippa kyssa henne.</desc>
+		<credits>
+			<director>Andy Ackerman</director>
+			<actor role="Helen">Liz Sheridan</actor>
+			<actor role="Estelle Constanza">Estelle Harris</actor>
+			<actor role="Susan Ross">Heidi Swedberg</actor>
+			<actor role="George Steinbrenner">Larry David</actor>
+			<actor role="Juror">Spike Feresten</actor>
+			<actor role="Ruthie Cohen">Ruth Cohen</actor>
+			<actor role="Frank Costanza">Jerry Stiller</actor>
+			<actor role="Newman">Wayne Knight</actor>
+			<actor role="Morty">Barney Martin</actor>
+			<actor role="Jerry Seinfeld">Jerry Seinfeld</actor>
+			<actor role="George Costanza">Jason Alexander</actor>
+			<actor role="Elaine Benes">Julia Louis-Dreyfus</actor>
+			<actor role="Cosmo Kramer">Michael Richards</actor>
+			<actor>Wayne Knight</actor>
+			<actor>George Cheung</actor>
+			<actor>Radmar Agana Jao</actor>
+			<actor>Jack McGee</actor>
+			<actor role="Jenna">Kristin Davis</actor>
+			<writer>Steve O'Donnell</writer>
+			<writer>Dan O'Keeffe</writer>
+		</credits>
+		<date>1997</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1400/season/8/episode/16]]></url>
+		<episode-num system="xmltv_ns">7 . 15/22 .</episode-num>
+		<episode-num system="onscreen">Episode 16 of 22 season 8</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>7.1 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171104005000 +0100" stop="20171104012000 +0100" channel="tv6.se">
+		<title lang="sv">Seinfeld</title>
+		<sub-title lang="sv">The English Patient</sub-title>
+		<desc lang="sv">Elaine upptäcker att hon är den enda i världen som hatar "Den engelske patienten". George träffar en snygg tjej, som har en pojkvän som är på pricken lik George. Jerry får veta att Kramer inte pratade om cigarrer när han bar Jerry att köpa några kubaner till honom i Florida.</desc>
+		<credits>
+			<director>Andy Ackerman</director>
+			<actor role="Helen">Liz Sheridan</actor>
+			<actor role="Estelle Constanza">Estelle Harris</actor>
+			<actor role="Susan Ross">Heidi Swedberg</actor>
+			<actor role="George Steinbrenner">Larry David</actor>
+			<actor role="Juror">Spike Feresten</actor>
+			<actor role="Ruthie Cohen">Ruth Cohen</actor>
+			<actor role="Frank Costanza">Jerry Stiller</actor>
+			<actor role="Newman">Wayne Knight</actor>
+			<actor role="Morty">Barney Martin</actor>
+			<actor role="Jerry Seinfeld">Jerry Seinfeld</actor>
+			<actor role="George Costanza">Jason Alexander</actor>
+			<actor role="Elaine Benes">Julia Louis-Dreyfus</actor>
+			<actor role="Cosmo Kramer">Michael Richards</actor>
+			<actor>Jill Talley</actor>
+			<actor>Gene Dynarski</actor>
+			<actor>O'Neal Compton</actor>
+			<actor>Barney Martin</actor>
+			<actor>Liz Sheridan</actor>
+			<actor>Lloyd Bridges</actor>
+			<actor>Chelsea Noble</actor>
+			<writer>Steve Koren</writer>
+		</credits>
+		<date>1997</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1400/season/8/episode/17]]></url>
+		<episode-num system="xmltv_ns">7 . 16/22 .</episode-num>
+		<episode-num system="onscreen">Episode 17 of 22 season 8</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>7.1 / 9</value>
+		</star-rating>
+	</programme>
+</tv>

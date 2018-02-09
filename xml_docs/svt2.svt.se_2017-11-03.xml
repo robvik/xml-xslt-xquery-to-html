@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv [
+<!ELEMENT tv (channel*, programme*)>
+<!ATTLIST tv date   CDATA #IMPLIED source-info-url     CDATA #IMPLIED source-info-name    CDATA #IMPLIED        source-data-url     CDATA #IMPLIED        generator-info-name CDATA #IMPLIED          generator-info-url  CDATA #IMPLIED >
+<!ELEMENT channel (display-name+, icon*, url*) >
+<!ATTLIST channel id CDATA #REQUIRED >
+<!ELEMENT display-name (#PCDATA)>
+<!ATTLIST display-name lang CDATA #IMPLIED>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT programme (title+, sub-title*, desc*, credits?, date?,
+                     category*, keyword*, language?, orig-language?,
+                     length?, icon*, url*, country*, episode-num*,
+                     video?, audio?, previously-shown?, premiere?,
+                     last-chance?, new?, subtitles*, rating*,
+                     star-rating*, review* )>
+<!ATTLIST programme start     CDATA #REQUIRED
+                    stop      CDATA #IMPLIED
+                    pdc-start CDATA #IMPLIED
+                    vps-start CDATA #IMPLIED
+                    showview  CDATA #IMPLIED
+                    videoplus CDATA #IMPLIED
+                    channel   CDATA #REQUIRED
+                    clumpidx  CDATA "0/1" >
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title lang CDATA #IMPLIED>
+<!ELEMENT sub-title (#PCDATA)>
+<!ATTLIST sub-title lang CDATA #IMPLIED>
+<!ELEMENT desc (#PCDATA)>
+<!ATTLIST desc lang CDATA #IMPLIED>
+<!ELEMENT credits (director*, actor*, writer*, adapter*, producer*,
+                   composer*, editor*, presenter*, commentator*, 
+                   guest* )>
+<!ELEMENT director    (#PCDATA)>
+<!ELEMENT actor       (#PCDATA)>
+<!ATTLIST actor role  CDATA #IMPLIED>
+<!ELEMENT writer      (#PCDATA)>
+<!ELEMENT adapter     (#PCDATA)>
+<!ELEMENT producer    (#PCDATA)>
+<!ELEMENT composer    (#PCDATA)>
+<!ELEMENT editor      (#PCDATA)>
+<!ELEMENT presenter   (#PCDATA)>
+<!ELEMENT commentator (#PCDATA)>
+<!ELEMENT guest       (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ATTLIST category lang CDATA #IMPLIED>
+<!ELEMENT keyword (#PCDATA)>
+<!ATTLIST keyword lang CDATA #IMPLIED>
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language lang CDATA #IMPLIED>
+<!ELEMENT orig-language (#PCDATA)>
+<!ATTLIST orig-language lang CDATA #IMPLIED>
+<!ELEMENT length (#PCDATA)>
+<!ATTLIST length units (seconds | minutes | hours) #REQUIRED>
+<!ELEMENT icon EMPTY>
+<!ATTLIST icon src         CDATA #REQUIRED
+               width       CDATA #IMPLIED
+               height      CDATA #IMPLIED> 
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ATTLIST country lang CDATA #IMPLIED>
+<!ELEMENT episode-num (#PCDATA)>
+<!ATTLIST episode-num system CDATA "onscreen">
+<!ELEMENT video (present?, colour?, aspect?, quality?)>
+<!ELEMENT present (#PCDATA)>
+<!ELEMENT colour (#PCDATA)>
+<!ELEMENT aspect (#PCDATA)>
+<!ELEMENT quality (#PCDATA)>
+<!ELEMENT audio (present?, stereo?)>
+<!ELEMENT stereo (#PCDATA)>
+<!ELEMENT previously-shown EMPTY>
+<!ATTLIST previously-shown start   CDATA #IMPLIED
+                           channel CDATA #IMPLIED >
+<!ELEMENT premiere (#PCDATA)>
+<!ATTLIST premiere lang CDATA #IMPLIED>
+<!ELEMENT last-chance (#PCDATA)>
+<!ATTLIST last-chance lang CDATA #IMPLIED>
+<!ELEMENT new EMPTY>
+<!ELEMENT subtitles (language?)>
+<!ATTLIST subtitles type (teletext | onscreen | deaf-signed) #IMPLIED>
+<!ELEMENT rating (value, icon*)>
+<!ATTLIST rating system CDATA #IMPLIED>
+<!ELEMENT star-rating (value, icon*)>
+<!ATTLIST star-rating system CDATA #IMPLIED>
+<!ELEMENT review (#PCDATA)>
+<!ATTLIST review type     (text | url) #REQUIRED
+                 source   CDATA        #IMPLIED
+                 reviewer CDATA        #IMPLIED
+                 lang     CDATA        #IMPLIED>
+]>
+
+<tv generator-info-name="Taiga XMLTV" generator-info-url="http://xmltv.se">
+	<programme start="20171103010000 +0100" stop="20171103010500 +0100" channel="svt2.svt.se">
+		<title lang="sv">SVT Nyheter</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 305/365 .</episode-num>
+		<episode-num system="onscreen">Episode 306 of 365 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103010500 +0100" stop="20171103012500 +0100" channel="svt2.svt.se">
+		<title lang="sv">Sportnytt</title>
+		<date>2017</date>
+		<category lang="en">sports</category>
+		<category lang="en">Sports</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103012500 +0100" stop="20171103013500 +0100" channel="svt2.svt.se">
+		<title lang="sv">Nyhetstecken</title>
+		<desc lang="sv">Nyheter på teckenspråk.</desc>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103020000 +0100" stop="20171103020500 +0100" channel="svt2.svt.se">
+		<title lang="sv">SVT Nyheter</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 305/365 .</episode-num>
+		<episode-num system="onscreen">Episode 306 of 365 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103020500 +0100" stop="20171103023500 +0100" channel="svt2.svt.se">
+		<title lang="sv">Sverige idag</title>
+		<desc lang="sv">Nyheter från hela Sverige - direkt från Umeå.</desc>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 148/220 .</episode-num>
+		<episode-num system="onscreen">Episode 149 of 220 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103030000 +0100" stop="20171103030500 +0100" channel="svt2.svt.se">
+		<title lang="sv">SVT Nyheter</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 305/365 .</episode-num>
+		<episode-num system="onscreen">Episode 306 of 365 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103040000 +0100" stop="20171103040500 +0100" channel="svt2.svt.se">
+		<title lang="sv">SVT Nyheter</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 305/365 .</episode-num>
+		<episode-num system="onscreen">Episode 306 of 365 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103050000 +0100" stop="20171103050500 +0100" channel="svt2.svt.se">
+		<title lang="sv">SVT Nyheter</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 305/365 .</episode-num>
+		<episode-num system="onscreen">Episode 306 of 365 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103080000 +0100" stop="20171103083000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Latela - bilduellen</title>
+		<desc lang="sv">Det är projektets sjunde dag och arbetet har kommit igång, men sänkningen av bilen skapar problem. Även ekonomin ger huvudbry. Hur ska man få den begränsade budgeten att gå ihop? Bilmekskompisarna i gänget Latela har åtagit sig att på 21 dagar bygga en flakbil till en förfest inför en konsert med Justin Bieber. Latela består av Huttunen, Tommi, Valkama, Miika, Riku, Majuri, Harhala, Härski och Jopa.</desc>
+		<date>2013</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[<![CDATAhttp://thetvdb.com/?tab=episode&seriesid=268569&seasonid=584901&id=4877543&lid=8]]></url>
+		<episode-num system="xmltv_ns">1 . 2 .</episode-num>
+		<episode-num system="onscreen">Episode 3 season 2</episode-num>
+		<episode-num system="thetvdb.com">series/268569</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103083000 +0100" stop="20171103090000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Förväxlingen</title>
+		<desc lang="sv">Vi får följa hur ödets vindar förändrar livet för de två familjerna Gulpinar och Gurpinar, vars döttrar förväxlades på BB. Falay med flera.</desc>
+		<credits>
+			<actor>Nurgül Yesilçay</actor>
+			<actor>Erkan Petekkaya</actor>
+			<actor>Ebru Özkan</actor>
+			<actor>Alina Boz</actor>
+			<actor>Leyla Tanlar</actor>
+			<actor>Bar??</actor>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">1 . 48/120 .</episode-num>
+		<episode-num system="onscreen">Episode 49 of 120 season 2</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103090000 +0100" stop="20171103120000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Forum</title>
+		<desc lang="sv">Politiska seminarier, debatter och föreläsningar.</desc>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">Politics</category>
+		<category lang="en">Society</category>
+		<episode-num system="xmltv_ns">2016 . 175/215 .</episode-num>
+		<episode-num system="onscreen">Episode 176 of 215 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103120000 +0100" stop="20171103120500 +0100" channel="svt2.svt.se">
+		<title lang="sv">SVT Nyheter</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 306/366 .</episode-num>
+		<episode-num system="onscreen">Episode 307 of 366 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103120500 +0100" stop="20171103160000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Forum</title>
+		<desc lang="sv">Politiska seminarier, debatter och föreläsningar.</desc>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">Politics</category>
+		<category lang="en">Society</category>
+		<episode-num system="xmltv_ns">2016 . 175/215 .</episode-num>
+		<episode-num system="onscreen">Episode 176 of 215 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103160000 +0100" stop="20171103160500 +0100" channel="svt2.svt.se">
+		<title lang="sv">SVT Nyheter</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 306/366 .</episode-num>
+		<episode-num system="onscreen">Episode 307 of 366 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103160500 +0100" stop="20171103161500 +0100" channel="svt2.svt.se">
+		<title lang="sv">Forum</title>
+		<desc lang="sv">Politiska seminarier, debatter och föreläsningar.</desc>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">Politics</category>
+		<category lang="en">Society</category>
+		<episode-num system="xmltv_ns">2016 . 175/215 .</episode-num>
+		<episode-num system="onscreen">Episode 176 of 215 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103161500 +0100" stop="20171103164500 +0100" channel="svt2.svt.se">
+		<title lang="sv">Mark och Luther</title>
+		<sub-title lang="sv">Luther, reformationen och skuggorna</sub-title>
+		<desc lang="sv">Mark Levengood ger sig ut på spaning efter spåren av Martin Luther, nu 500 år efter hans reformation som startade 1517.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">0 . 2/4 .</episode-num>
+		<episode-num system="onscreen">Episode 3 of 4 season 1</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103164500 +0100" stop="20171103171500 +0100" channel="svt2.svt.se">
+		<title lang="sv">Plus</title>
+		<sub-title lang="sv">Avsnitt 5</sub-title>
+		<desc lang="sv">Tommy utvecklade tvångssyndrom efter en trafikolycka, men när han krävde ersättning hävdar försäkringsbolaget att problemen beror på att han sörjer sin döda hund. Plus inleder en granskning av försäkringsbolagens medicinska rådgivare. Konsumentvägledaren Karin Lindmark svarar på tittarnas frågor.</desc>
+		<credits>
+			<actor role="Programledare">Åsa Avdic</actor>
+			<actor role="Programledare">Mathias Andersson</actor>
+			<presenter>Inger Ljung Olsson</presenter>
+			<presenter>Sanne Olsson</presenter>
+		</credits>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Special Interest</category>
+		<url><![CDATA[<![CDATAhttp://thetvdb.com/?tab=episode&seriesid=164841&seasonid=250931&id=2255151&lid=8]]></url>
+		<episode-num system="xmltv_ns">23 . 4 .</episode-num>
+		<episode-num system="onscreen">Episode 5 season 24</episode-num>
+		<episode-num system="thetvdb.com">series/164841</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103171500 +0100" stop="20171103172000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Nyheter på lätt svenska</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 184/220 .</episode-num>
+		<episode-num system="onscreen">Episode 185 of 220 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103172000 +0100" stop="20171103173000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Nyhetstecken</title>
+		<desc lang="sv">Nyheter på teckenspråk.</desc>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103173000 +0100" stop="20171103174500 +0100" channel="svt2.svt.se">
+		<title lang="sv">Oddasat</title>
+		<desc lang="sv">Samiskspråkiga nyheter.</desc>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103174500 +0100" stop="20171103180000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Uutiset</title>
+		<desc lang="sv">Finskspråkiga nyheter.</desc>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103180000 +0100" stop="20171103190000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Engelska Antikrundan</title>
+		<desc lang="sv">Scarborough i nordöstra England får besök av Fiona och hennes antikexperter. En brevpress från Winton Churchills skrivbord visar sig bära på en särskild historia och en tiara får åskådarna att tappa hakan.</desc>
+		<date>2013</date>
+		<category lang="en">series</category>
+		<category lang="en">Magazine</category>
+		<episode-num system="xmltv_ns">34 . 23/25 .</episode-num>
+		<episode-num system="onscreen">Episode 24 of 25 season 35</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103190000 +0100" stop="20171103193000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Vem vet mest?</title>
+		<desc lang="sv">Rickard Olsson leder de tävlande genom SVT:s frågesport som kan handla om allt från Abba till atomer. Förutom bred allmänbildning krävs också ett strategiskt tänkande.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<category lang="en">Entertainment</category>
+		<episode-num system="xmltv_ns">18 . 54/85 .</episode-num>
+		<episode-num system="onscreen">Episode 55 of 85 season 19</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103193000 +0100" stop="20171103200000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Förväxlingen</title>
+		<desc lang="sv">Vi får följa hur ödets vindar förändrar livet för de två familjerna Gulpinar och Gurpinar, vars döttrar förväxlades på BB. Falay med flera.</desc>
+		<credits>
+			<actor>Nurgül Yesilçay</actor>
+			<actor>Erkan Petekkaya</actor>
+			<actor>Ebru Özkan</actor>
+			<actor>Alina Boz</actor>
+			<actor>Leyla Tanlar</actor>
+			<actor>Bar??</actor>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">1 . 49/120 .</episode-num>
+		<episode-num system="onscreen">Episode 50 of 120 season 2</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103200000 +0100" stop="20171103205900 +0100" channel="svt2.svt.se">
+		<title lang="sv">Himlens mörkrum</title>
+		<desc lang="sv">Fotografen och filmaren Jean Hermanson fotograferade arbetare på de svenska industrigolven under 60-talet, och under flera år var Nils Petter Löfstedt hans fotoassistent. Jean berättade för Nils Petter om sitt stora misstag: han tog aldrig reda på namnen på dem han fotograferade. I augusti 2012 dör Jean. Han lämnar efter sig ett arkiv där det mesta varit helt dolt för omvärlden. Drömmen växer hos Nils Petter om att finna människorna som Jean en gång fotograferat och hitta en plats där Jeans kulturarv kan förvaltas. Det blir en resa med många spännande möten mellan nuet och det förflutna. En resa genom ett Sverige som är märkligt likt det som Jean Hermanson en gång fotograferade.</desc>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103210000 +0100" stop="20171103211800 +0100" channel="svt2.svt.se">
+		<title lang="sv">Aktuellt</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103211800 +0100" stop="20171103212300 +0100" channel="svt2.svt.se">
+		<title lang="sv">Kulturnyheterna</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103212300 +0100" stop="20171103212500 +0100" channel="svt2.svt.se">
+		<title lang="sv">Väder</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 33/52 .</episode-num>
+		<episode-num system="onscreen">Episode 34 of 52 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103212500 +0100" stop="20171103213000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Lokala nyheter</title>
+		<date>2017</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<episode-num system="xmltv_ns">2016 . 36/55 .</episode-num>
+		<episode-num system="onscreen">Episode 37 of 55 season 2017</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103213000 +0100" stop="20171103214500 +0100" channel="svt2.svt.se">
+		<title lang="sv">Sportnytt</title>
+		<date>2017</date>
+		<category lang="en">sports</category>
+		<category lang="en">Sports</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103214500 +0100" stop="20171103231500 +0100" channel="svt2.svt.se">
+		<title lang="sv">Återträffen</title>
+		<desc lang="sv">20 år har gått sedan eleverna i klass 9c slutade grundskolan och gick skilda vägar, och nu ska de ses igen. Men feststämningen kommer av sig när konflikter kommer upp till ytan och gamla sanningar ifrågasätts.</desc>
+		<credits>
+			<director>Anna Odell</director>
+			<actor role="Louise">Sandra Andreis</actor>
+			<actor role="Camilla">Kamila Benhamza</actor>
+			<actor role="Anders">Anders Berg</actor>
+			<actor role="Erik">Erik Ehn</actor>
+			<actor role="Nille">Niklas Engdahl</actor>
+			<actor role="Per">Per Fenger-Krog</actor>
+			<actor role="Robban">Robert Fransson</actor>
+			<actor role="Linda">Sara Karlsdotter</actor>
+			<actor role="Sanna">Sanna Krepper</actor>
+			<actor role="Andreas">Andreas Kundler</actor>
+			<actor role="Fredrik">Fredrik Meyer</actor>
+			<actor role="Lena">Lena Mossegård</actor>
+			<actor role="David">David Nordstrom</actor>
+			<actor role="Henrik">Henrik Norlén</actor>
+			<actor role="Anna Odell">Anna Odell</actor>
+			<actor role="Malle">Malin Vulcano</actor>
+			<actor role="Mikaela">Mikaela Ramel</actor>
+			<actor role="Mina">Minna Treutiger</actor>
+			<actor role="Rikard">Rikard Svensson</actor>
+			<actor role="Sara">Sara Persson</actor>
+			<actor role="Ulf">Ulf Stenberg</actor>
+			<actor role="Christopher">Christopher Wollter</actor>
+			<actor role="Cilla">Cilla Thorell</actor>
+			<actor role="Barnet I Telefon">Linus Munter</actor>
+			<producer>Mathilde Dedye</producer>
+		</credits>
+		<date>2012</date>
+		<category lang="en">movie</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[<![CDATAhttp://www.themoviedb.org/movie/202573]]></url>
+		<episode-num system="themoviedb.org">movie/202573</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>dolby digital</stereo>
+		</audio>
+		<star-rating>
+			<value>6.3 / 10</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103231500 +0100" stop="20171103233000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Speldosan</title>
+		<desc lang="sv">En familj är i Skagen på solsemester för att fira dotterns födelsedag då en speldosas förtrollande toner spelar dem ett spratt. Den lyckliga resan förvandlas snart till en oväntad färd i humor och svärta. En kortfilm av Johannes Nyholm.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Drama</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>dolby digital</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103233000 +0100" stop="20171104000000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Anna Järvinen och kvinnorna</title>
+		<desc lang="sv">Anna Järvinen träffar tidigare rektorn Eivor Olofsson, en skotokig konstnärssjäl från Tornedalen. Som nybliven pensionär varvar Eivor livet på landsbygden med resor runtom i världen. Sångerskan Anna Järvinen träffar fem kvinnor som alla liksom hon har rötter i Finland.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Politics</category>
+		<category lang="en">Society</category>
+		<episode-num system="xmltv_ns">1 . 3/5 .</episode-num>
+		<episode-num system="onscreen">Episode 4 of 5 season 2</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171104000000 +0100" stop="20171104003000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Kvinnan som samlade Sápmi</title>
+		<desc lang="sv">Ett porträtt av Elsa Laula Renberg. Under jubileumsåret 2017 högtidlighålls 100-årsminnet av det första samiska landsmötet. En av initiativtagarna till mötet var Elsa Laula Renberg. Renberg som föddes och växte upp i Sverige var en av de första att samla samerna till politisk kamp och kom att få stor betydelse för den politiska utvecklingen i Sápmi.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Humanities</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>dolby digital</stereo>
+		</audio>
+	</programme>
+	<programme start="20171104003000 +0100" stop="20171104010000 +0100" channel="svt2.svt.se">
+		<title lang="sv">Tonårsmammor</title>
+		<desc lang="sv">Fyra tjejer och en kille - fem tonårsföräldrar. Under ett år följer vi Elina, Nea, Emilia, Laura och Jussi, som alla blivit föräldrar i tonåren. Laura och Jussi har något nytt att berätta. Nea förbereder sig inför julen och Elinas boendeförhållanden ändras återigen.</desc>
+		<date>2014</date>
+		<category lang="en">series</category>
+		<category lang="en">Politics</category>
+		<category lang="en">Society</category>
+		<episode-num system="xmltv_ns">1 . 4/8 .</episode-num>
+		<episode-num system="onscreen">Episode 5 of 8 season 2</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+</tv>

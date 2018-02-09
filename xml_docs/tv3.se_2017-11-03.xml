@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv [
+<!ELEMENT tv (channel*, programme*)>
+<!ATTLIST tv date   CDATA #IMPLIED source-info-url     CDATA #IMPLIED source-info-name    CDATA #IMPLIED        source-data-url     CDATA #IMPLIED        generator-info-name CDATA #IMPLIED          generator-info-url  CDATA #IMPLIED >
+<!ELEMENT channel (display-name+, icon*, url*) >
+<!ATTLIST channel id CDATA #REQUIRED >
+<!ELEMENT display-name (#PCDATA)>
+<!ATTLIST display-name lang CDATA #IMPLIED>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT programme (title+, sub-title*, desc*, credits?, date?,
+                     category*, keyword*, language?, orig-language?,
+                     length?, icon*, url*, country*, episode-num*,
+                     video?, audio?, previously-shown?, premiere?,
+                     last-chance?, new?, subtitles*, rating*,
+                     star-rating*, review* )>
+<!ATTLIST programme start     CDATA #REQUIRED
+                    stop      CDATA #IMPLIED
+                    pdc-start CDATA #IMPLIED
+                    vps-start CDATA #IMPLIED
+                    showview  CDATA #IMPLIED
+                    videoplus CDATA #IMPLIED
+                    channel   CDATA #REQUIRED
+                    clumpidx  CDATA "0/1" >
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title lang CDATA #IMPLIED>
+<!ELEMENT sub-title (#PCDATA)>
+<!ATTLIST sub-title lang CDATA #IMPLIED>
+<!ELEMENT desc (#PCDATA)>
+<!ATTLIST desc lang CDATA #IMPLIED>
+<!ELEMENT credits (director*, actor*, writer*, adapter*, producer*,
+                   composer*, editor*, presenter*, commentator*, 
+                   guest* )>
+<!ELEMENT director    (#PCDATA)>
+<!ELEMENT actor       (#PCDATA)>
+<!ATTLIST actor role  CDATA #IMPLIED>
+<!ELEMENT writer      (#PCDATA)>
+<!ELEMENT adapter     (#PCDATA)>
+<!ELEMENT producer    (#PCDATA)>
+<!ELEMENT composer    (#PCDATA)>
+<!ELEMENT editor      (#PCDATA)>
+<!ELEMENT presenter   (#PCDATA)>
+<!ELEMENT commentator (#PCDATA)>
+<!ELEMENT guest       (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ATTLIST category lang CDATA #IMPLIED>
+<!ELEMENT keyword (#PCDATA)>
+<!ATTLIST keyword lang CDATA #IMPLIED>
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language lang CDATA #IMPLIED>
+<!ELEMENT orig-language (#PCDATA)>
+<!ATTLIST orig-language lang CDATA #IMPLIED>
+<!ELEMENT length (#PCDATA)>
+<!ATTLIST length units (seconds | minutes | hours) #REQUIRED>
+<!ELEMENT icon EMPTY>
+<!ATTLIST icon src         CDATA #REQUIRED
+               width       CDATA #IMPLIED
+               height      CDATA #IMPLIED> 
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ATTLIST country lang CDATA #IMPLIED>
+<!ELEMENT episode-num (#PCDATA)>
+<!ATTLIST episode-num system CDATA "onscreen">
+<!ELEMENT video (present?, colour?, aspect?, quality?)>
+<!ELEMENT present (#PCDATA)>
+<!ELEMENT colour (#PCDATA)>
+<!ELEMENT aspect (#PCDATA)>
+<!ELEMENT quality (#PCDATA)>
+<!ELEMENT audio (present?, stereo?)>
+<!ELEMENT stereo (#PCDATA)>
+<!ELEMENT previously-shown EMPTY>
+<!ATTLIST previously-shown start   CDATA #IMPLIED
+                           channel CDATA #IMPLIED >
+<!ELEMENT premiere (#PCDATA)>
+<!ATTLIST premiere lang CDATA #IMPLIED>
+<!ELEMENT last-chance (#PCDATA)>
+<!ATTLIST last-chance lang CDATA #IMPLIED>
+<!ELEMENT new EMPTY>
+<!ELEMENT subtitles (language?)>
+<!ATTLIST subtitles type (teletext | onscreen | deaf-signed) #IMPLIED>
+<!ELEMENT rating (value, icon*)>
+<!ATTLIST rating system CDATA #IMPLIED>
+<!ELEMENT star-rating (value, icon*)>
+<!ATTLIST star-rating system CDATA #IMPLIED>
+<!ELEMENT review (#PCDATA)>
+<!ATTLIST review type     (text | url) #REQUIRED
+                 source   CDATA        #IMPLIED
+                 reviewer CDATA        #IMPLIED
+                 lang     CDATA        #IMPLIED>
+]>
+
+<tv generator-info-name="Taiga XMLTV" generator-info-url="http://xmltv.se">
+	<programme start="20171103010000 +0100" stop="20171103013000 +0100" channel="tv3.se">
+		<title lang="sv">Jims värld</title>
+		<sub-title lang="sv">The Gift of Maggie</sub-title>
+		<desc lang="sv">När Cheryl och Danas mamma, Maggie, kommer på besök blir det en tävling om vem som kan få mest uppmärksamhet. Jim och Cheryl eller Ryan och Dana.</desc>
+		<credits>
+			<director>Leonard R. Garner, Jr.</director>
+			<actor role="Jim">Jim Belushi</actor>
+			<actor role="Cheryl Mabel">Courtney Thorne-Smith</actor>
+			<actor role="Andy">Larry Joe Campbell</actor>
+			<actor role="Ruby">Taylor Atelian</actor>
+			<actor role="Dana">Kimberly Williams-Paisley</actor>
+			<actor role="Kyle">Conner Rayburn</actor>
+			<actor role="Gracie">Billi Bruno</actor>
+			<actor>Kathleen Noone</actor>
+			<writer>Daniel Egan</writer>
+		</credits>
+		<date>2005</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1739/season/5/episode/11]]></url>
+		<episode-num system="xmltv_ns">4 . 10/22 .</episode-num>
+		<episode-num system="onscreen">Episode 11 of 22 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>6.5 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103013000 +0100" stop="20171103015500 +0100" channel="tv3.se">
+		<title lang="sv">Jims värld</title>
+		<sub-title lang="sv">Sex Ed Fred</sub-title>
+		<desc lang="sv">När Jim och Cheryl tittar på en sexualkunskapsvideo inser Jim att han tittar på en ung version av sig själv.</desc>
+		<credits>
+			<director>Larry Joe Campbell</director>
+			<actor role="Jim">Jim Belushi</actor>
+			<actor role="Cheryl Mabel">Courtney Thorne-Smith</actor>
+			<actor role="Andy">Larry Joe Campbell</actor>
+			<actor role="Ruby">Taylor Atelian</actor>
+			<actor role="Dana">Kimberly Williams-Paisley</actor>
+			<actor role="Kyle">Conner Rayburn</actor>
+			<actor role="Gracie">Billi Bruno</actor>
+			<actor>Barry Williams</actor>
+			<writer>Mitch Hunter</writer>
+		</credits>
+		<date>2006</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1739/season/5/episode/12]]></url>
+		<episode-num system="xmltv_ns">4 . 11/22 .</episode-num>
+		<episode-num system="onscreen">Episode 12 of 22 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>6.9 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103015500 +0100" stop="20171103023500 +0100" channel="tv3.se">
+		<title lang="sv">Navy NCIS</title>
+		<desc lang="sv">NCIS teamet återförenas med FBI agenten Tobias Fornell när de båda utreder hur två brittiska fångar lyckats fly efter att de anlänt till amerika med båt.</desc>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">12 . 20/24 .</episode-num>
+		<episode-num system="onscreen">Episode 21 of 24 season 13</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103023500 +0100" stop="20171103031500 +0100" channel="tv3.se">
+		<title lang="sv">The Mentalist</title>
+		<sub-title lang="sv">Red All Over</sub-title>
+		<desc lang="sv">CBI kallas till mordplatsen där Xander Harrington, en framgångsrik VD inom media. Utredningen leder till en sektliknande religiös grupp.</desc>
+		<credits>
+			<director>Roxann Dawson</director>
+			<actor role="Patrick Jane">Simon Baker</actor>
+			<actor role="Teresa Lisbon">Robin Tunney</actor>
+			<actor role="Kimball Cho">Tim Kang</actor>
+			<actor role="Wayne Rigsby">Owain Yeoman</actor>
+			<actor role="Grace van Pelt">Amanda Righetti</actor>
+			<actor role="Heater Evans">Virginia Williams</actor>
+			<actor role="Ed Harrington">Tanc Sade</actor>
+			<actor role="Sadie Harrington">Robyn Lively</actor>
+			<actor role="Brother David">Steven Hack</actor>
+			<actor role="Tara Harrington">Michelle Clunie</actor>
+			<actor role="Brother Steven Wench">Joseph Will</actor>
+			<actor role="Alexander Harrington">Bob Gunton</actor>
+			<actor role="Bret Stiles">Malcolm McDowell</actor>
+			<actor role="Special Agent Madeline Hightower">Aunjanue Ellis</actor>
+			<writer>Carolyn Ingber</writer>
+		</credits>
+		<date>2010</date>
+		<category lang="en">series</category>
+		<category lang="en">Drama</category>
+		<category lang="en">Mystery</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/5920/season/2/episode/20]]></url>
+		<episode-num system="xmltv_ns">1 . 19/23 .</episode-num>
+		<episode-num system="onscreen">Episode 20 of 23 season 2</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103031500 +0100" stop="20171103040000 +0100" channel="tv3.se">
+		<title lang="sv">The Lie Detective</title>
+		<desc lang="sv">Dan Ribacoff hjälper Ryan som gjorde slut med Hannah för ett halvår sedan på grund av avståndet mellan dem. Han vill veta vad hon gör när hon inte pratar med honom.</desc>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">0 . 7/10 .</episode-num>
+		<episode-num system="onscreen">Episode 8 of 10 season 1</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103040000 +0100" stop="20171103044500 +0100" channel="tv3.se">
+		<title lang="sv">Masterchef USA</title>
+		<sub-title lang="sv">Top 7 Compete</sub-title>
+		<desc lang="sv">Paula Deen är gästdomare i en utmaning som inspireras av de sydligare breddgraderna. De hoppfulla deltagarna delas sedan upp i par och måste tillaga en avancerad japansk maträtt.</desc>
+		<credits>
+			<actor role="Himself - Judge">Gordon Ramsay</actor>
+			<actor role="Himself - Judge">Graham Elliot</actor>
+			<actor role="Himself - Judge">Joe Bastianich</actor>
+			<actor>Paula Deen</actor>
+		</credits>
+		<date>2012</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/40290/season/3/episode/13]]></url>
+		<episode-num system="xmltv_ns">2 . 12/20 .</episode-num>
+		<episode-num system="onscreen">Episode 13 of 20 season 3</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>7.6 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103044500 +0100" stop="20171103051000 +0100" channel="tv3.se">
+		<title lang="sv">Jims värld</title>
+		<sub-title lang="sv">The Gift of Maggie</sub-title>
+		<desc lang="sv">När Cheryl och Danas mamma, Maggie, kommer på besök blir det en tävling om vem som kan få mest uppmärksamhet. Jim och Cheryl eller Ryan och Dana.</desc>
+		<credits>
+			<director>Leonard R. Garner, Jr.</director>
+			<actor role="Jim">Jim Belushi</actor>
+			<actor role="Cheryl Mabel">Courtney Thorne-Smith</actor>
+			<actor role="Andy">Larry Joe Campbell</actor>
+			<actor role="Ruby">Taylor Atelian</actor>
+			<actor role="Dana">Kimberly Williams-Paisley</actor>
+			<actor role="Kyle">Conner Rayburn</actor>
+			<actor role="Gracie">Billi Bruno</actor>
+			<actor>Kathleen Noone</actor>
+			<writer>Daniel Egan</writer>
+		</credits>
+		<date>2005</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1739/season/5/episode/11]]></url>
+		<episode-num system="xmltv_ns">4 . 10/22 .</episode-num>
+		<episode-num system="onscreen">Episode 11 of 22 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>6.5 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103051000 +0100" stop="20171103053500 +0100" channel="tv3.se">
+		<title lang="sv">Jims värld</title>
+		<sub-title lang="sv">Sex Ed Fred</sub-title>
+		<desc lang="sv">När Jim och Cheryl tittar på en sexualkunskapsvideo inser Jim att han tittar på en ung version av sig själv.</desc>
+		<credits>
+			<director>Larry Joe Campbell</director>
+			<actor role="Jim">Jim Belushi</actor>
+			<actor role="Cheryl Mabel">Courtney Thorne-Smith</actor>
+			<actor role="Andy">Larry Joe Campbell</actor>
+			<actor role="Ruby">Taylor Atelian</actor>
+			<actor role="Dana">Kimberly Williams-Paisley</actor>
+			<actor role="Kyle">Conner Rayburn</actor>
+			<actor role="Gracie">Billi Bruno</actor>
+			<actor>Barry Williams</actor>
+			<writer>Mitch Hunter</writer>
+		</credits>
+		<date>2006</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1739/season/5/episode/12]]></url>
+		<episode-num system="xmltv_ns">4 . 11/22 .</episode-num>
+		<episode-num system="onscreen">Episode 12 of 22 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>6.9 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103053500 +0100" stop="20171103055900 +0100" channel="tv3.se">
+		<title lang="sv">Nanny</title>
+		<sub-title lang="sv">Kissing Cousins</sub-title>
+		<desc lang="sv">Fran tar Dr Millers råd på allvar och bestämmer sig för att sluta springa efter män. Hon går ut på tjejkväll med sina väninnor men när de träffar killar känner hon sig ensam och går till slut hem. Kvällen slutar tillsammans med Maxwell...</desc>
+		<credits>
+			<director>Dorothy Lyman</director>
+			<actor role="Fran Fine">Fran Drescher</actor>
+			<actor role="Maxwell Sheffield">Charles Shaughnessy</actor>
+			<actor role="Niles">Daniel Davis</actor>
+			<actor role="Chastity Claire Babcock">Lauren Lane</actor>
+			<actor role="Maggie Sheffield">Nicholle Tom</actor>
+		</credits>
+		<date>1997</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/2352/season/4/episode/13]]></url>
+		<episode-num system="xmltv_ns">3 . 12/26 .</episode-num>
+		<episode-num system="onscreen">Episode 13 of 26 season 4</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103060000 +0100" stop="20171103063000 +0100" channel="tv3.se">
+		<title lang="sv">Nanny</title>
+		<sub-title lang="sv">The Fifth Wheel</sub-title>
+		<desc lang="sv">Fran blir rosenrasande när hon får syn på Maxwell och en fotomodell hånglandes i vardagsrummet. Dr Miller säger att hennes ilska beror på att hon tänker på Maxwell som sin man och inte som sin arbetsgivare. När Fran senare ser Dr Miller peta sig själv i näsan vet hon inte om hon kommer att kunna ta hans råd på allvar i fortsättningen...</desc>
+		<credits>
+			<director>Dorothy Lyman</director>
+			<actor role="Fran Fine">Fran Drescher</actor>
+			<actor role="Maxwell Sheffield">Charles Shaughnessy</actor>
+			<actor role="Niles">Daniel Davis</actor>
+			<actor role="Chastity Claire Babcock">Lauren Lane</actor>
+			<actor role="Maggie Sheffield">Nicholle Tom</actor>
+		</credits>
+		<date>1997</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/2352/season/4/episode/14]]></url>
+		<episode-num system="xmltv_ns">3 . 13/26 .</episode-num>
+		<episode-num system="onscreen">Episode 14 of 26 season 4</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103063000 +0100" stop="20171103070000 +0100" channel="tv3.se">
+		<title lang="sv">Neighbours</title>
+		<desc lang="sv">Australiensisk såpopera där vi får följa livet och relationerna hos invånarna på Ramsay Street i Erinsborough.</desc>
+		<category lang="en">series</category>
+		<category lang="en">Drama</category>
+		<episode-num system="xmltv_ns">. 222/240 .</episode-num>
+		<episode-num system="onscreen">Episode 223 of 240</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103070000 +0100" stop="20171103090000 +0100" channel="tv3.se">
+		<title lang="sv">Aftonbladet morgon</title>
+		<desc lang="sv">Aftonbladet Morgon är Sveriges rappaste nyhetsprogram som kastar dig direkt in i nyhetsflödet. Med Aftonbladet Morgon hänger du med i det senaste när det gäller nyheter, sport, nöje och viralt. Självklart sänder vi live vid stora nyhetshändelser. Våra programledare är Maria Bjaring, Claes Åkeson och Karin Magnusson. Henrik Torehammar och Amie Bramme Sey sidkickar.</desc>
+		<date>2016</date>
+		<category lang="en">tvshow</category>
+		<category lang="en">News</category>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103090000 +0100" stop="20171103095500 +0100" channel="tv3.se">
+		<title lang="sv">Masterchef USA</title>
+		<sub-title lang="sv">Top 6 Compete (1)</sub-title>
+		<desc lang="sv">De återstående kockarna arbetar hårt i ytterligare en utmaning, och de utröstade deltagarna kommer tillbaka och kämpar för att få en andra chans i tävlingen.</desc>
+		<credits>
+			<actor role="Himself - Judge">Gordon Ramsay</actor>
+			<actor role="Himself - Judge">Graham Elliot</actor>
+			<actor role="Himself - Judge">Joe Bastianich</actor>
+		</credits>
+		<date>2012</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/40290/season/3/episode/14]]></url>
+		<episode-num system="xmltv_ns">2 . 13/20 .</episode-num>
+		<episode-num system="onscreen">Episode 14 of 20 season 3</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>7.6 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103095500 +0100" stop="20171103105500 +0100" channel="tv3.se">
+		<title lang="sv">Svenska Hollywoodfruar</title>
+		<desc lang="sv">Isabel Adrian ordnar en babyshower och bjuder Maria Montazami med bästisen Mindy samt Margareta Svensson. Mindy är ett stort fan av Swedish House Mafia men inser inte först att det är Steve Angello hon pratar med i trädgården - när hon inser det börjar hon hoppa upp och ner. Gunilla Persson däremot är inte bjuden på babyshowern och ifrågasätter Isabels sätt. Seths vuxna barn gillar inte alls Margareta och har krävt ett dna-test för att ta reda på om barnet i magen verkligen är Seths. Provsvaret visar att det de facto är så men dottern Rachel är fortfarande inte övertygad. Margareta blir sårad över hennes hårda ord. Isabel Adrian bjuder in till baby shower och vill att allt ska vara skinande rent - även bilarna på uppfarten. Hon har anlitat en kille som ska komma och tvätta bilarna men han beter sig lite konstigt. Hennes tvivel späs bara på ytterligare när han frågar henne om hon har en speciell sorts gräs hemma. Och det har inget med gräsmattan att göra. Margareta känner pressen att matcha de andra Hollywoodfruarna utseendemässigt så hon anlitar en sminkös till babyshowern. Mindy får följa med Maria på festen och flippar ur totalt när hon får träffa Isabels man Steve från Swedish House Mafia. Maria Montazami har blivit inspirerad av sin bästis Mindys ljusa inredningsstil och har slängt ut alla sina tygblommor. Men de fräscha nya plantorna kommer med oväntat besök - ohyra. Därför åker för att shoppa nya växter och blir väldigt nöjd med sina inköp. - Blommor och blader gör en glader, säger Maria i programmet. Gunilla Persson är stagemom på heltid och jobbar hårt för sin dotters karriär. Nu ska Erika för första gången ställa upp i en skönhetstävling. Gunilla har en regel och det är att Erika inte får sminka sig. Avsnitt 6 av 10.</desc>
+		<date>2012</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">4 . 5 .</episode-num>
+		<episode-num system="onscreen">Episode 6 season 5</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103105500 +0100" stop="20171103115500 +0100" channel="tv3.se">
+		<title lang="sv">Lyxfällan</title>
+		<sub-title lang="sv">Mats och Agneta</sub-title>
+		<desc lang="sv">Trebarnsföräldrarna Mats och Agneta har kämpat i många år med sina skulder. De går 24 000 kronor back varje månad, men trots detta vill Mats inte skaffa ett riktigt heltidsjobb. I stället odlar han drömmen om ett "kreativt" yrke. Trots de uppenbara problemen blir Patrick Grimlund tagen på sängen när Agneta plötsligt utbrister att hon bestämt sig för skilsmässa. Hon orkar inte längre. Patrick och Magnus låter sig inte nedslås utan kavlar upp ärmarna och ger allt de har för att lösa ett av sina svåraste fall. Avsnitt 8 av 12.</desc>
+		<credits>
+			<actor>Patrick Grimlund</actor>
+			<actor>Mathias Andersson</actor>
+			<actor>Magnus Hedberg</actor>
+			<actor>Charlie Söderberg</actor>
+		</credits>
+		<date>2006</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=81847&seasonid=595721&id=4982326&lid=8]]></url>
+		<episode-num system="xmltv_ns">16 . 7 .</episode-num>
+		<episode-num system="onscreen">Episode 8 season 17</episode-num>
+		<episode-num system="thetvdb.com">series/81847</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103115500 +0100" stop="20171103122500 +0100" channel="tv3.se">
+		<title lang="sv">I djurens tjänst</title>
+		<desc lang="sv">I kvällens avsnitt av I djurens tjänst får vi träffa papegojan Charlie som levt lite för bra, och som nu har fått problem med levern. Den trebenta hunden Elsa har problem med sitt framben och kommer på besök hos kliniken, medan hunden Davidii inte alls vill bli undersökt för sina magproblem.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">0 . 13 .</episode-num>
+		<episode-num system="onscreen">Episode 14 season 1</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103122500 +0100" stop="20171103125500 +0100" channel="tv3.se">
+		<title lang="sv">I djurens tjänst</title>
+		<desc lang="sv">I kvällens avsnitt av I djurens tjänst får vi träffa hunden Blade som har svåra ryggsmärtor och den hyperaktiva illern Dexter. Dessutom blir det sorg på kliniken när vi möter den obotligt cancersjuka hunden Exi.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">0 . 14 .</episode-num>
+		<episode-num system="onscreen">Episode 15 season 1</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103125500 +0100" stop="20171103150000 +0100" channel="tv3.se">
+		<title lang="sv">Min tjej</title>
+		<desc lang="sv">Vada, som är hypokondriker, bor tillsammans med sin far, Harry, och sin senila farmor ovanför faderns begravningsfirma. På sommarlovet tillbringar Vada den mesta tiden med Thomas J, som följer henne på hennes återkommande besök hos läkaren. Vada berättar för fadern att hon vill gå en teckningskurs över sommaren, ledd av herr Bixler, som Vada är kär i. Men fadern vägrar att ge henne pengar till kursen... Text-TV s. 690.</desc>
+		<credits>
+			<director>Howard Zieff</director>
+			<actor role="Vada Sultenfuss">Anna Chlumsky</actor>
+			<actor role="Thomas J. Sennett">Macaulay Culkin</actor>
+			<actor role="Harry Sultenfuss">Dan Aykroyd</actor>
+			<actor role="Shelly DeVoto">Jamie Lee Curtis</actor>
+			<actor role="Phil Sultenfuss">Richard Masur</actor>
+			<actor role="Mr. Jake Bixler">Griffin Dunne</actor>
+			<actor role="Dr. Welty">Peter Michael Goetz</actor>
+			<actor role="Ronda">Lara Steinick</actor>
+			<actor role="Gramoo Sultenfuss">Anny Nelsen</actor>
+			<writer>Laurice Elehwany</writer>
+			<producer>Brian Grazer</producer>
+			<producer>Hannah Gold</producer>
+		</credits>
+		<date>1991</date>
+		<category lang="en">movie</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Drama</category>
+		<category lang="en">Family</category>
+		<url><![CDATA[http://www.themoviedb.org/movie/4032]]></url>
+		<episode-num system="themoviedb.org">movie/4032</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>7 / 10</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103150000 +0100" stop="20171103170000 +0100" channel="tv3.se">
+		<title lang="sv">Turbo</title>
+		<desc lang="sv">En högoktanig komedi i 3D om en snigel som vågar drömma stort - och snabbt. När han en dag, till sin försiktige brorsas förskräckelse, mirakulöst blir supersnabb så lägger Turbo in högsta växeln på sin dröm och ger sig ut på en helt galen resa för att uppnå det omöjliga: att få tävla mot världens bästa racerförare Guy Gagne. Turbo blir kompis med ett gäng gatusmarta sköna lirare och sätter sitt hjärta och skal på spel för att bevisa att ingen dröm är för stor, och ingen drömmare för liten...</desc>
+		<credits>
+			<director>David Soren</director>
+			<actor role="Turbo (voice)">Ryan Reynolds</actor>
+			<actor role="Chet (voice)">Paul Giamatti</actor>
+			<actor role="Tito (voice)">Michael Peña</actor>
+			<actor role="Whiplash (voice)">Samuel L. Jackson</actor>
+			<actor role="Angelo (voice)">Luis Guzmán</actor>
+			<actor role="Guy Gagné (voice)">Bill Hader</actor>
+			<actor role="Smoove Move (voice)">Snoop Dogg</actor>
+			<actor role="Burn (voice)">Maya Rudolph</actor>
+			<actor role="Skid Mark (voice)">Ben Schwartz</actor>
+			<actor role="Bobby (voice)">Richard Jenkins</actor>
+			<actor role="Kim-Ly (voice)">Ken Jeong</actor>
+			<actor role="Paz (voice)">Michelle Rodriguez</actor>
+			<writer>David Soren</writer>
+			<writer>Robert D. Siegel</writer>
+			<writer>Darren Lemke </writer>
+			<producer>Lisa Stewart</producer>
+		</credits>
+		<date>2013</date>
+		<category lang="en">movie</category>
+		<category lang="en">Animation</category>
+		<category lang="en">Family</category>
+		<url><![CDATA[http://www.themoviedb.org/movie/77950]]></url>
+		<episode-num system="themoviedb.org">movie/77950</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>6.1 / 10</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103170000 +0100" stop="20171103190000 +0100" channel="tv3.se">
+		<title lang="sv">Paddington (SNDF Dubed)</title>
+		<desc lang="sv">En film baserade på Michael Bonds älskade böcker. Det här är berättelsen om Paddington, en ung peruviansk björn som reser till London för att hitta ett jobb. Väl där börjar han känna sig vilsen och ensam, och han inser snart att storstadslivet inte alls var det han väntat sig, tills han möter den vänliga familjen Brown som ser lappen runt hans hals med texten "Vänligen se efter denna björn. Tack." De erbjuder honom en tillfällig bostad i sitt hem, och det verkar som om lyckan har vänt för denne märklige björn - tills en taxidermist får upp ögonen för honom.</desc>
+		<credits>
+			<director>Paul King</director>
+			<actor role="Millicent">Nicole Kidman</actor>
+			<actor role="Mr. Curry">Peter Capaldi</actor>
+			<actor role="Paddington (voice)">Ben Whishaw</actor>
+			<actor role="Uncle Pastuzo (voice)">Michael Gambon</actor>
+			<actor role="Aunt Lucy (voice)">Imelda Staunton</actor>
+			<actor role="Mrs. Mary Brown">Sally Hawkins</actor>
+			<actor role="Mrs. Bird">Julie Walters</actor>
+			<actor role="Mr. Brown">Hugh Bonneville</actor>
+			<actor role="Mr. Gruber">Jim Broadbent</actor>
+			<actor role="Taxi Driver">Matt Lucas</actor>
+			<actor role="Andre the Thief">Matt King</actor>
+			<actor role="Jonathan Brown">Samuel Joslin</actor>
+			<actor role="Servant">Daniel Westwood</actor>
+			<actor role="Policeman">Dominic Coleman</actor>
+			<actor role="Security Guard">Simon Farnaby</actor>
+			<actor role="Judy Brown">Madeleine Harris</actor>
+			<actor role="Montgomery Clyde">Tim Downie</actor>
+			<actor role="Agatha Clyde">Madeleine Worrall</actor>
+			<actor role="Young Millicent">Lottie Steer</actor>
+			<actor role="Head Geographer">Geoffrey Palmer</actor>
+			<actor role="Stenographer">Theresa Watson</actor>
+			<actor role="Kindly Gentleman">Michael Bond</actor>
+			<actor role="Tony">Jude Wright</actor>
+			<actor role="Grant">Kayvan Novak</actor>
+			<actor role="Underground Ticket Inspector">Eddie Nestor</actor>
+			<actor role="Dog Owner">Iain Mitchell</actor>
+			<actor role="Master Gruber">Jonathan Derbyshire</actor>
+			<actor role="Master Gruber's Aunt">Mary Roscoe</actor>
+			<actor role="Class Teacher">Llewella Gideon</actor>
+			<actor role="Pupil">Tarik Blake</actor>
+			<actor role="Trader">Ross Boatman</actor>
+			<actor role="Paddington Station Security Guard">Steve Oram</actor>
+			<actor role="Paddington Station Security Guard">Tom Meeten</actor>
+			<actor role="Geographers' Guild Receptionist">Alice Lowe</actor>
+			<actor role="Geographer (Present Day)">Will Smith</actor>
+			<actor role="Geographer (Present Day)">Toby Williams</actor>
+			<actor role="Geographer (Present Day)">Catherine Shepherd</actor>
+			<actor role="Buckingham Palace Sentry">Javier Marzan</actor>
+			<actor role="Morgan Clyde">Sean Bridgeman</actor>
+			<actor role="Desk Sergeant">Justin Edwards</actor>
+			<actor role="Marjorie Clyde">Cleo Sylvestre</actor>
+			<actor role="Second Geographer">Gus Brown</actor>
+			<actor role="Third Geographer">Rufus Jones</actor>
+			<actor role="Fourth Geographer">Kenneth Hadley</actor>
+			<actor role="Fifth Geographer">David McKail</actor>
+			<actor role="Sixth Geographer">James Bachman</actor>
+			<actor role="Natural History Museum Security Guard">Steve Edge</actor>
+			<actor role="Judge">Barry Ashton</actor>
+			<actor role="Petting Zoo Keeper">Hamish MacColl</actor>
+			<actor role="Additional Voices (voice) (uncredited)">Lauren Barrand</actor>
+			<actor role="Commuter #1 (uncredited)">Alexander Bracq</actor>
+			<actor role="Commuter #2 (uncredited)">Ancuta Breaban</actor>
+			<actor role="Security Guard (uncredited)">Asim Chaudhry</actor>
+			<actor role="Police Officer (uncredited)">Bern Collaco</actor>
+			<actor role="Commuter #3 (uncredited)">Faith Elizabeth</actor>
+			<actor role="Station Blocker (uncredited)">Nigel Genis</actor>
+			<actor role="Hungarian immigrant (uncredited)">Kornelia Horvath</actor>
+			<actor role="Immigrant (uncredited)">Denis Khoroshko</actor>
+			<actor role="Portobello Market shopper (uncredited)">Shaz Lancaster</actor>
+			<actor role="Trader (uncredited)">Jim Lawrence</actor>
+			<actor role="Commuter #4 (uncredited)">Barrie Martin</actor>
+			<actor role="Commuter #5 (uncredited)">Stuart Matthews</actor>
+			<actor role="Docker (uncredited)">Matthew David McCarthy</actor>
+			<actor role="Angel (uncredited)">George Newton</actor>
+			<actor role="Market Stall Owner (uncredited)">Jack Philips</actor>
+			<actor role="Commuter #7 (uncredited)">Fabio Vollono</actor>
+			<actor role="Commuter #8 (uncredited)">Julie Vollono</actor>
+			<actor role="Additional Voices (voice) (uncredited)">Vic Waghorn</actor>
+			<writer>Paul King</writer>
+			<producer>David Heyman</producer>
+		</credits>
+		<date>2014</date>
+		<category lang="en">movie</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Family</category>
+		<url><![CDATA[http://www.themoviedb.org/movie/116149]]></url>
+		<episode-num system="themoviedb.org">movie/116149</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>7 / 10</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103190000 +0100" stop="20171103200000 +0100" channel="tv3.se">
+		<title lang="sv">Ensam mamma söker</title>
+		<desc lang="sv">I Ensam mamma söker ska de tre härliga singelmammorna Jenny, Johanna och Beatrice träffa mannen i sitt liv. Under en sommar av värme och spirande romans kommer mammorna att dejta och lära känna sina beundrare innan det är dags för det slutgiltiga valet. En kille blir ensam kvar och har vunnit mammans hjärta. Programmet leds av den folkkära artisten Jessica Andersson.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">8 . 2 .</episode-num>
+		<episode-num system="onscreen">Episode 3 season 9</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103200000 +0100" stop="20171103203000 +0100" channel="tv3.se">
+		<title lang="sv">Kids do the craziest things</title>
+		<desc lang="sv">I "Kids do the craziest things" får vi se barn runt hela världen göra de mest galna, komiska och löjliga sakerna.</desc>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Entertainment</category>
+		<episode-num system="xmltv_ns">0 . 50/78 .</episode-num>
+		<episode-num system="onscreen">Episode 51 of 78 season 1</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103203000 +0100" stop="20171103210000 +0100" channel="tv3.se">
+		<title lang="sv">How I Met Your Mother</title>
+		<sub-title lang="sv">Robots Versus Wrestlers</sub-title>
+		<desc lang="sv">När Ted våldgästar ett överklasskalas får han möjligheten att visa vilket praktpretto han kan vara.</desc>
+		<credits>
+			<actor role="Ted Mosby">Josh Radnor</actor>
+			<actor role="Marshall Eriksen">Jason Segel</actor>
+			<actor role="Robin Scherbatsky">Cobie Smulders</actor>
+			<actor role="Barney Stinson">Neil Patrick Harris</actor>
+			<actor role="Lily Aldrin">Alyson Hannigan</actor>
+			<actor>Ed Brigadier</actor>
+			<actor>Michael York</actor>
+			<actor>Peter Bogdanovich</actor>
+			<actor>Michele Boyd</actor>
+			<actor>Darby Stanchfield</actor>
+			<actor>Arianna Huffington</actor>
+			<writer>Jamie Rhonheimer</writer>
+		</credits>
+		<date>2010</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1100/season/5/episode/22]]></url>
+		<episode-num system="xmltv_ns">4 . 21/24 .</episode-num>
+		<episode-num system="onscreen">Episode 22 of 24 season 5</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103210000 +0100" stop="20171103213000 +0100" channel="tv3.se">
+		<title lang="sv">How I Met Your Mother</title>
+		<sub-title lang="sv">The Wedding Bride</sub-title>
+		<desc lang="sv">Ted har bjudit ut en tjej på bio. Men filmen de ser visar sig bygga på hans förhållande med Stella.</desc>
+		<credits>
+			<director>Pamela Fryman</director>
+			<actor role="Ted Mosby">Josh Radnor</actor>
+			<actor role="Marshall Eriksen">Jason Segel</actor>
+			<actor role="Robin Scherbatsky">Cobie Smulders</actor>
+			<actor role="Barney Stinson">Neil Patrick Harris</actor>
+			<actor role="Lily Aldrin">Alyson Hannigan</actor>
+			<actor>Jason Lewis</actor>
+			<actor role="Royce">Judy Greer</actor>
+			<actor>Malin Åkerman</actor>
+			<actor>Chris Kattan</actor>
+			<writer>Stephen Lloyd</writer>
+		</credits>
+		<date>2010</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1100/season/5/episode/23]]></url>
+		<episode-num system="xmltv_ns">4 . 22/24 .</episode-num>
+		<episode-num system="onscreen">Episode 23 of 24 season 5</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103213000 +0100" stop="20171103233000 +0100" channel="tv3.se">
+		<title lang="sv">Men in Black</title>
+		<desc lang="sv">Den topphemliga specialstyrkan MiB har i uppdrag att övervaka de tusentals fredliga utomjordingar som lever i USA. Men en dag landar ett flygande tefat med en främmande varelse, som tar över en bondes kropp och specialstyrkan får det svåra uppdraget att leta reda på och oskadliggöra den ondskefulle utomjordingen. test</desc>
+		<credits>
+			<director>Barry Sonnenfeld</director>
+			<actor role="Agent K">Tommy Lee Jones</actor>
+			<actor role="James Edwards / Agent J">Will Smith</actor>
+			<actor role="Dr. Laurel Weaver / Agent L">Linda Fiorentino</actor>
+			<actor role="Edgar / The Bug">Vincent D'Onofrio</actor>
+			<actor role="Chief Zed">Rip Torn</actor>
+			<actor role="Jack Jeebs">Tony Shalhoub</actor>
+			<actor role="Gentle Rosenburg the Arquillian Jeweler">Mike Nussbaum</actor>
+			<actor role="Van driver">Jon Gries</actor>
+			<actor role="Jose">Sergio Calderón</actor>
+			<actor role="Arquillian">Carel Struycken</actor>
+			<actor role="INS agent Janus">Fredric Lehne</actor>
+			<actor role="Agent D">Richard Hamilton</actor>
+			<actor role="2nd Lt. Jake Jensen">Kent Faulcon</actor>
+			<actor role="Beatrice">Siobhan Fallon</actor>
+			<actor role="Mikey">John Alexander</actor>
+			<actor role="Perp">Keith Campbell</actor>
+			<actor role="Alien on TV Monitor (uncredited)">Sylvester Stallone</actor>
+			<actor role="Alien on TV Monitor (uncredited)">Danny DeVito</actor>
+			<writer>Ed Solomon</writer>
+			<producer>Walter F. Parkes</producer>
+			<producer>Laurie MacDonald</producer>
+		</credits>
+		<date>1997</date>
+		<category lang="en">movie</category>
+		<category lang="en">Action</category>
+		<category lang="en">Adventure</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Sci-Fi</category>
+		<url><![CDATA[http://www.themoviedb.org/movie/607]]></url>
+		<episode-num system="themoviedb.org">movie/607</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<star-rating>
+			<value>6.9 / 10</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103233000 +0100" stop="20171104014500 +0100" channel="tv3.se">
+		<title lang="sv">The Drop</title>
+		<desc lang="sv">Bob Saginowski (Tom Hardy) jobbar i baren hos sin kusin Marv (James Gandolfini). De faktiska ägarna är lokala gangsters, och baren används egentligen för att utbyta svarta pengar och olagliga varor. En kväll när Bob är på väg hem hittar han en misshandlad pitbull i en soptunna. Medan han tröstar det stackars djuret träffar han Nadia (Noomi Rapace). Hon och Bob börjar snart dejta. Men situationen tar en förkrossande vändning när hennes psykotiska ex, och någon som utger sig för att vara hundens ägare, dyker upp.</desc>
+		<credits>
+			<director>Michaël R. Roskam</director>
+			<actor role="Bob">Tom Hardy</actor>
+			<actor role="Nadia">Noomi Rapace</actor>
+			<actor role="Cousin Marv">James Gandolfini</actor>
+			<actor role="Eric Deeds">Matthias Schoenaerts</actor>
+			<actor role="Detective Torres">John Ortiz</actor>
+			<actor role="Detective Romsey">Elizabeth Rodriguez</actor>
+			<actor role="Chovka">Michael Aronov</actor>
+			<actor role="Andre">Morgan Spector</actor>
+			<actor role="Rardy">Michael Esper</actor>
+			<actor role="Father Regan">Ross Bickell</actor>
+			<actor role="Fitz">James Frecheville</actor>
+			<actor role="Briele">Tobias Segal</actor>
+			<actor role="Millie">Patricia Squire</actor>
+			<actor role="Dottie">Ann Dowd</actor>
+			<actor role="Jimmy">Chris Sullivan</actor>
+			<actor role="Paul">Lucas Caleb Rooney</actor>
+			<actor role="Stevie">Jeremy Bobb</actor>
+			<actor role="Sully">James Colby</actor>
+			<actor role="Donny">Mike Houston</actor>
+			<actor role="Sean">Michael O'Hara</actor>
+			<actor role="Car Guy">Scott Johnsen</actor>
+			<actor role="Angry Patron">David Brown</actor>
+			<writer>Dennis Lehane</writer>
+			<producer>Peter Chernin</producer>
+			<producer>Dylan Clark</producer>
+			<producer>Mike Larocca</producer>
+		</credits>
+		<date>2014</date>
+		<category lang="en">movie</category>
+		<category lang="en">Crime</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[http://www.themoviedb.org/movie/154400]]></url>
+		<episode-num system="themoviedb.org">movie/154400</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<star-rating>
+			<value>6.7 / 10</value>
+		</star-rating>
+	</programme>
+</tv>

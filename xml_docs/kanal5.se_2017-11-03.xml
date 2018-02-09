@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv [
+<!ELEMENT tv (channel*, programme*)>
+<!ATTLIST tv date   CDATA #IMPLIED source-info-url     CDATA #IMPLIED source-info-name    CDATA #IMPLIED        source-data-url     CDATA #IMPLIED        generator-info-name CDATA #IMPLIED          generator-info-url  CDATA #IMPLIED >
+<!ELEMENT channel (display-name+, icon*, url*) >
+<!ATTLIST channel id CDATA #REQUIRED >
+<!ELEMENT display-name (#PCDATA)>
+<!ATTLIST display-name lang CDATA #IMPLIED>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT programme (title+, sub-title*, desc*, credits?, date?,
+                     category*, keyword*, language?, orig-language?,
+                     length?, icon*, url*, country*, episode-num*,
+                     video?, audio?, previously-shown?, premiere?,
+                     last-chance?, new?, subtitles*, rating*,
+                     star-rating*, review* )>
+<!ATTLIST programme start     CDATA #REQUIRED
+                    stop      CDATA #IMPLIED
+                    pdc-start CDATA #IMPLIED
+                    vps-start CDATA #IMPLIED
+                    showview  CDATA #IMPLIED
+                    videoplus CDATA #IMPLIED
+                    channel   CDATA #REQUIRED
+                    clumpidx  CDATA "0/1" >
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title lang CDATA #IMPLIED>
+<!ELEMENT sub-title (#PCDATA)>
+<!ATTLIST sub-title lang CDATA #IMPLIED>
+<!ELEMENT desc (#PCDATA)>
+<!ATTLIST desc lang CDATA #IMPLIED>
+<!ELEMENT credits (director*, actor*, writer*, adapter*, producer*,
+                   composer*, editor*, presenter*, commentator*, 
+                   guest* )>
+<!ELEMENT director    (#PCDATA)>
+<!ELEMENT actor       (#PCDATA)>
+<!ATTLIST actor role  CDATA #IMPLIED>
+<!ELEMENT writer      (#PCDATA)>
+<!ELEMENT adapter     (#PCDATA)>
+<!ELEMENT producer    (#PCDATA)>
+<!ELEMENT composer    (#PCDATA)>
+<!ELEMENT editor      (#PCDATA)>
+<!ELEMENT presenter   (#PCDATA)>
+<!ELEMENT commentator (#PCDATA)>
+<!ELEMENT guest       (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ATTLIST category lang CDATA #IMPLIED>
+<!ELEMENT keyword (#PCDATA)>
+<!ATTLIST keyword lang CDATA #IMPLIED>
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language lang CDATA #IMPLIED>
+<!ELEMENT orig-language (#PCDATA)>
+<!ATTLIST orig-language lang CDATA #IMPLIED>
+<!ELEMENT length (#PCDATA)>
+<!ATTLIST length units (seconds | minutes | hours) #REQUIRED>
+<!ELEMENT icon EMPTY>
+<!ATTLIST icon src         CDATA #REQUIRED
+               width       CDATA #IMPLIED
+               height      CDATA #IMPLIED> 
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ATTLIST country lang CDATA #IMPLIED>
+<!ELEMENT episode-num (#PCDATA)>
+<!ATTLIST episode-num system CDATA "onscreen">
+<!ELEMENT video (present?, colour?, aspect?, quality?)>
+<!ELEMENT present (#PCDATA)>
+<!ELEMENT colour (#PCDATA)>
+<!ELEMENT aspect (#PCDATA)>
+<!ELEMENT quality (#PCDATA)>
+<!ELEMENT audio (present?, stereo?)>
+<!ELEMENT stereo (#PCDATA)>
+<!ELEMENT previously-shown EMPTY>
+<!ATTLIST previously-shown start   CDATA #IMPLIED
+                           channel CDATA #IMPLIED >
+<!ELEMENT premiere (#PCDATA)>
+<!ATTLIST premiere lang CDATA #IMPLIED>
+<!ELEMENT last-chance (#PCDATA)>
+<!ATTLIST last-chance lang CDATA #IMPLIED>
+<!ELEMENT new EMPTY>
+<!ELEMENT subtitles (language?)>
+<!ATTLIST subtitles type (teletext | onscreen | deaf-signed) #IMPLIED>
+<!ELEMENT rating (value, icon*)>
+<!ATTLIST rating system CDATA #IMPLIED>
+<!ELEMENT star-rating (value, icon*)>
+<!ATTLIST star-rating system CDATA #IMPLIED>
+<!ELEMENT review (#PCDATA)>
+<!ATTLIST review type     (text | url) #REQUIRED
+                 source   CDATA        #IMPLIED
+                 reviewer CDATA        #IMPLIED
+                 lang     CDATA        #IMPLIED>
+]>
+<tv generator-info-name="Taiga XMLTV" generator-info-url="http://xmltv.se">
+	<programme start="20171103022000 +0100" stop="20171103031500 +0100" channel="kanal5.se">
+		<title lang="sv">Tunnelbanan</title>
+		<sub-title lang="sv">En äldre dam har rymt</sub-title>
+		<desc lang="sv">Ordningsvakterna Tedde och Fredrik tar upp jakten på en aggressiv man som hotat att stjäla en taxibil och köra över folk. Vid Slussen försöker Danne och Amin avvisa två killar. Reine och Tom letar efter en äldre dam som rymt från Kalix.</desc>
+		<date>2012</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=255533&seasonid=572600&id=4798135&lid=8]]></url>
+		<episode-num system="xmltv_ns">2 . 5 .</episode-num>
+		<episode-num system="onscreen">Episode 6 season 3</episode-num>
+		<episode-num system="thetvdb.com">series/255533</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103031500 +0100" stop="20171103045000 +0100" channel="kanal5.se">
+		<title lang="sv">American Ninja Warrior</title>
+		<sub-title lang="sv">Miami Qualifying</sub-title>
+		<desc lang="sv">Vi följer kvalen och regionsfinalerna när de duktiga atleterna gallras från de riktigt duktiga. Till sist är bara de som kunnat hantera banan kvar i den stora finalen i Las Vegas. Bland de som ger sig på banan finns wrestlare, gymnaster och olympier.</desc>
+		<credits>
+			<actor role="Reporter">Kristine Leahy</actor>
+			<actor role="Reporter">Kristen Wiig</actor>
+			<actor role="Reporter">Jenn Brown</actor>
+			<actor role="Host">Jonny Moseley</actor>
+			<actor role="Host">Jimmy Smith</actor>
+			<actor role="Host">Akbar Gbaja-Biamila</actor>
+			<actor role="Host">Mike O'Malley</actor>
+			<actor role="Reporter">Angela Sun</actor>
+			<actor role="Host">Blair Herter</actor>
+			<actor role="Host">Alison Haislip</actor>
+			<actor role="Host">Matt Iseman</actor>
+			<presenter>Matt Iseman</presenter>
+			<presenter>Jenn Brown</presenter>
+			<presenter>Akbar Gbaja-Biamila</presenter>
+		</credits>
+		<date>2009</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<category lang="en">Special Interest</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=212411&seasonid=527880&id=4903193&lid=8]]></url>
+		<episode-num system="xmltv_ns">5 . 3 .</episode-num>
+		<episode-num system="onscreen">Episode 4 season 6</episode-num>
+		<episode-num system="thetvdb.com">series/212411</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103045000 +0100" stop="20171103053500 +0100" channel="kanal5.se">
+		<title lang="sv">Ellen DeGeneres Show</title>
+		<desc lang="sv">En blandning av kändisintervjuer, musikframträdanden och humor. Ellen dansar och delar med sig av sitt eget liv och vad hon alltid velat uppnå.</desc>
+		<credits>
+			<presenter>Ellen DeGeneres</presenter>
+			<guest>Jamie Dornan</guest>
+		</credits>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Talkshow</category>
+		<episode-num system="xmltv_ns">13 . 92 .</episode-num>
+		<episode-num system="onscreen">Episode 93 season 14</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103060000 +0100" stop="20171103064500 +0100" channel="kanal5.se">
+		<title lang="sv">Gilmore Girls</title>
+		<sub-title lang="sv">A Vineyard Valentine</sub-title>
+		<desc lang="sv">Alla Hjärtans Dag närmar sig och Rory och Logan bjuder Lorelai och Luke till Logans föräldrars sommarställe, men helgen slutar illa när Logans pappa dyker upp.</desc>
+		<credits>
+			<director>Daniel Palladino</director>
+			<director>Matt Czuchry</director>
+			<director>Lauren Graham</director>
+			<director>Alexis Bledel</director>
+			<director>Scott Patterson</director>
+			<actor role="Luke Danes">Scott Patterson</actor>
+			<actor role="Lorelai Gilmore">Lauren Graham</actor>
+			<actor role="Kirk Gleason">Sean Gunn</actor>
+			<actor role="Jason Stiles">Chris Eigeman</actor>
+			<actor role="Sookie St. James">Melissa McCarthy</actor>
+			<actor role="Michel Gerard">Yanic Truesdale</actor>
+			<actor role="Richard Gilmore">Edward Herrmann</actor>
+			<actor role="Paris Geller">Liza Weil</actor>
+			<actor role="Lane Kim">Keiko Agena</actor>
+			<actor role="Emily Gilmore">Kelly Bishop</actor>
+			<actor role="Babette Dell">Sally Struthers</actor>
+			<actor role="Logan Huntzberger">Matt Czuchry</actor>
+			<actor role="Miss Patty">Liz Torres</actor>
+			<actor role="Dean Forester">Jared Padalecki</actor>
+			<actor role="Christopher Hayden">David Sutcliffe</actor>
+			<actor role="Jackson Matthew Belleville">Jackson Douglas</actor>
+			<actor role="Jess Mariano">Milo Ventimiglia</actor>
+			<actor role="Rory Gilmore">Alexis Bledel</actor>
+			<actor role="Max Medina">Scott Cohen</actor>
+			<actor>Gregg Henry</actor>
+			<writer>Daniel Palladino</writer>
+		</credits>
+		<date>2000</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=76568&seasonid=10759&id=304960&lid=8]]></url>
+		<episode-num system="xmltv_ns">5 . 14 .</episode-num>
+		<episode-num system="onscreen">Episode 15 season 6</episode-num>
+		<episode-num system="thetvdb.com">series/76568</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+		<star-rating>
+			<value>6.5 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103064500 +0100" stop="20171103074000 +0100" channel="kanal5.se">
+		<title lang="sv">Jane the Virgin</title>
+		<sub-title lang="sv">Chapter Thirteen</sub-title>
+		<desc lang="sv">Ett medicinskt problem kan leda till att Jane missar sin examen. Michael tror sig ha identifierat Sin Rostro.</desc>
+		<credits>
+			<director>Howard Deutch</director>
+			<actor role="Petra Solano">Yael Grobglas</actor>
+			<actor role="Rose Solano">Bridget Regan</actor>
+			<actor role="Alba Villanueva">Ivonne Coll</actor>
+			<actor role="Rogelio de la Vega">Jaime Camil</actor>
+			<actor role="Anezka">Yael Grobglas</actor>
+			<actor role="Rafael Solano">Justin Baldoni</actor>
+			<actor role="Xiomara Villanueva">Andrea Navedo</actor>
+			<actor role="Michael Cordero Jr.">Brett Dier</actor>
+			<actor role="Susanna Barnett">Megan Ketch</actor>
+			<actor role="Narrator">Anthony Mendez</actor>
+			<actor role="Jane Villanueva">Gina Rodriguez</actor>
+			<writer>Josh Reims</writer>
+		</credits>
+		<date>2014</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Drama</category>
+		<category lang="en">Soap</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=281621&seasonid=585759&id=5109700&lid=8]]></url>
+		<episode-num system="xmltv_ns">0 . 12 .</episode-num>
+		<episode-num system="onscreen">Episode 13 season 1</episode-num>
+		<episode-num system="thetvdb.com">series/281621</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+		<star-rating>
+			<value>7.3 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103074000 +0100" stop="20171103080500 +0100" channel="kanal5.se">
+		<title lang="sv">Dr Ken</title>
+		<sub-title lang="sv">Ken Helps Pat</sub-title>
+		<desc lang="sv">Pat vill att alla ska arbeta även på lördagar så arbetarna på kontoret vill att Ken pratar med Pat och sätter stopp för det. Samtidigt får Dave ett nytt smeknamn i skolan som väcker dåliga minnen hos Allison.</desc>
+		<credits>
+			<director>Andy Cadiff</director>
+			<actor role="Dr. Julie Dobbs">Kate Simses</actor>
+			<actor role="Dr. Ken">Ken Jeong</actor>
+			<actor role="Allison">Suzy Nakamura</actor>
+			<actor role="Dave">Albert Tsai</actor>
+			<actor role="Clark">Jonathan Slavin</actor>
+			<actor role="Molly">Krista Marie Yu</actor>
+			<actor role="Pat">Dave Foley</actor>
+			<actor role="Damona">Tisha Campbell-Martin</actor>
+			<actor>Marques Ray</actor>
+			<actor>Victor Amayo</actor>
+			<actor>Ethan Drake Davis</actor>
+			<writer>Daniel Libman</writer>
+			<writer>Matthew Libman</writer>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=295557&seasonid=625713&id=5315742&lid=8]]></url>
+		<episode-num system="xmltv_ns">0 . 2 .</episode-num>
+		<episode-num system="onscreen">Episode 3 season 1</episode-num>
+		<episode-num system="thetvdb.com">series/295557</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103080500 +0100" stop="20171103090500 +0100" channel="kanal5.se">
+		<title lang="sv">Real Housewives of New York</title>
+		<sub-title lang="sv">Birthday in the Berks</sub-title>
+		<desc lang="sv">Här möter vi några förmögna kvinnor i New Yorks high society som pendlar mellan New York och sommarstället i lyxiga Hamptons. De ägnar det mesta av sin tid åt intriger, modevisningar, botoxbehandlingar, välgörenhetsgalor och barnens privatskolor.</desc>
+		<date>2008</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=84669&seasonid=615176&id=5236797&lid=7]]></url>
+		<episode-num system="xmltv_ns">6 . 8 .</episode-num>
+		<episode-num system="onscreen">Episode 9 season 7</episode-num>
+		<episode-num system="thetvdb.com">series/84669</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103090500 +0100" stop="20171103100500 +0100" channel="kanal5.se">
+		<title lang="sv">The Little Couple</title>
+		<sub-title lang="sv">Have A Little Faith</sub-title>
+		<desc lang="sv">Zoey ska snart fylla 4, och Jen bestämmer sig för att temat för kalaset ska vara Tebjudning för en prinsessa, men Bill oroar sig för att planerna är lite väl storslagna.</desc>
+		<credits>
+			<actor role="Bill Klein">Bill Klein</actor>
+			<actor role="Zoey Klein">Zoey Klein</actor>
+			<actor role="Will Klein">Will Klein</actor>
+			<actor role="Jen Arnold">Jen Arnold</actor>
+		</credits>
+		<date>2009</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=98481&seasonid=604079&id=5052652&lid=8]]></url>
+		<episode-num system="xmltv_ns">7 . 0 .</episode-num>
+		<episode-num system="onscreen">Episode 1 season 8</episode-num>
+		<episode-num system="thetvdb.com">series/98481</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103100500 +0100" stop="20171103110500 +0100" channel="kanal5.se">
+		<title lang="sv">Sofias änglar</title>
+		<sub-title lang="sv">Avsnitt 7: Conny får hjälp med sin sjukdom</sub-title>
+		<desc lang="sv">Conny är sjukskriven och bor med sin dotter i totalt kaos. Johnnie och Mattias tar tag i alla halvfärdiga projekt och ser till att Conny och Emilia får ett fungerande hem. Sofia träffar en av Sveriges främsta läkare på de symptom Conny har.</desc>
+		<credits>
+			<presenter>Sofia Wistam</presenter>
+			<presenter>Johnnie Krigström</presenter>
+			<presenter>Mattias Särnholm</presenter>
+		</credits>
+		<date>2011</date>
+		<category lang="en">series</category>
+		<category lang="en">Home</category>
+		<category lang="en">Nature</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=225481&seasonid=406131&id=3552331&lid=8]]></url>
+		<episode-num system="xmltv_ns">0 . 6 .</episode-num>
+		<episode-num system="onscreen">Episode 7 season 1</episode-num>
+		<episode-num system="thetvdb.com">series/225481</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103110500 +0100" stop="20171103120500 +0100" channel="kanal5.se">
+		<title lang="sv">Grey's Anatomy</title>
+		<sub-title lang="sv">Can't Fight Biology</sub-title>
+		<desc lang="sv">Meredith och Derek får mycket oroväckande nyheter när de besöker förlossningsläkaren. En bilolycka orsakar flera trauman och Jackson försöker använda sina fysiska attribut för att komma före i operationssalen.</desc>
+		<credits>
+			<director>Edward Ornelas</director>
+			<actor role="Heather Brooks">Tina Majorino</actor>
+			<actor role="Lucy Fields">Rachael Taylor</actor>
+			<actor role="Alex Karev">Justin Chambers</actor>
+			<actor role="Leah Murphy">Tessa Ferrer</actor>
+			<actor role="Adele Webber">Loretta Devine</actor>
+			<actor role="Nicole Herman">Geena Davis</actor>
+			<actor role="Catherine Avery">Debbie Allen</actor>
+			<actor role="Erica Hahn">Brooke Smith</actor>
+			<actor role="Addison Forbes Montgomery">Kate Walsh</actor>
+			<actor role="Maggie Pierce">Kelly McCreary</actor>
+			<actor role="Preston Burke">Isaiah Washington</actor>
+			<actor role="Derek Shepherd">Patrick Dempsey</actor>
+			<actor role="Teddy Altman">Kim Raver</actor>
+			<actor role="Isaac Cross">Joe Adler</actor>
+			<actor role="Miranda Bailey">Chandra Wilson</actor>
+			<actor role="George O'Malley">T.R. Knight</actor>
+			<actor role="April Kepner">Sarah Drew</actor>
+			<actor role="Richard Webber">James Pickens Jr.</actor>
+			<actor role="Ben Warren">Jason George</actor>
+			<actor role="Stephanie Edwards">Jerrika Hinton</actor>
+			<actor role="Jo Wilson">Camilla Luddington</actor>
+			<actor role="Penelope 'Penny' Blake">Samantha Sloyan</actor>
+			<actor role="Andrew DeLuca">Giacomo Gianniotti</actor>
+			<actor role="Arizona Robbins">Jessica Capshaw</actor>
+			<actor role="Owen Hunt">Kevin McKidd</actor>
+			<actor role="Mark Sloan">Eric Dane</actor>
+			<actor role="Isobel 'Izzie' Stevens">Katherine Heigl</actor>
+			<actor role="Alexandra 'Lexie' Grey">Chyler Leigh</actor>
+			<actor role="Calliope 'Callie' Torres">Sara Ramirez</actor>
+			<actor role="Cristina Yang">Sandra Oh</actor>
+			<actor role="Shane Ross">Gaius Charles</actor>
+			<actor role="Nathan Riggs">Martin Henderson</actor>
+			<actor role="Sadie Harris">Melissa George</actor>
+			<actor role="Henry Burton">Scott Foley</actor>
+			<actor role="Jackson Avery">Jesse Williams</actor>
+			<actor role="Meredith Grey">Ellen Pompeo</actor>
+			<actor role="Amelia Shepherd">Caterina Scorsone</actor>
+			<writer>Peter Nowalk</writer>
+		</credits>
+		<date>2005</date>
+		<category lang="en">series</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=73762&seasonid=268581&id=2903371&lid=8]]></url>
+		<episode-num system="xmltv_ns">6 . 3 .</episode-num>
+		<episode-num system="onscreen">Episode 4 season 7</episode-num>
+		<episode-num system="thetvdb.com">series/73762</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+		<star-rating>
+			<value>6.4 / 9</value>
+		</star-rating>
+	</programme>
+	<programme start="20171103120500 +0100" stop="20171103130000 +0100" channel="kanal5.se">
+		<title lang="sv">Ellen DeGeneres Show</title>
+		<desc lang="sv">En blandning av kändisintervjuer, musikframträdanden och humor. Ellen dansar och delar med sig av sitt eget liv och vad hon alltid velat uppnå.</desc>
+		<credits>
+			<presenter>Ellen DeGeneres</presenter>
+			<guest>Wanda Sykes</guest>
+		</credits>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Talkshow</category>
+		<episode-num system="xmltv_ns">13 . 93 .</episode-num>
+		<episode-num system="onscreen">Episode 94 season 14</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103130000 +0100" stop="20171103140000 +0100" channel="kanal5.se">
+		<title lang="sv">Real Housewives of New York</title>
+		<sub-title lang="sv">Pop of Crazy</sub-title>
+		<desc lang="sv">Här möter vi några förmögna kvinnor i New Yorks high society som pendlar mellan New York och sommarstället i lyxiga Hamptons. De ägnar det mesta av sin tid åt intriger, modevisningar, botoxbehandlingar, välgörenhetsgalor och barnens privatskolor.</desc>
+		<date>2008</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=84669&seasonid=615176&id=5245203&lid=7]]></url>
+		<episode-num system="xmltv_ns">6 . 9 .</episode-num>
+		<episode-num system="onscreen">Episode 10 season 7</episode-num>
+		<episode-num system="thetvdb.com">series/84669</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103140000 +0100" stop="20171103150000 +0100" channel="kanal5.se">
+		<title lang="sv">Böda Camping</title>
+		<sub-title lang="sv">Avsnitt 5</sub-title>
+		<desc lang="sv">Fest och mat är viktiga ingredienser på semestern och naturligtvis även på Böda. Frukosten är en klassisk Bödatradition med det egna bageriet som bakar bullar varje natt. Fest blir det också på Bödas egen Beach club där det väntas dansbandssväng.</desc>
+		<date>2010</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Documentary</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=202661&seasonid=595508&id=4976841&lid=8]]></url>
+		<episode-num system="xmltv_ns">3 . 4 .</episode-num>
+		<episode-num system="onscreen">Episode 5 season 4</episode-num>
+		<episode-num system="thetvdb.com">series/202661</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103150000 +0100" stop="20171103160000 +0100" channel="kanal5.se">
+		<title lang="sv">The Little Couple</title>
+		<sub-title lang="sv">Device Free Day</sub-title>
+		<desc lang="sv">Bill tar med Will till affären för att handla till hans skolluncher. Jen och Zoe får naglarna fixade och klipper sig inför skolstarten.</desc>
+		<credits>
+			<actor role="Bill Klein">Bill Klein</actor>
+			<actor role="Zoey Klein">Zoey Klein</actor>
+			<actor role="Will Klein">Will Klein</actor>
+			<actor role="Jen Arnold">Jen Arnold</actor>
+		</credits>
+		<date>2009</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=98481&seasonid=604079&id=5063404&lid=8]]></url>
+		<episode-num system="xmltv_ns">7 . 1 .</episode-num>
+		<episode-num system="onscreen">Episode 2 season 8</episode-num>
+		<episode-num system="thetvdb.com">series/98481</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103160000 +0100" stop="20171103170000 +0100" channel="kanal5.se">
+		<title lang="sv">Sofias änglar</title>
+		<sub-title lang="sv">Avsnitt 8: Göran får hjälp med sin smärta</sub-title>
+		<desc lang="sv">Göran bor med sina döttrar Anna, 15, och Amanda, 9, i ett radhus i Stockholm. Göran har haft enorm otur och drabbats av nervskador efter en bilolycka och en ryggskada. För att hjälpa familjen tar Johnnie och Mattias tag i köket och döttrarnas rum.</desc>
+		<credits>
+			<presenter>Sofia Wistam</presenter>
+			<presenter>Johnnie Krigström</presenter>
+			<presenter>Mattias Särnholm</presenter>
+		</credits>
+		<date>2011</date>
+		<category lang="en">series</category>
+		<category lang="en">Home</category>
+		<category lang="en">Nature</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[http://thetvdb.com/?tab=episode&seriesid=225481&seasonid=406131&id=3552341&lid=8]]></url>
+		<episode-num system="xmltv_ns">0 . 7 .</episode-num>
+		<episode-num system="onscreen">Episode 8 season 1</episode-num>
+		<episode-num system="thetvdb.com">series/225481</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103170000 +0100" stop="20171103180000 +0100" channel="kanal5.se">
+		<title lang="sv">Trafikpoliserna</title>
+		<desc lang="sv">En olycka inträffar i samband med en biljakt efter ett rån i Akalla. Tjuvar försöker stjäla koppar och poliserna tar upp jakten. Polisaspiranter stoppar en trafikant som ljuger om sitt körkort. Polisen redogör för när popbandet Viola Beach omkom.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<episode-num system="xmltv_ns">0 . 3 .</episode-num>
+		<episode-num system="onscreen">Episode 4 season 1</episode-num>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103180000 +0100" stop="20171103190000 +0100" channel="kanal5.se">
+		<title lang="sv">Sofias änglar</title>
+		<desc lang="sv">Mirsad drömde om att bygga ett vitt stenhus till sin fru Senada och deras söner. Bygget kom igång, men på julaftons morgon förra året avled Mirsad av en hjärtinfarkt. Senada vill uppfylla sin mans dröm om huset, men i dag är bygget bara ett kalt skal.</desc>
+		<credits>
+			<presenter>Mattias Särnholm</presenter>
+			<presenter>Johnnie Krigström</presenter>
+			<presenter>Sofia Wistam</presenter>
+		</credits>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Lifestyle</category>
+		<episode-num system="xmltv_ns">8 . 9 .</episode-num>
+		<episode-num system="onscreen">Episode 10 season 9</episode-num>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103190000 +0100" stop="20171103200000 +0100" channel="kanal5.se">
+		<title lang="sv">Wahlgrens värld</title>
+		<desc lang="sv">Efter att det tog slut med Philippe har Bianca varit trött och deppig. Pernilla och Bianca åker därför till Israel med Micael Bindefeld. Han har styrt upp ett fullspäckat schema. De besöker bland annat klagomuren, här petar Bianca in en önskebön.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<episode-num system="xmltv_ns">1 . 8 .</episode-num>
+		<episode-num system="onscreen">Episode 9 season 2</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103200000 +0100" stop="20171103203000 +0100" channel="kanal5.se">
+		<title lang="sv">America's Funniest Home Videos</title>
+		<desc lang="sv">Vanliga människors hemvideofilmer med fokus på humor. Det kan vara barnkalas, bröllop, lek med husdjur och mycket annat som har fått en oväntad komisk knorr när något gått galet.</desc>
+		<credits>
+			<presenter>Alfonso Ribeiro</presenter>
+		</credits>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Entertainment</category>
+		<episode-num system="xmltv_ns">27 . 16 .</episode-num>
+		<episode-num system="onscreen">Episode 17 season 28</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103203000 +0100" stop="20171103210000 +0100" channel="kanal5.se">
+		<title lang="sv">America's Funniest Home Videos</title>
+		<desc lang="sv">Vanliga människors hemvideofilmer med fokus på humor. Det kan vara barnkalas, bröllop, lek med husdjur och mycket annat som har fått en oväntad komisk knorr när något gått galet.</desc>
+		<credits>
+			<presenter>Alfonso Ribeiro</presenter>
+		</credits>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Entertainment</category>
+		<episode-num system="xmltv_ns">27 . 17 .</episode-num>
+		<episode-num system="onscreen">Episode 18 season 28</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103210000 +0100" stop="20171103220000 +0100" channel="kanal5.se">
+		<title lang="sv">Tunnelbanan</title>
+		<desc lang="sv">Trygghetsoperatörerna bevakar tunnelbanesystemet via kameror och koordinerar hjälpinsatser för små och stora händelser. Vi träffar människorna som arbetar i tunnelbanesystemet. De är först på plats vid bråk och olyckor i Stockholms tunnelbana.</desc>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<episode-num system="xmltv_ns">5 . 8 .</episode-num>
+		<episode-num system="onscreen">Episode 9 season 6</episode-num>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+	<programme start="20171103220000 +0100" stop="20171104004500 +0100" channel="kanal5.se">
+		<title lang="sv">American Hustle</title>
+		<desc lang="sv">För att själv slippa straff tvingas den briljante svindlaren Irving Rosenfeld, tillsammans med sin medbrottsling och älskarinna Sydney Prosser, att samarbeta med FBI för att avslöja andra bedragare, gangstrar och skumma politiker.</desc>
+		<credits>
+			<director>David O. Russell</director>
+			<actor role="Irving Rosenfeld">Christian Bale</actor>
+			<actor role="Richie DiMaso">Bradley Cooper</actor>
+			<actor role="Sydney Prosser">Amy Adams</actor>
+			<actor role="Carmine Polito">Jeremy Renner</actor>
+			<actor role="Rosalyn Rosenfeld">Jennifer Lawrence</actor>
+			<actor role="Stoddard Thorsen">Louis C.K.</actor>
+			<actor role="Pete Musane">Jack Huston</actor>
+			<actor role="Paco Hernandez">Michael Peña</actor>
+			<actor role="Carl Elway">Shea Whigham</actor>
+			<actor role="Anthony Amado">Alessandro Nivola</actor>
+			<actor role="Dolly Polito">Elisabeth Röhm</actor>
+			<actor role="Alfonse Simone">Paul Herman</actor>
+			<actor role="Irv's Sheik Plant">Saïd Taghmaoui</actor>
+			<actor role="Dominic Polito">Matthew Russell</actor>
+			<actor role="Francis Polito">Thomas Matthews</actor>
+			<actor role="Julius">Adrian Martinez</actor>
+			<actor role="Senator Horton Mitchell">Anthony Zerbe</actor>
+			<actor role="Brenda">Colleen Camp</actor>
+			<actor role="Agent Schmidt">Steve Gagliastro</actor>
+			<actor role="Agent Stock">Christopher Tarjan</actor>
+			<actor role="Young Irv">Zachariah Supka</actor>
+			<actor role="Cosmo Interview Girl">Christy Scott Cashman</actor>
+			<actor role="Photographer">Simon Hamlin</actor>
+			<actor role="Helen">Martie Barylick</actor>
+			<actor role="Cosmo Girl">Dawn Olivieri</actor>
+			<actor role="Abbie Abrams">Erica McDermott</actor>
+			<actor role="Street Thug #1">Dicky Eklund Jr.</actor>
+			<actor role="Victor Tellegio">Robert De Niro</actor>
+			<actor role="Art Patron (uncredited)">John Franchi</actor>
+			<actor role="Danny Rosenfeld (as Dante Corbo)">Danny Corbo</actor>
+			<actor role="Danny Rosenfeld (as Santino Corbo)">Sonny Corbo</actor>
+			<producer>Charles Roven</producer>
+			<producer>Jonathan Gordon</producer>
+			<producer>Richard Suckle</producer>
+			<producer>Megan Ellison</producer>
+		</credits>
+		<date>2013</date>
+		<category lang="en">movie</category>
+		<category lang="en">Crime</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[http://www.themoviedb.org/movie/168672]]></url>
+		<episode-num system="themoviedb.org">movie/168672</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+		<star-rating>
+			<value>6.8 / 10</value>
+		</star-rating>
+	</programme>
+	<programme start="20171104004500 +0100" stop="20171104023500 +0100" channel="kanal5.se">
+		<title lang="sv">Mad Max</title>
+		<desc lang="sv">Max Rockatansky är en orädd polis som startar krig mot ett mordlystet motorcykelgäng som mördat hans familj. Det är ett "take-no-prisoners-krig" som utspelar sig i ett framtida Australien.</desc>
+		<credits>
+			<director>George Miller</director>
+			<actor>Mel Gibson</actor>
+			<actor>Joanne Samuel</actor>
+			<actor>Steve Bisley</actor>
+		</credits>
+		<date>1979</date>
+		<category lang="en">movie</category>
+		<category lang="en">Action</category>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+		<audio>
+			<stereo>stereo</stereo>
+		</audio>
+	</programme>
+</tv>

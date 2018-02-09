@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv [
+<!ELEMENT tv (channel*, programme*)>
+<!ATTLIST tv date   CDATA #IMPLIED source-info-url     CDATA #IMPLIED source-info-name    CDATA #IMPLIED        source-data-url     CDATA #IMPLIED        generator-info-name CDATA #IMPLIED          generator-info-url  CDATA #IMPLIED >
+<!ELEMENT channel (display-name+, icon*, url*) >
+<!ATTLIST channel id CDATA #REQUIRED >
+<!ELEMENT display-name (#PCDATA)>
+<!ATTLIST display-name lang CDATA #IMPLIED>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT programme (title+, sub-title*, desc*, credits?, date?,
+                     category*, keyword*, language?, orig-language?,
+                     length?, icon*, url*, country*, episode-num*,
+                     video?, audio?, previously-shown?, premiere?,
+                     last-chance?, new?, subtitles*, rating*,
+                     star-rating*, review* )>
+<!ATTLIST programme start     CDATA #REQUIRED
+                    stop      CDATA #IMPLIED
+                    pdc-start CDATA #IMPLIED
+                    vps-start CDATA #IMPLIED
+                    showview  CDATA #IMPLIED
+                    videoplus CDATA #IMPLIED
+                    channel   CDATA #REQUIRED
+                    clumpidx  CDATA "0/1" >
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title lang CDATA #IMPLIED>
+<!ELEMENT sub-title (#PCDATA)>
+<!ATTLIST sub-title lang CDATA #IMPLIED>
+<!ELEMENT desc (#PCDATA)>
+<!ATTLIST desc lang CDATA #IMPLIED>
+<!ELEMENT credits (director*, actor*, writer*, adapter*, producer*,
+                   composer*, editor*, presenter*, commentator*, 
+                   guest* )>
+<!ELEMENT director    (#PCDATA)>
+<!ELEMENT actor       (#PCDATA)>
+<!ATTLIST actor role  CDATA #IMPLIED>
+<!ELEMENT writer      (#PCDATA)>
+<!ELEMENT adapter     (#PCDATA)>
+<!ELEMENT producer    (#PCDATA)>
+<!ELEMENT composer    (#PCDATA)>
+<!ELEMENT editor      (#PCDATA)>
+<!ELEMENT presenter   (#PCDATA)>
+<!ELEMENT commentator (#PCDATA)>
+<!ELEMENT guest       (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ATTLIST category lang CDATA #IMPLIED>
+<!ELEMENT keyword (#PCDATA)>
+<!ATTLIST keyword lang CDATA #IMPLIED>
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language lang CDATA #IMPLIED>
+<!ELEMENT orig-language (#PCDATA)>
+<!ATTLIST orig-language lang CDATA #IMPLIED>
+<!ELEMENT length (#PCDATA)>
+<!ATTLIST length units (seconds | minutes | hours) #REQUIRED>
+<!ELEMENT icon EMPTY>
+<!ATTLIST icon src         CDATA #REQUIRED
+               width       CDATA #IMPLIED
+               height      CDATA #IMPLIED> 
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ATTLIST country lang CDATA #IMPLIED>
+<!ELEMENT episode-num (#PCDATA)>
+<!ATTLIST episode-num system CDATA "onscreen">
+<!ELEMENT video (present?, colour?, aspect?, quality?)>
+<!ELEMENT present (#PCDATA)>
+<!ELEMENT colour (#PCDATA)>
+<!ELEMENT aspect (#PCDATA)>
+<!ELEMENT quality (#PCDATA)>
+<!ELEMENT audio (present?, stereo?)>
+<!ELEMENT stereo (#PCDATA)>
+<!ELEMENT previously-shown EMPTY>
+<!ATTLIST previously-shown start   CDATA #IMPLIED
+                           channel CDATA #IMPLIED >
+<!ELEMENT premiere (#PCDATA)>
+<!ATTLIST premiere lang CDATA #IMPLIED>
+<!ELEMENT last-chance (#PCDATA)>
+<!ATTLIST last-chance lang CDATA #IMPLIED>
+<!ELEMENT new EMPTY>
+<!ELEMENT subtitles (language?)>
+<!ATTLIST subtitles type (teletext | onscreen | deaf-signed) #IMPLIED>
+<!ELEMENT rating (value, icon*)>
+<!ATTLIST rating system CDATA #IMPLIED>
+<!ELEMENT star-rating (value, icon*)>
+<!ATTLIST star-rating system CDATA #IMPLIED>
+<!ELEMENT review (#PCDATA)>
+<!ATTLIST review type     (text | url) #REQUIRED
+                 source   CDATA        #IMPLIED
+                 reviewer CDATA        #IMPLIED
+                 lang     CDATA        #IMPLIED>
+]>
+
+<tv generator-info-name="Taiga XMLTV" generator-info-url="http://xmltv.se">
+	<programme start="20171103010500 +0100" stop="20171103020000 +0100" channel="tv8.se">
+		<title lang="sv">Bones</title>
+		<sub-title lang="sv">The Corpse at the Convention</sub-title>
+		<desc lang="sv">Brennan talar inför en grupp kriminaltekniker på ett konvent. De vill hjälpa till att lösa mordet på en person som hittas död i en trappuppgång. Teamet chockas när Hodgins blir misstänkt.</desc>
+		<credits>
+			<actor role="Temperance 'Bones' Brennan">Emily Deschanel</actor>
+			<actor role="Seeley Booth">David Boreanaz</actor>
+			<actor role="Angela Montenegro">Michaela Conlin</actor>
+			<actor role="Jack Hodgins">T. J. Thyne</actor>
+			<actor role="Camille Saroyan">Tamara Taylor</actor>
+			<actor role="James Aubrey">John Boyd</actor>
+		</credits>
+		<date>2014</date>
+		<category lang="en">series</category>
+		<category lang="en">Crime</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1911/season/10/episode/5]]></url>
+		<episode-num system="xmltv_ns">9 . 4/22 .</episode-num>
+		<episode-num system="onscreen">Episode 5 of 22 season 10</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103020000 +0100" stop="20171103024500 +0100" channel="tv8.se">
+		<title lang="sv">I lagens namn: Brottslig synvinkel</title>
+		<sub-title lang="sv">Legacy</sub-title>
+		<desc lang="sv">Ett självmord på en student på en prestigefull student visar sig istället vara ett mord. Goren och Eames hittar snart ett samband med hans död och en klasskamrat som han varit kär i och mamman likaså som även är lärare på skolan.</desc>
+		<credits>
+			<director>Dick Wolf</director>
+			<actor role="Detective Alexandra Eames">Kathryn Erbe</actor>
+			<actor role="Danny Ross">Eric Bogosian</actor>
+			<actor role="Mike Logan">Chris Noth</actor>
+			<actor role="Detective Nola Falacci">Alicia Witt</actor>
+			<actor role="Megan Wheeler">Julianne Nicholson</actor>
+			<actor role="Detective Robert Goren">Vincent D'Onofrio</actor>
+			<actor role="H. Jack Walker III">Anthony Carrigan</actor>
+			<actor role="Mr. Richmond">Peter Francis James</actor>
+			<actor>Jefferson Mays</actor>
+			<actor>Leslie Hendrix</actor>
+			<actor>Sonequa Martin-Green</actor>
+			<actor>John Shea</actor>
+			<actor>Matt Salinger</actor>
+			<actor>Kristin Griffith</actor>
+			<actor>Sarah Steele</actor>
+			<writer>Warren Leight</writer>
+		</credits>
+		<date>2008</date>
+		<category lang="en">series</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/4601/season/7/episode/19]]></url>
+		<episode-num system="xmltv_ns">6 . 18/22 .</episode-num>
+		<episode-num system="onscreen">Episode 19 of 22 season 7</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103024500 +0100" stop="20171103032500 +0100" channel="tv8.se">
+		<title lang="sv">Chicago P.D.</title>
+		<sub-title lang="sv">Life Is Fluid</sub-title>
+		<desc lang="sv">I säsongspremiären är de ifatt med att få tag på en av Chicagos mest eftersökta heroinbrottsling. Halstead försöker hitta ett sätt att nå fram till Lindsay som halkat efter då hon varit borta från distriktet i tre veckor.</desc>
+		<credits>
+			<actor role="Hank Voight">Jason Beghe</actor>
+			<actor role="Erin Lindsay">Sophia Bush</actor>
+			<actor role="Adam Ruzek">Patrick John Flueger</actor>
+			<actor role="Sean Roman">Brian Geraghty</actor>
+			<actor role="Jay Halstead">Jesse Lee Soffer</actor>
+			<actor role="Kim Burgess">Marina Squerciati</actor>
+			<actor role="Alvin Olinsky">Elias Koteas</actor>
+			<actor role="Kevin Atwater">Laroyce Hawkins</actor>
+			<actor role="Trudy Platt">Amy Morton</actor>
+			<actor role="Antonio Dawson">Jon Seda</actor>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Crime</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/58841/season/3/episode/1]]></url>
+		<episode-num system="xmltv_ns">2 . 0/23 .</episode-num>
+		<episode-num system="onscreen">Episode 1 of 23 season 3</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103032500 +0100" stop="20171103041500 +0100" channel="tv8.se">
+		<title lang="sv">En plats på landet</title>
+		<desc lang="sv">Programmet hjälper familjer som vill fly stadslivet att hitta den perfekta fristaden på landsbygden. Möt en rad olika människor som av olika anledningar vill lämna hektiska storstäder bakom sig. De får hjälp av mäklare som letar upp lämpliga köpobjekt på den engelska landsbygden, helt enligt deras önskemål. Oftast vill de bo i eller i närheten av en by och bli en del av den gemenskap som finns på den engelska landsbygden. Varje avsnitt följer olika familjer som får hjälp att hitta sina drömhus.</desc>
+		<date>2014</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">20 . 61/72 .</episode-num>
+		<episode-num system="onscreen">Episode 62 of 72 season 21</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103041500 +0100" stop="20171103050000 +0100" channel="tv8.se">
+		<title lang="sv">The Hotel Inspector</title>
+		<sub-title lang="sv">The Clover</sub-title>
+		<desc lang="sv">Alex Polizzi besöker ett hotell i Birmingham, där ägarna är naturister. Kommer hon att kunna rädda deras krisande verksamhet?</desc>
+		<credits>
+			<actor>Alex Polizzi</actor>
+		</credits>
+		<date>2012</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/6430/season/9/episode/1]]></url>
+		<episode-num system="xmltv_ns">8 . 0/10 .</episode-num>
+		<episode-num system="onscreen">Episode 1 of 10 season 9</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103050000 +0100" stop="20171103055900 +0100" channel="tv8.se">
+		<title lang="sv">Inredningsmästarna</title>
+		<desc lang="sv">Deltagarna är i London och gör om tre sovrum som inspireras av 1930-talets Hollywood. Tom Dyckhoff undersöker lägenheterna som designats för att attrahera dåtidens filmstjärnor.</desc>
+		<date>2014</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">1 . 8/16 .</episode-num>
+		<episode-num system="onscreen">Episode 9 of 16 season 2</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103060000 +0100" stop="20171103065500 +0100" channel="tv8.se">
+		<title lang="sv">Top Chef</title>
+		<sub-title lang="sv">Even the Famous Come Home</sub-title>
+		<desc lang="sv">I detta avsnitt ska kockarna laga något från deras ursprung och härstammning.</desc>
+		<date>2012</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/41822/season/10/episode/6]]></url>
+		<episode-num system="xmltv_ns">9 . 5/17 .</episode-num>
+		<episode-num system="onscreen">Episode 6 of 17 season 10</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103065500 +0100" stop="20171103075500 +0100" channel="tv8.se">
+		<title lang="sv">Doc Martin</title>
+		<sub-title lang="sv">Aromatherapy</sub-title>
+		<desc lang="sv">Doktor Martin Ellingham kan på grund av sin blodfobi inte längre kan arbeta som kirurg. Han flyttar från London till en liten kuststad i Cornwall för att istället bli husläkare. Martin saknar sociala förmågor och framstår som burdus då han säger vad han tycker utan några som helst försköningar. Han har det inte lätt i byn då han ses som en snobb och blir ofta föremål för skratt från byborna. I den andra säsongen får Martin återigen sällskap av moster Joan, Bert och Al Large, de lokala rörmokarna - och läraren Louisa Glasson - vars känslor för Doc Martin är lika otydliga som första gången de träffades.</desc>
+		<credits>
+			<actor role="Elaine Denham">Lucy Punch</actor>
+			<actor role="Pauline Lamb">Katherine Parkinson</actor>
+			<actor>Stephanie Cole</actor>
+			<actor>Angeline Ball</actor>
+			<actor role="Al Large">Joe Absolom</actor>
+			<actor role="Bert Large">Ian McNeice</actor>
+			<actor>Roger Lloyd Pack</actor>
+			<actor role="Jimmy Dobbs">Jake Wood</actor>
+			<actor role="Mrs Tishell">Selina Cadell</actor>
+			<actor>Lia Williams</actor>
+			<actor>Stewart Wright</actor>
+			<actor role="Jonathan Crozier">Chris O'Dowd</actor>
+			<actor role="Isobel">Amanda Abbington</actor>
+			<actor role="Dr. Martin Ellingham">Martin Clunes</actor>
+		</credits>
+		<date>2005</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/2430/season/2/episode/4]]></url>
+		<episode-num system="xmltv_ns">1 . 3/8 .</episode-num>
+		<episode-num system="onscreen">Episode 4 of 8 season 2</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103075500 +0100" stop="20171103085000 +0100" channel="tv8.se">
+		<title lang="sv">Undercover Boss US</title>
+		<desc lang="sv">Chefen för Marco´s Pizza går undercover för att kunna räkna in "degen" på hans snabbt växande företag.</desc>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">6 . 6/13 .</episode-num>
+		<episode-num system="onscreen">Episode 7 of 13 season 7</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103085000 +0100" stop="20171103095000 +0100" channel="tv8.se">
+		<title lang="sv">Million Dollar Listing San Franscisco</title>
+		<sub-title lang="sv">We Are the Chammy-ions</sub-title>
+		<desc lang="sv">"We Are the Chammy-ions". Justin takes a listing with an old friend, but quickly realizes that mixing business with his personal life is not a good combination. Outside of the city, Andrew snags an amazing winery estate, and now just needs to pair it with the right buyer. Roh's newest listing has everything an agent could want, and the one thing no agent ever wants: a messy tenant already renting the unit.</desc>
+		<credits>
+			<actor role="Himself - Agent">Justin Fichelson</actor>
+			<actor role="Himself - Agent">Andrew Greenwell</actor>
+			<actor role="Himself - Agent">Roh Habibi</actor>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/64182/season/1/episode/6]]></url>
+		<episode-num system="xmltv_ns">0 . 5/9 .</episode-num>
+		<episode-num system="onscreen">Episode 6 of 9 season 1</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103095000 +0100" stop="20171103110000 +0100" channel="tv8.se">
+		<title lang="sv">Masterchef</title>
+		<desc lang="sv">Masterchef är Storbritanniens största och tuffaste matlagningstävling för ambitiösa amatörkockar. I varje avsnitt tävlar deltagarna i en rad uppdrag och måste kämpa till det yttersta för att imponera på domarna. Endast en av dem kommer att segra i den nervkittlande finalen. De hoppfulla kockarna eliminieras en efter en från tävlingen och slutligen kvarstår endast de absolut bästa deltagarna. De drömmer alla om att bli nästa Jamie Oliver eller Gordon Ramsay, men pallar de trycket i kökets hetta? Missa inte detta inspirerande kulinariska äventyr.</desc>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">10 . 4/24 .</episode-num>
+		<episode-num system="onscreen">Episode 5 of 24 season 11</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103110000 +0100" stop="20171103115500 +0100" channel="tv8.se">
+		<title lang="sv">Husfixarna Norge</title>
+		<desc lang="sv">I detta avsnitt ligger fokus på entrén samt trappan ned till källaren.</desc>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">0 . 13/24 .</episode-num>
+		<episode-num system="onscreen">Episode 14 of 24 season 1</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103115500 +0100" stop="20171103125500 +0100" channel="tv8.se">
+		<title lang="sv">En plats på landet</title>
+		<desc lang="sv">Programmet hjälper familjer som vill fly stadslivet att hitta den perfekta fristaden på landsbygden. Möt en rad olika människor som av olika anledningar vill lämna hektiska storstäder bakom sig. De får hjälp av mäklare som letar upp lämpliga köpobjekt på den engelska landsbygden, helt enligt deras önskemål. Oftast vill de bo i eller i närheten av en by och bli en del av den gemenskap som finns på den engelska landsbygden. Varje avsnitt följer olika familjer som får hjälp att hitta sina drömhus.</desc>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">21 . 5/75 .</episode-num>
+		<episode-num system="onscreen">Episode 6 of 75 season 22</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103125500 +0100" stop="20171103135500 +0100" channel="tv8.se">
+		<title lang="sv">The Hotel Inspector</title>
+		<sub-title lang="sv">The Oakland</sub-title>
+		<desc lang="sv">Alex besöker ett hotell som ägs av en familj som inte kan komma överens om någonting. Kan hon hjälpa dem att rädda sin verksamhet?</desc>
+		<credits>
+			<actor>Alex Polizzi</actor>
+		</credits>
+		<date>2012</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/6430/season/9/episode/2]]></url>
+		<episode-num system="xmltv_ns">8 . 1/10 .</episode-num>
+		<episode-num system="onscreen">Episode 2 of 10 season 9</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103135500 +0100" stop="20171103145000 +0100" channel="tv8.se">
+		<title lang="sv">Doc Martin</title>
+		<sub-title lang="sv">Always On My Mind</sub-title>
+		<desc lang="sv">Doktor Martin Ellingham kan på grund av sin blodfobi inte längre kan arbeta som kirurg. Han flyttar från London till en liten kuststad i Cornwall för att istället bli husläkare. Martin saknar sociala förmågor och framstår som burdus då han säger vad han tycker utan några som helst försköningar. Han har det inte lätt i byn då han ses som en snobb och blir ofta föremål för skratt från byborna. I den andra säsongen får Martin återigen sällskap av moster Joan, Bert och Al Large, de lokala rörmokarna - och läraren Louisa Glasson - vars känslor för Doc Martin är lika otydliga som första gången de träffades.</desc>
+		<credits>
+			<actor role="Elaine Denham">Lucy Punch</actor>
+			<actor role="Pauline Lamb">Katherine Parkinson</actor>
+			<actor>Stephanie Cole</actor>
+			<actor>Angeline Ball</actor>
+			<actor role="Al Large">Joe Absolom</actor>
+			<actor role="Bert Large">Ian McNeice</actor>
+			<actor>Roger Lloyd Pack</actor>
+			<actor role="Jimmy Dobbs">Jake Wood</actor>
+			<actor role="Mrs Tishell">Selina Cadell</actor>
+			<actor>Lia Williams</actor>
+			<actor>Stewart Wright</actor>
+			<actor role="Jonathan Crozier">Chris O'Dowd</actor>
+			<actor role="Isobel">Amanda Abbington</actor>
+			<actor role="Dr. Martin Ellingham">Martin Clunes</actor>
+		</credits>
+		<date>2005</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/2430/season/2/episode/5]]></url>
+		<episode-num system="xmltv_ns">1 . 4/8 .</episode-num>
+		<episode-num system="onscreen">Episode 5 of 8 season 2</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103145000 +0100" stop="20171103155000 +0100" channel="tv8.se">
+		<title lang="sv">Million Dollar Listing San Franscisco</title>
+		<sub-title lang="sv">Carry On, Hayward Son</sub-title>
+		<desc lang="sv">"Carry on, Hayward Son". Andrew takes a listing just outside of the city, but trying to get a bidding war started is never pleasant...even in Pleasanton. Justin struggles to find a buyer for his demanding client, Kevin, who expects someone to drastically overpay for his place. Luckily for Justin, Roh pays a visit with a potential client.</desc>
+		<credits>
+			<actor role="Himself - Agent">Justin Fichelson</actor>
+			<actor role="Himself - Agent">Andrew Greenwell</actor>
+			<actor role="Himself - Agent">Roh Habibi</actor>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/64182/season/1/episode/7]]></url>
+		<episode-num system="xmltv_ns">0 . 6/9 .</episode-num>
+		<episode-num system="onscreen">Episode 7 of 9 season 1</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103155000 +0100" stop="20171103165000 +0100" channel="tv8.se">
+		<title lang="sv">Undercover Boss US</title>
+		<sub-title lang="sv">4 Wheel Parts</sub-title>
+		<desc lang="sv">Chefen för 4 Wheel Parts, Greg Adler, går undercover och får i uppdrag att sätta på massiva däck på en Jeep.</desc>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/33297/season/7/episode/8]]></url>
+		<episode-num system="xmltv_ns">6 . 7/12 .</episode-num>
+		<episode-num system="onscreen">Episode 8 of 12 season 7</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103165000 +0100" stop="20171103175000 +0100" channel="tv8.se">
+		<title lang="sv">Husfixarna Norge</title>
+		<desc lang="sv">I detta avsnitt ligger fokus på källarutrymmet samt sovrum till barnen.</desc>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">0 . 14/24 .</episode-num>
+		<episode-num system="onscreen">Episode 15 of 24 season 1</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103175000 +0100" stop="20171103183000 +0100" channel="tv8.se">
+		<title lang="sv">Masterchef</title>
+		<desc lang="sv">Masterchef är Storbritanniens största och tuffaste matlagningstävling för ambitiösa amatörkockar. I varje avsnitt tävlar deltagarna i en rad uppdrag och måste kämpa till det yttersta för att imponera på domarna. Endast en av dem kommer att segra i den nervkittlande finalen. De hoppfulla kockarna eliminieras en efter en från tävlingen och slutligen kvarstår endast de absolut bästa deltagarna. De drömmer alla om att bli nästa Jamie Oliver eller Gordon Ramsay, men pallar de trycket i kökets hetta? Missa inte detta inspirerande kulinariska äventyr.</desc>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">10 . 5/24 .</episode-num>
+		<episode-num system="onscreen">Episode 6 of 24 season 11</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103183000 +0100" stop="20171103190000 +0100" channel="tv8.se">
+		<title lang="sv">Jamie´s 30 minute meals</title>
+		<sub-title lang="sv">Piri Piri Chicken</sub-title>
+		<desc lang="sv">Piri Piri. Jamie cooks piri piri chicken with dressed potatoes, rocket salad and quick Portuguese tarts.</desc>
+		<credits>
+			<actor>Jamie Oliver</actor>
+		</credits>
+		<date>2010</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/35605/season/1/episode/1]]></url>
+		<episode-num system="xmltv_ns">0 . 0/20 .</episode-num>
+		<episode-num system="onscreen">Episode 1 of 20 season 1</episode-num>
+		<video>
+			<aspect>16:9</aspect>
+		</video>
+	</programme>
+	<programme start="20171103190000 +0100" stop="20171103200000 +0100" channel="tv8.se">
+		<title lang="sv">En plats på landet</title>
+		<desc lang="sv">Programmet hjälper familjer som vill fly stadslivet att hitta den perfekta fristaden på landsbygden. Möt en rad olika människor som av olika anledningar vill lämna hektiska storstäder bakom sig. De får hjälp av mäklare som letar upp lämpliga köpobjekt på den engelska landsbygden, helt enligt deras önskemål. Oftast vill de bo i eller i närheten av en by och bli en del av den gemenskap som finns på den engelska landsbygden. Varje avsnitt följer olika familjer som får hjälp att hitta sina drömhus.</desc>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Series</category>
+		<episode-num system="xmltv_ns">21 . 6/75 .</episode-num>
+		<episode-num system="onscreen">Episode 7 of 75 season 22</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103200000 +0100" stop="20171103210000 +0100" channel="tv8.se">
+		<title lang="sv">Navy CIS</title>
+		<sub-title lang="sv">Troll</sub-title>
+		<desc lang="sv">Specialagent Ned Dorneget från NCIS digitala avdelning assisterar teamet när en fänrik i Naval Intelligence blir mördad. Undertiden blir Jake och Gibbs vänner.</desc>
+		<credits>
+			<actor role="Leroy Jethro Gibbs">Mark Harmon</actor>
+			<actor role="Tony DiNozzo">Michael Weatherly</actor>
+			<actor role="Abby Sciuto">Pauley Perrette</actor>
+			<actor role="Timothy McGee">Sean Murray</actor>
+			<actor role="Donald 'Ducky' Mallard">David McCallum</actor>
+			<actor role="Jimmy Palmer">Brian Dietzen</actor>
+			<actor role="Ellie Bishop">Emily Wickersham</actor>
+			<actor role="Director Leon Vance">Rocky Carroll</actor>
+			<actor role="Boyfriend at Diner">Kevin Fonteyne</actor>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Crime</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/4614/season/12/episode/22]]></url>
+		<episode-num system="xmltv_ns">11 . 21/24 .</episode-num>
+		<episode-num system="onscreen">Episode 22 of 24 season 12</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103210000 +0100" stop="20171103220000 +0100" channel="tv8.se">
+		<title lang="sv">Bosch</title>
+		<sub-title lang="sv">Follow the Money</sub-title>
+		<desc lang="sv">Follow The Money. Bosch tar fokus på en ökänd brottsling. Eleanor levererar till FBI. Våldsbenägna grupper möts i en brutal uppgörelse.</desc>
+		<credits>
+			<actor role="Harry Bosch">Titus Welliver</actor>
+			<actor role="Jerry Edgar">Jamie Hector</actor>
+			<actor role="Lt. Grace Billets">Amy Aquino</actor>
+			<actor role="Eleanor Wish">Sarah Clarke</actor>
+			<actor role="Maddie Bosch">Madison Lintz</actor>
+			<actor role="Veronica Allen">Jeri Ryan</actor>
+			<actor role="Carl Nash">Brent Sexton</actor>
+			<actor role="Irvin Irving">Lance Reddick</actor>
+		</credits>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Crime</category>
+		<category lang="en">Drama</category>
+		<category lang="en">Mystery</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/60585/season/2/episode/8]]></url>
+		<episode-num system="xmltv_ns">1 . 7/10 .</episode-num>
+		<episode-num system="onscreen">Episode 8 of 10 season 2</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+	</programme>
+	<programme start="20171103220000 +0100" stop="20171104013500 +0100" channel="tv8.se">
+		<title lang="sv">Möt Joe Black</title>
+		<desc lang="sv">William Parrish är en mäktig man som badar i pengar och äger ett internationellt multimediaimperium. Trots förlusten av sin älskade fru är William nöjd med livet, och står mycket nära sina döttrar Allison och Susan. En natt börjar William visa symtom på en allvarlig hjärtattack, och besöks av en mystisk främling, Joe Black. Joe, som är dödens ängel, har kommit för att besöka William och tala om för honom att hans tid på jorden snart är slut. Men William vill inte följa med. Joe är nyfiken på livet i människornas värld, och de två männen sluter ett avtal. William får tid på sig att ordna upp sina affärer medan Joe väntar och ser hur det är att vara människa. Joe tycker om upplevelsen, och blir förälskad i Susan. Att förhandla om kärleken är dock inte lättare för Joe än för någon annan man.</desc>
+		<credits>
+			<director>Martin Brest</director>
+			<actor role="Joe Black">Brad Pitt</actor>
+			<actor role="William Parrish">Anthony Hopkins</actor>
+			<actor role="Susan Parrish">Claire Forlani</actor>
+			<actor role="Quince">Jeffrey Tambor</actor>
+			<actor role="Allison Parrish">Marcia Gay Harden</actor>
+			<actor role="Drew">Jake Weber</actor>
+			<actor role="Eddie Sloane">David S. Howard</actor>
+			<actor role="Jamaican Woman">Lois Kelly-Miller</actor>
+			<actor role="Jamaican Woman's Daughter">Jahnni St. John</actor>
+			<actor role="The Parrish's Butler">Richard Clarke</actor>
+			<actor role="Helen">June Squibb</actor>
+			<writer>Ron Osborn</writer>
+			<writer>Jeff Reno</writer>
+			<writer>Kevin Wade</writer>
+			<writer>Bo Goldman</writer>
+			<producer>Martin Brest</producer>
+			<producer>David J. Wally</producer>
+			<producer>Celia D. Costas</producer>
+		</credits>
+		<date>1998</date>
+		<category lang="en">movie</category>
+		<category lang="en">Drama</category>
+		<category lang="en">Fantasy</category>
+		<category lang="en">Mystery</category>
+		<url><![CDATA[http://www.themoviedb.org/movie/297]]></url>
+		<episode-num system="themoviedb.org">movie/297</episode-num>
+		<video>
+			<aspect>4:3</aspect>
+		</video>
+		<star-rating>
+			<value>7 / 10</value>
+		</star-rating>
+	</programme>
+</tv>

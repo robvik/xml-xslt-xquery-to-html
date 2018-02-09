@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv [
+<!ELEMENT tv (channel*, programme*)>
+<!ATTLIST tv date   CDATA #IMPLIED source-info-url     CDATA #IMPLIED source-info-name    CDATA #IMPLIED        source-data-url     CDATA #IMPLIED        generator-info-name CDATA #IMPLIED          generator-info-url  CDATA #IMPLIED >
+<!ELEMENT channel (display-name+, icon*, url*) >
+<!ATTLIST channel id CDATA #REQUIRED >
+<!ELEMENT display-name (#PCDATA)>
+<!ATTLIST display-name lang CDATA #IMPLIED>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT programme (title+, sub-title*, desc*, credits?, date?,
+                     category*, keyword*, language?, orig-language?,
+                     length?, icon*, url*, country*, episode-num*,
+                     video?, audio?, previously-shown?, premiere?,
+                     last-chance?, new?, subtitles*, rating*,
+                     star-rating*, review* )>
+<!ATTLIST programme start     CDATA #REQUIRED
+                    stop      CDATA #IMPLIED
+                    pdc-start CDATA #IMPLIED
+                    vps-start CDATA #IMPLIED
+                    showview  CDATA #IMPLIED
+                    videoplus CDATA #IMPLIED
+                    channel   CDATA #REQUIRED
+                    clumpidx  CDATA "0/1" >
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title lang CDATA #IMPLIED>
+<!ELEMENT sub-title (#PCDATA)>
+<!ATTLIST sub-title lang CDATA #IMPLIED>
+<!ELEMENT desc (#PCDATA)>
+<!ATTLIST desc lang CDATA #IMPLIED>
+<!ELEMENT credits (director*, actor*, writer*, adapter*, producer*,
+                   composer*, editor*, presenter*, commentator*, 
+                   guest* )>
+<!ELEMENT director    (#PCDATA)>
+<!ELEMENT actor       (#PCDATA)>
+<!ATTLIST actor role  CDATA #IMPLIED>
+<!ELEMENT writer      (#PCDATA)>
+<!ELEMENT adapter     (#PCDATA)>
+<!ELEMENT producer    (#PCDATA)>
+<!ELEMENT composer    (#PCDATA)>
+<!ELEMENT editor      (#PCDATA)>
+<!ELEMENT presenter   (#PCDATA)>
+<!ELEMENT commentator (#PCDATA)>
+<!ELEMENT guest       (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ATTLIST category lang CDATA #IMPLIED>
+<!ELEMENT keyword (#PCDATA)>
+<!ATTLIST keyword lang CDATA #IMPLIED>
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language lang CDATA #IMPLIED>
+<!ELEMENT orig-language (#PCDATA)>
+<!ATTLIST orig-language lang CDATA #IMPLIED>
+<!ELEMENT length (#PCDATA)>
+<!ATTLIST length units (seconds | minutes | hours) #REQUIRED>
+<!ELEMENT icon EMPTY>
+<!ATTLIST icon src         CDATA #REQUIRED
+               width       CDATA #IMPLIED
+               height      CDATA #IMPLIED> 
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ATTLIST country lang CDATA #IMPLIED>
+<!ELEMENT episode-num (#PCDATA)>
+<!ATTLIST episode-num system CDATA "onscreen">
+<!ELEMENT video (present?, colour?, aspect?, quality?)>
+<!ELEMENT present (#PCDATA)>
+<!ELEMENT colour (#PCDATA)>
+<!ELEMENT aspect (#PCDATA)>
+<!ELEMENT quality (#PCDATA)>
+<!ELEMENT audio (present?, stereo?)>
+<!ELEMENT stereo (#PCDATA)>
+<!ELEMENT previously-shown EMPTY>
+<!ATTLIST previously-shown start   CDATA #IMPLIED
+                           channel CDATA #IMPLIED >
+<!ELEMENT premiere (#PCDATA)>
+<!ATTLIST premiere lang CDATA #IMPLIED>
+<!ELEMENT last-chance (#PCDATA)>
+<!ATTLIST last-chance lang CDATA #IMPLIED>
+<!ELEMENT new EMPTY>
+<!ELEMENT subtitles (language?)>
+<!ATTLIST subtitles type (teletext | onscreen | deaf-signed) #IMPLIED>
+<!ELEMENT rating (value, icon*)>
+<!ATTLIST rating system CDATA #IMPLIED>
+<!ELEMENT star-rating (value, icon*)>
+<!ATTLIST star-rating system CDATA #IMPLIED>
+<!ELEMENT review (#PCDATA)>
+<!ATTLIST review type     (text | url) #REQUIRED
+                 source   CDATA        #IMPLIED
+                 reviewer CDATA        #IMPLIED
+                 lang     CDATA        #IMPLIED>
+]>
+
+<tv generator-info-name="Taiga XMLTV" generator-info-url="http://xmltv.se">
+	<programme start="20171103013500 +0100" stop="20171103023000 +0100" channel="sjuan.se">
+		<title lang="sv">Revolution</title>
+		<sub-title lang="sv">Captain Trips</sub-title>
+		<desc lang="sv">Miles, Rachel och Bass kidnappar Truman. De smittar honom med den form av tyfus som patrioterna har arbetat fram för att tvinga honom att uppge var motgiftet finns.</desc>
+		<credits>
+			<director>Steve Boyum</director>
+			<actor role="Aaron Pittman">Zak Orth</actor>
+			<actor role="Charlotte 'Charlie' Matheson">Tracy Spiridakos</actor>
+			<actor role="Miles Matheson">Billy Burke</actor>
+			<actor role="Major Tom Neville">Giancarlo Esposito</actor>
+			<actor role="Rachel Matheson">Elizabeth Mitchell</actor>
+			<actor role="Sebastian 'Bass' Monroe">David Lyons</actor>
+			<actor role="Jason Neville">J. D. Pardo</actor>
+			<actor role="Dr. Gene Porter">Stephen Collins</actor>
+			<actor role="Connor Bennett">Mat Vairo</actor>
+			<actor role="Victor Doyle">Christopher Cousins</actor>
+			<actor role="Julia Neville">Kim Raver</actor>
+			<actor role="Priscilla Pittman">Maureen Sebastian</actor>
+			<actor role="Edward Truman">Steven Culp</actor>
+			<actor role="Cynthia">Jessica Collins</actor>
+			<writer>Jim Barnes</writer>
+			<writer>Paul Grellong</writer>
+		</credits>
+		<date>2014</date>
+		<category lang="en">series</category>
+		<category lang="en">Action</category>
+		<category lang="en">Adventure</category>
+		<category lang="en">Drama</category>
+		<category lang="en">Sci-Fi</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/1410/season/2/episode/12]]></url>
+		<episode-num system="xmltv_ns">1 . 11/22 .</episode-num>
+		<episode-num system="onscreen">Episode 12 of 22 season 2</episode-num>
+	</programme>
+	<programme start="20171103023000 +0100" stop="20171103032500 +0100" channel="sjuan.se">
+		<title lang="sv">Hawaii Five-0</title>
+		<sub-title lang="sv">Pa'ani</sub-title>
+		<desc lang="sv">Teamet ber den amerikanske fotbollsspelaren Arian Foster att hjälpa dem lösa mordet på en chef vars drink var spetsad.</desc>
+		<credits>
+			<director>Jeffrey Hunt</director>
+			<actor role="Catherine Rollins">Michelle Borth</actor>
+			<actor role="Steve McGarrett">Alex O'Loughlin</actor>
+			<actor role="Danny 'Danno' Williams">Scott Caan</actor>
+			<actor role="Chin Ho Kelly">Daniel Dae Kim</actor>
+			<actor role="Kono Kalakaua">Grace Park</actor>
+			<actor role="Dr. Max Bergman">Masi Oka</actor>
+		</credits>
+		<date>2013</date>
+		<category lang="en">series</category>
+		<category lang="en">Action</category>
+		<category lang="en">Crime</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/32798/season/3/episode/17]]></url>
+		<episode-num system="xmltv_ns">2 . 16/24 .</episode-num>
+		<episode-num system="onscreen">Episode 17 of 24 season 3</episode-num>
+	</programme>
+	<programme start="20171103032500 +0100" stop="20171103042000 +0100" channel="sjuan.se">
+		<title lang="sv">Hawaii Five-0</title>
+		<sub-title lang="sv">Na Ki'i</sub-title>
+		<desc lang="sv">Efter att ett mordoffer faller på en stadsjeep försöker Catherine lösa fallet genom att arbeta under täckmantel på ett evenemang för rullskridskosporten roller derby. Doris stöter samman med en inbrottstjuv som stjäl information från den tid då hon arbetade med hemliga uppdrag åt militären.</desc>
+		<credits>
+			<director>Duane Clark</director>
+			<actor role="Catherine Rollins">Michelle Borth</actor>
+			<actor role="Steve McGarrett">Alex O'Loughlin</actor>
+			<actor role="Danny 'Danno' Williams">Scott Caan</actor>
+			<actor role="Chin Ho Kelly">Daniel Dae Kim</actor>
+			<actor role="Kono Kalakaua">Grace Park</actor>
+			<actor role="Dr. Max Bergman">Masi Oka</actor>
+		</credits>
+		<date>2013</date>
+		<category lang="en">series</category>
+		<category lang="en">Action</category>
+		<category lang="en">Crime</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/32798/season/3/episode/18]]></url>
+		<episode-num system="xmltv_ns">2 . 17/24 .</episode-num>
+		<episode-num system="onscreen">Episode 18 of 24 season 3</episode-num>
+	</programme>
+	<programme start="20171103042000 +0100" stop="20171103052500 +0100" channel="sjuan.se">
+		<title lang="sv">MacGyver</title>
+		<sub-title lang="sv">Jenny's Chance</sub-title>
+		<desc lang="sv">MacGyver och Jack Dalton hjälper en vän att undersöka hennes pappas död. Hon är övertygad om att pappan som arbetade som jockey inte dog i en olycka och spåren leder till matchfixning i travvärlden.</desc>
+		<credits>
+			<actor role="MacGyver">Richard Dean Anderson</actor>
+			<actor role="Pete Thornton">Dana Elcar</actor>
+			<actor>Linda Blair</actor>
+			<actor>Bruce McGill</actor>
+			<actor>Vic Tayback</actor>
+			<actor>Dale Wilson</actor>
+		</credits>
+		<date>1990</date>
+		<category lang="en">series</category>
+		<category lang="en">Drama</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/2875/season/5/episode/16]]></url>
+		<episode-num system="xmltv_ns">4 . 15/21 .</episode-num>
+		<episode-num system="onscreen">Episode 16 of 21 season 5</episode-num>
+	</programme>
+	<programme start="20171103052500 +0100" stop="20171103060000 +0100" channel="sjuan.se">
+		<title lang="sv">Judys domstol</title>
+		<desc lang="sv">Ett gift par stämmer sin tidigare hyresvärd och kräver ersättning för en häst och vandalisering av deras fordon. En hyresvärd stämmer en kvinna för utebliven hyra och städavgifter.</desc>
+		<date>2014</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<episode-num system="xmltv_ns">2013 . 74/260 .</episode-num>
+		<episode-num system="onscreen">Episode 75 of 260 season 2014</episode-num>
+	</programme>
+	<programme start="20171103060000 +0100" stop="20171103070000 +0100" channel="sjuan.se">
+		<title lang="sv">Kvinnofängelset</title>
+		<desc lang="sv">Kvinnorna drar nytta av ett arbetslivsprogram för att ta ut sin hämnd på Joan.</desc>
+		<credits>
+			<actor role="Joan">Maggie Kirkpatrick</actor>
+			<actor role="Meg">Elspeth Ballantyne</actor>
+			<actor role="Ann">Gerda Nicolson</actor>
+			<actor role="Lexie">Pepe Trevor</actor>
+			<actor role="Alice">Lois Collinder</actor>
+			<actor role="Rita">Glenda Linscott</actor>
+			<actor role="Joyce">Joy Westmore</actor>
+			<actor role="Kath">Kate Hood</actor>
+			<actor role="Marty">Michael Winchester</actor>
+			<actor role="Merle">Rosanne Hull-Brown</actor>
+		</credits>
+		<date>1986</date>
+		<category lang="en">series</category>
+		<category lang="en">Drama</category>
+		<episode-num system="xmltv_ns">7 . 54/81 .</episode-num>
+		<episode-num system="onscreen">Episode 55 of 81 season 8</episode-num>
+	</programme>
+	<programme start="20171103070000 +0100" stop="20171103080000 +0100" channel="sjuan.se">
+		<title lang="sv">Husjägarna</title>
+		<desc lang="sv">Phil hälsar på hos Steve och Sally i Warwickshire. Kirstie kollar hur det gått för Rinku och Sunder i Northamptonshire vars hem skulle rivas.</desc>
+		<credits>
+			<actor>Kirstie Allsopp</actor>
+		</credits>
+		<date>2015</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<episode-num system="xmltv_ns">17 . 7 .</episode-num>
+		<episode-num system="onscreen">Episode 8 season 18</episode-num>
+	</programme>
+	<programme start="20171103080000 +0100" stop="20171103090000 +0100" channel="sjuan.se">
+		<title lang="sv">Judge Rinder</title>
+		<desc lang="sv">En kvinna påstår att hon aldrig fick betalt för att hon gjort reklam för en väns internetprofil. En kvinna och hennes dotter stämmer dotterns före detta pojkvän.</desc>
+		<credits>
+			<actor>Robert Rinder</actor>
+		</credits>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<episode-num system="xmltv_ns">3 . 23 .</episode-num>
+		<episode-num system="onscreen">Episode 24 season 4</episode-num>
+	</programme>
+	<programme start="20171103110000 +0100" stop="20171103120000 +0100" channel="sjuan.se">
+		<title lang="sv">Halv åtta hos mig: England</title>
+		<desc lang="sv">Terry Houlihan, Ita Egan, Jon Revell och Oliver Gillie i London tävlar om att hålla den bästa middagsbjudningen och kamma hem vinsten på 1 000 pund.</desc>
+		<date>2009</date>
+		<category lang="en">series</category>
+		<category lang="en">Cooking</category>
+		<episode-num system="xmltv_ns">3 . 8 .</episode-num>
+		<episode-num system="onscreen">Episode 9 season 4</episode-num>
+	</programme>
+	<programme start="20171103120000 +0100" stop="20171103130000 +0100" channel="sjuan.se">
+		<title lang="sv">Mannen som talar med hundar</title>
+		<desc lang="sv">Cesar hjälper hunden Buddy, en pitbullterrier som utsatts för övergrepp. Det har gjort att han utan förvarning kan bli väldigt aggressiv mot människor. Cesar träffar också shar pei- och rottweilerblandningen Rufus som är aggressiv mot både människor och andra hundar.</desc>
+		<credits>
+			<actor>Cesar Millan</actor>
+		</credits>
+		<date>2007</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<episode-num system="xmltv_ns">3 . 18 .</episode-num>
+		<episode-num system="onscreen">Episode 19 season 4</episode-num>
+	</programme>
+	<programme start="20171103130000 +0100" stop="20171103140000 +0100" channel="sjuan.se">
+		<title lang="sv">Dr Phil</title>
+		<desc lang="sv">Leslie hävdar att hennes före detta make Andy är kontrollerande och självupptagen och hon hoppas kunna få delad vårdnad om deras femårige son. Hon menar att Andy förföljer henne genom att avlyssna hennes telefon, spåra hennes bil och spana på henne från trädtopparna. Andy har ensam vårdnad om deras son och tycker att det ska fortsätta så. Han påstår att Leslie är verklighetsfrånvänd och inte går att lita på. Även Leslies mamma ger sin syn på saken.</desc>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Talk</category>
+		<episode-num system="xmltv_ns">2015 . 28/174 .</episode-num>
+		<episode-num system="onscreen">Episode 29 of 174 season 2016</episode-num>
+	</programme>
+	<programme start="20171103140000 +0100" stop="20171103150000 +0100" channel="sjuan.se">
+		<title lang="sv">Judge Rinder</title>
+		<desc lang="sv">En kvinna kräver att hennes före detta pojkvän återbetalar ett lån men han kontrar med att de aldrig skrev ett ordentligt kontrakt. Ett par föräldrar som hjälpt sin son och hans flickvän att få en hyreslägenhet får pengaproblem när de gör slut.</desc>
+		<credits>
+			<actor>Robert Rinder</actor>
+		</credits>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<episode-num system="xmltv_ns">3 . 24 .</episode-num>
+		<episode-num system="onscreen">Episode 25 season 4</episode-num>
+	</programme>
+	<programme start="20171103150000 +0100" stop="20171103160000 +0100" channel="sjuan.se">
+		<title lang="sv">Att bygga sitt drömhus</title>
+		<desc lang="sv">Charlie beger sig till Cambridgeshire där förstagångsbyggarna Mark och Helen försöker konstruera ett traditionellt hus som lämpar sig för ett modernt leverne. Charlie hjälper dem att fokusera på detaljerna.</desc>
+		<credits>
+			<actor>Charlie Luxton</actor>
+		</credits>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Lifestyle</category>
+		<episode-num system="xmltv_ns">1 . 9 .</episode-num>
+		<episode-num system="onscreen">Episode 10 season 2</episode-num>
+	</programme>
+	<programme start="20171103160000 +0100" stop="20171103170000 +0100" channel="sjuan.se">
+		<title lang="sv">Det okända</title>
+		<desc lang="sv">Mediet Terry Evans åker till Transtrand utanför Sälen där Fredrik Lind och Amanda Gudmunds köpt ett renoverat hus. Första natten de sover där vaknar de av att det låter som om någon drar en kätting under deras säng. Efter detta staplas märkliga händelser på varandra och det kulminerar med att Amanda, dottern Freja och vänner till familjen ser gestalter som rör sig i hemmet. Fredrik är skeptisk och försöker vifta bort allt som händer men Amanda har fått nog. Frågan är om Terry kan övertyga Fredrik om att det finns ett liv efter döden.</desc>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<episode-num system="xmltv_ns">19 . 12 .</episode-num>
+		<episode-num system="onscreen">Episode 13 season 20</episode-num>
+	</programme>
+	<programme start="20171103170000 +0100" stop="20171103180000 +0100" channel="sjuan.se">
+		<title lang="sv">Det okända</title>
+		<desc lang="sv">Mediet Pierre Hesselbrandt åker till Heby för att hjälpa Camilla, sambon Stefan och Camillas 15-årige son Leon som bor i en villa mitt i stan. Dottern Madelene som pluggar på annan ort har kvar sitt rum men hon vågar inte sova där längre. Inte heller Camilla vågar sova i sitt hus. Alla i familjen har märkt av oförklarliga aktiviteter som blivit värre och påverkar deras livskvalitet. Situationen är nu ohållbar och Camilla ber Det okända om hjälp.</desc>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Documentary</category>
+		<episode-num system="xmltv_ns">19 . 13 .</episode-num>
+		<episode-num system="onscreen">Episode 14 season 20</episode-num>
+	</programme>
+	<programme start="20171103180000 +0100" stop="20171103183500 +0100" channel="sjuan.se">
+		<title lang="sv">Glamour</title>
+		<desc lang="sv">Brooke och Bill firar i sänghalmen. Wyatt och Liam får höra överraskande nyheter. Eric har ett jobberbjudande åt Katie som inte faller Quinn i smaken. Ridge får anledning att bli upprörd.</desc>
+		<credits>
+			<director>Deveney Kelly</director>
+			<actor role="Bill Spencer Jr.">Don Diamont</actor>
+			<actor role="Brooke Logan">Katherine Kelly Lang</actor>
+			<actor role="Eric Forrester">John McCook</actor>
+			<actor role="Liam Spencer">Scott Clifton</actor>
+			<actor role="Wyatt Spencer">Darin Brooks</actor>
+			<actor role="Quinn Fuller Forrester">Rena Sofer</actor>
+			<actor role="Katie Logan">Heather Tom</actor>
+			<actor role="Ridge Forrester">Thorsten Kaye</actor>
+			<actor role="Pamela Douglas">Alley Mills</actor>
+			<actor>Bradley Bell</actor>
+			<actor>Michael Minnis</actor>
+			<producer>Colleen Bell</producer>
+		</credits>
+		<date>2013</date>
+		<category lang="en">series</category>
+		<category lang="en">Drama</category>
+		<episode-num system="xmltv_ns">15 . 234 .</episode-num>
+		<episode-num system="onscreen">Episode 235 season 16</episode-num>
+	</programme>
+	<programme start="20171103183500 +0100" stop="20171103190000 +0100" channel="sjuan.se">
+		<title lang="sv">Judys domstol</title>
+		<desc lang="sv">Amerikansk realityserie från 2016. Med sin rättframma stil tar domare Judith Sheindlin upp autentiska fall i sin rättssal. Hon är tuff men rättvis, och fast besluten att alltid skipa rättvisa och avkunna snabba domar.</desc>
+		<credits>
+			<actor>Judith Sheindlin</actor>
+		</credits>
+		<date>2016</date>
+		<category lang="en">series</category>
+		<category lang="en">Reality</category>
+		<episode-num system="xmltv_ns">2015 . 2/180 .</episode-num>
+		<episode-num system="onscreen">Episode 3 of 180 season 2016</episode-num>
+	</programme>
+	<programme start="20171103190000 +0100" stop="20171103200000 +0100" channel="sjuan.se">
+		<title lang="sv">Dr Phil</title>
+		<desc lang="sv">Jackie och Darin misströstar över sin till synes okontrollerbara son Bo, 17 år, som gripits två gånger för rattonykterhet. Vid det ena tillfället ska han ha kört över en människa och vid det andra totalförstörde han sin bil. Doktor Phil undersöker bakgrunden till Bos vårdslösa beteende.</desc>
+		<credits>
+			<actor>Phil McGraw</actor>
+		</credits>
+		<date>2017</date>
+		<category lang="en">series</category>
+		<category lang="en">Talk</category>
+		<episode-num system="xmltv_ns">2016 . 54/174 .</episode-num>
+		<episode-num system="onscreen">Episode 55 of 174 season 2017</episode-num>
+	</programme>
+	<programme start="20171103200000 +0100" stop="20171103203500 +0100" channel="sjuan.se">
+		<title lang="sv">Pang i bygget</title>
+		<sub-title lang="sv">The Builders</sub-title>
+		<desc lang="sv">En ombyggnad av hotellet kräver duktiga hantverkare. Det vet Sybil, men snåle Basil anlitar på eget bevåg den billige men oduglige O'Reilly och hans manskap. Till Sybils förvåning och Basils triumferande glädje ser det inte så tokigt ut när byggarna är klara.</desc>
+		<credits>
+			<director>John Howard Davies</director>
+			<actor role="Basil Fawlty">John Cleese</actor>
+			<actor role="Sybil Fawlty">Prunella Scales</actor>
+			<actor role="Polly Sherman">Connie Booth</actor>
+			<actor role="Manuel">Andrew Sachs</actor>
+			<actor role="Major Gowen">Ballard Berkeley</actor>
+			<actor role="Terry the Chef">Brian Hall</actor>
+			<actor role="Miss Tibbs">Gilly Flower</actor>
+			<actor role="Miss Gatsby">Renee Roberts</actor>
+			<actor role="Stubbs">James Appleby</actor>
+			<actor role="O'Reilly">David Kelly</actor>
+			<writer>Connie Booth</writer>
+			<writer>John Cleese</writer>
+			<producer>John Howard Davies</producer>
+		</credits>
+		<date>1975</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/2207/season/1/episode/2]]></url>
+		<episode-num system="xmltv_ns">0 . 1/6 .</episode-num>
+		<episode-num system="onscreen">Episode 2 of 6 season 1</episode-num>
+	</programme>
+	<programme start="20171103203500 +0100" stop="20171103212500 +0100" channel="sjuan.se">
+		<title lang="sv">Pang i bygget</title>
+		<sub-title lang="sv">The Wedding Party</sub-title>
+		<desc lang="sv">Basil försöker hantera en flirtig fransyska samtidigt som han håller ett vakande öga på ett ungt par. Med sin unika förmåga att misstolka ser Basil sitt hotell förfalla till ett sexinferno. Den stupfulle Manuel, som firar sin födelsedag, är inte till någon hjälp.</desc>
+		<credits>
+			<director>John Howard Davies</director>
+			<actor role="Basil Fawlty">John Cleese</actor>
+			<actor role="Sybil Fawlty">Prunella Scales</actor>
+			<actor role="Polly Sherman">Connie Booth</actor>
+			<actor role="Manuel">Andrew Sachs</actor>
+			<actor role="Major Gowen">Ballard Berkeley</actor>
+			<actor role="Terry the Chef">Brian Hall</actor>
+			<actor role="Miss Tibbs">Gilly Flower</actor>
+			<actor role="Miss Gatsby">Renee Roberts</actor>
+			<actor role="Mrs. Peignoir">Yvonne Gilan</actor>
+			<actor role="Alan">Trevor Adams</actor>
+			<actor role="Mr. Lloyd">Conrad Phillips</actor>
+			<actor role="Mrs. Rachel Lloyd">Diana King</actor>
+			<writer>Connie Booth</writer>
+			<writer>John Cleese</writer>
+			<producer>John Howard Davies</producer>
+		</credits>
+		<date>1975</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/2207/season/1/episode/3]]></url>
+		<episode-num system="xmltv_ns">0 . 2/6 .</episode-num>
+		<episode-num system="onscreen">Episode 3 of 6 season 1</episode-num>
+	</programme>
+	<programme start="20171103212500 +0100" stop="20171103220000 +0100" channel="sjuan.se">
+		<title lang="sv">Pang i bygget</title>
+		<sub-title lang="sv">The Hotel Inspectors</sub-title>
+		<desc lang="sv">Basil får reda på att en hotellinspektör är i staden och han blir genast paranoid. Han måste ta reda på vem av hans gäster som är inspektör. Ett antal felgissningar och några hysteriska utbrott leder inte Basil framåt i hans undersökning. Han är helt oförberedd när den riktige inspektören dyker upp och gör givetvis ett totalt katastrofalt intryck.</desc>
+		<credits>
+			<director>John Howard Davies</director>
+			<actor role="Basil Fawlty">John Cleese</actor>
+			<actor role="Sybil Fawlty">Prunella Scales</actor>
+			<actor role="Polly Sherman">Connie Booth</actor>
+			<actor role="Manuel">Andrew Sachs</actor>
+			<actor role="Major Gowen">Ballard Berkeley</actor>
+			<actor role="Terry the Chef">Brian Hall</actor>
+			<actor role="Miss Tibbs">Gilly Flower</actor>
+			<actor role="Miss Gatsby">Renee Roberts</actor>
+			<actor role="Mr. Walt">James Cossins</actor>
+			<actor role="Mr. Hutchinson">Bernard Cribbins</actor>
+			<writer>Connie Booth</writer>
+			<writer>John Cleese</writer>
+			<producer>John Howard Davies</producer>
+		</credits>
+		<date>1975</date>
+		<category lang="en">series</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[https://www.themoviedb.org/tv/2207/season/1/episode/4]]></url>
+		<episode-num system="xmltv_ns">0 . 3/6 .</episode-num>
+		<episode-num system="onscreen">Episode 4 of 6 season 1</episode-num>
+	</programme>
+	<programme start="20171103220000 +0100" stop="20171104000000 +0100" channel="sjuan.se">
+		<title lang="sv">Maria Lang - mördaren ljuger inte ensam</title>
+		<desc lang="sv">Puck är bjuden till sin universitetshandledares ensliga stuga på en ö i Skogasjö med en grupp vänner, bland andra Einar Bure. Det ingen vet är att Puck och Einar har ett förhållande. En dag hittar Puck en av de kvinnliga gästerna mördad och Einar ber sin vän kriminalkommissarie Christer Wijk komma till ön och undersöka brottsplatsen. Men när Chistian kommer är liket spårlöst borta. Samtidigt försvinner öns enda båt och plötsligt är de fångna på ön med en mördare.</desc>
+		<credits>
+			<actor role="Christer Wijk">Ola Rapace</actor>
+			<actor role="Puck">Tuva Novotny</actor>
+			<actor role="Einar Bure">Linus Wahlgren</actor>
+		</credits>
+		<date>2011</date>
+		<category lang="en">series</category>
+		<category lang="en">Crime</category>
+		<category lang="en">Mystery</category>
+		<episode-num system="xmltv_ns">0 . 0 .</episode-num>
+		<episode-num system="onscreen">Episode 1 season 1</episode-num>
+	</programme>
+	<programme start="20171104000000 +0100" stop="20171104020500 +0100" channel="sjuan.se">
+		<title lang="sv">De tre musketörerna</title>
+		<desc lang="sv">De tre musketörerna är en amerikansk/brittisk/österrikisk äventyrsfilm från 1993. Adelsmannen D'Artagnan åker till Paris för att precis som sin far ta värvning hos kungens musketörer. Där träffar han de tre musketörerna Athos, Porthos och Aramis. Trots att det är förbjudet att duellera utmanar D'Artagnan dem alla tre. De ertappas av kardinal Richelieus män som försöker gripa dem. Men D'Artagnan visar vad han går för och lyckas fly med de tre musketörerna. Kardinal Richelieu har som mål att störta kungen och utropa sig själv till Frankrikes kung. Det vill D'Artagnan och hans nyfunna vänner till varje pris stoppa. Filmen bygger på en roman av Alexandre Dumas den äldre.</desc>
+		<credits>
+			<director>Stephen Herek</director>
+			<actor role="Aramis">Charlie Sheen</actor>
+			<actor role="Athos">Kiefer Sutherland</actor>
+			<actor role="D'Artagnan">Chris O'Donnell</actor>
+			<actor role="Porthos">Oliver Platt</actor>
+			<actor role="Cardinal Richelieu">Tim Curry</actor>
+			<actor role="Countess D'Winter">Rebecca De Mornay</actor>
+			<actor role="Queen Anne">Gabrielle Anwar</actor>
+			<actor role="Rochefort">Michael Wincott</actor>
+			<actor role="Girard">Paul McGann</actor>
+			<actor role="Constance">Julie Delpy</actor>
+			<actor role="King Louis XIII">Hugh O'Conor</actor>
+			<writer>David Loughery</writer>
+			<producer>Roger Birnbaum</producer>
+			<producer>Joe Roth</producer>
+		</credits>
+		<date>1993</date>
+		<category lang="en">movie</category>
+		<category lang="en">Action</category>
+		<category lang="en">Adventure</category>
+		<category lang="en">Comedy</category>
+		<url><![CDATA[http://www.themoviedb.org/movie/10057]]></url>
+		<episode-num system="themoviedb.org">movie/10057</episode-num>
+		<star-rating>
+			<value>6.2 / 10</value>
+		</star-rating>
+	</programme>
+</tv>

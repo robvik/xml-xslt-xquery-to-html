@@ -1,0 +1,38 @@
+	<!--
+		Author: Robin Viktorsson
+		Date:	2017-11-02
+		Filename: schema.xsd
+	-->
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="allchannels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="tv" type="tvType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="tvType">
+    <xs:sequence>
+      <xs:element name="programme" type="programmeType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="channel"/>
+    <xs:attribute type="xs:string" name="logo"/>
+  </xs:complexType>
+
+  <xs:complexType name="programmeType">
+    <xs:sequence>
+	  <xs:element type="xs:string" name="id"/>
+      <xs:element type="xs:string" name="title"/>
+      <xs:element type="xs:string" name="desc" minOccurs="0"/>
+      <xs:element type="xs:string" name="start"/>
+      <xs:element type="xs:string" name="stop"/>
+      <xs:element type="xs:short" name="date" minOccurs="0"/>
+	  <xs:element type="xs:string" name="type" minOccurs="0"/>
+      <xs:element type="xs:string" name="category" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
